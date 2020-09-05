@@ -1,5 +1,5 @@
 ---
-name: "\U0001F41E Bug report"
+name: "🐞 Bug report"
 about: Report an issue to help the project improve.
 title: ""
 labels: bug

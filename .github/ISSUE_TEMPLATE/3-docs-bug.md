@@ -16,13 +16,33 @@ Please read our Rules of Conduct at: this repository `.github/CODE_OF_CONDUCT.md
 
 📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛-->
 
-# **🚀 Feature Request**
+# **📚 Documentation Issue Report**
 
-
-## **Is your feature request related to a problem? Please describe.**
-<!-- A clear and concise description of what the problem is. Ex. I'm always frustrated when [...] -->
+## **Describe the bug**
+<!-- A clear and concise description of what the bug is. -->
 
 * 
+
+---
+
+### **To Reproduce**
+<!-- Steps to reproduce the error:
+(e.g.:)
+1. Use x argument / navigate to
+2. Fill this information
+3. Go to...
+4. See error -->
+
+<!-- Write the steps here (add or remove as many steps as needed)-->
+1.
+2.
+3.
+4.
+
+---
+
+### **Media prove**
+<!-- If applicable, add screenshots or videos to help explain your problem. -->
 
 ---
 
@@ -31,13 +51,6 @@ Please read our Rules of Conduct at: this repository `.github/CODE_OF_CONDUCT.md
 
 *
  
----
-
-## **Describe alternatives you've considered**
-<!-- A clear and concise description of any alternative solutions or features you've considered. -->
-
-*
-
 ---
 
 ### **Additional context**
