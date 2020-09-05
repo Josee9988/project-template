@@ -1,5 +1,5 @@
 ---
-name: Bug report
+name: "\U0001F41EBug report"
 about: Report an issue to help the project improve.
 title: ""
 labels: bug
@@ -7,17 +7,33 @@ assignees: Josee9988
 
 ---
 
-<!-- Please read our Rules of Conduct at: this repository `.github/CODE_OF_CONDUCT.md`-->
-<!-- Please search existing issues to avoid creating duplicates. -->
+<!--📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛
 
-**Describe the bug**
+Oh hi there! 😄
+
+To expedite issue processing please search open and closed issues before submitting a new one.
+Please read our Rules of Conduct at: this repository `.github/CODE_OF_CONDUCT.md`
+
+📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛-->
+
+
+# **🐞 Bug Report**
+
+
+## **Describe the bug**
 <!-- A clear and concise description of what the bug is. -->
 
 * 
 
 ---
 
-**To Reproduce**
+### **Is this a regression?**
+<!-- Did this behaviour use to work in the previous version? -->
+<!-- Yes, the previous version in which this bug was not present was: ... -->
+
+---
+
+### **To Reproduce**
 <!-- Steps to reproduce the error:
 (e.g.:)
 1. Use x argument / navigate to
@@ -33,19 +49,19 @@ assignees: Josee9988
 
 ---
 
-**Expected behaviour**
+### **Expected behaviour**
 <!-- A clear and concise description of what you expected to happen. -->
 
 * 
 
 ---
 
-**Media prove**
+### **Media prove**
 <!-- If applicable, add screenshots or videos to help explain your problem. -->
 
 ---
 
-**Device (please complete the following information):**
+### **Your environment**
 <!-- use all the applicable bulleted list element for this specific issue,
 and remove all the bulleted list elements that are not relevant for this issue. -->
 
@@ -56,7 +72,7 @@ and remove all the bulleted list elements that are not relevant for this issue. 
  
 ---
 
-**Additional context**
+### **Additional context**
 <!-- Add any other context or additional information about the problem here.-->
 
 * 
