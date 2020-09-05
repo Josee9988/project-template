@@ -1,8 +1,8 @@
 ---
-name: "\U0001F680 Feature request"
-about: Suggest an idea or possible enhancement for this project
+name: "📚 Documentation or README.md issue report"
+about: Report an issue in the project's documentation or README.md file.
 title: ""
-labels: enhancement
+labels: documentation
 assignees: Josee9988
 
 ---
