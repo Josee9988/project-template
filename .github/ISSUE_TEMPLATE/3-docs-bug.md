@@ -26,6 +26,7 @@ Please read our Rules of Conduct at: this repository `.github/CODE_OF_CONDUCT.md
 ---
 
 ### **To Reproduce**
+
 <!-- Steps to reproduce the error:
 (e.g.:)
 1. Use x argument / navigate to
@@ -34,6 +35,7 @@ Please read our Rules of Conduct at: this repository `.github/CODE_OF_CONDUCT.md
 4. See error -->
 
 <!-- Write the steps here (add or remove as many steps as needed)-->
+
 1.
 2.
 3.
@@ -50,7 +52,7 @@ Please read our Rules of Conduct at: this repository `.github/CODE_OF_CONDUCT.md
 <!-- A clear and concise description of what you want to happen. -->
 
 *
- 
+
 ---
 
 ### **Additional context**
