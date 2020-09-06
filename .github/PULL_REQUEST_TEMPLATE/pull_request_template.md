@@ -13,7 +13,7 @@ For more information on closing issues using keywords please check https://docs.
 
 <!--  📛📛
 Please include a summary of the change and/or which issue is fixed.
-Also include relevant motivation and context.
+Also, include relevant motivation and context.
 List any dependencies that are required for this change if there are any.
 📛📛 -->
 

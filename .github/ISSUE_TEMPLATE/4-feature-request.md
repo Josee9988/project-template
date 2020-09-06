@@ -1,5 +1,5 @@
 ---
-name: "🚀 Feature request"
+name: "🚀 Feature Request"
 about: "Suggest an idea or possible enhancement for this project."
 title: ""
 labels: enhancement
@@ -12,7 +12,7 @@ assignees: Josee9988
 Oh hi there! 😄
 
 To expedite issue processing please search open and closed issues before submitting a new one.
-Please read our Rules of Conduct at: this repository's `.github/CODE_OF_CONDUCT.md`
+Please read our Rules of Conduct at this repository's `.github/CODE_OF_CONDUCT.md`
 
 📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛-->
 
