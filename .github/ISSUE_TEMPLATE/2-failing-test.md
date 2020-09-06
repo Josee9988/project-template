@@ -1,6 +1,6 @@
 ---
 name: "💉 Failing Test"
-about: "Report failing tests or jobs in CI"
+about: "Report failing tests or CI jobs."
 labels: failing-test
 assignees: Josee9988
 
