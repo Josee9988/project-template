@@ -3,6 +3,7 @@
 ## **What is this repository?**
 
 * This template, can be used as a base layer for any of your future repositories/projects.
+* Make your project easy to maintain with **7 issue templates**.
 * All the markdown follows [markdownlint rules](https://github.com/DavidAnson/markdownlint).
 * Learn more with the [official Github guide on creating repositories from a template](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/creating-a-repository-from-a-template).
 
@@ -20,7 +21,7 @@
    1. A [PULL_REQUEST_TEMPLATE](/.github/PULL_REQUEST_TEMPLATE/pull_request_template.md) with a template for your pull request that closes issues with keywords. [Learn more with the Github guide](https://docs.github.com/es/github/building-a-strong-community/creating-a-pull-request-template-for-your-repository).
    1. Multiple [issues templates](/.github/ISSUE_TEMPLATE) . [Learn more with the Github guide](https://docs.github.com/en/github/building-a-strong-community/configuring-issue-templates-for-your-repository).
       1. A [config.yml](/.github/ISSUE_TEMPLATE/config.yml) with the config and information about the issue templates.
-      1. A [Blank issue template](/.github/ISSUE_TEMPLATE) with the super basic stuff all the issues should contain.
+      1. A [Blank issue template](/.github/ISSUE_TEMPLATE) with the super basic stuff, all the issues should contain.
       1. A [Bug issue template](/.github/ISSUE_TEMPLATE/1-bug-report.md).
       1. A [Failing test issue template](/.github/ISSUE_TEMPLATE/2-failing-test.md).
       1. A [Documentation issue template](/.github/ISSUE_TEMPLATE/3-docs-bug.md).
@@ -30,9 +31,41 @@
 
 ---
 
+## **How to use it as a template for my new repos?**
+
+1. To create a new repository from this template [generate your new repository from this template](https://github.com/Josee9988/project-template/generate)
+for more information or guidance follow the [github guide](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/creating-a-repository-from-a-template).
+2. **Review** every single file and **modify** it with your data customizing it as you like.
+3. Build your project.
+
+* _Customize every file, and replace the usernames and emails with your own, this would take less than a couple of minutes_
+
+---
+
+## **Screenshots**
+
+A couple of screenshots to delight you before you use this template.
+
+*. All the issue templates.
+<p align="center">
+  <img width="70%" height="70%" src="https://i.imgur.com/BWOdDCb.png" alt="All the issue templates.">
+</p>
+
+*. An issue template opened.
+<p align="center">
+  <img width="70%" height="70%" src="https://i.imgur.com/r5AiLWu.png" alt="Bug issue template opened.">
+</p>
+
+* Security policy
+<p align="center">
+  <img width="70%" height="70%" src="https://i.imgur.com/ArwDQTi.png" alt="Security issue.">
+</p>
+
+---
+
 ## **Project tree**
 
-`plain
+```text
 .
 ├── .github
 │   ├── CODE_OF_CONDUCT.md
@@ -58,18 +91,7 @@
     └── README.md
 
 4 directories, 18 files
-`
-
----
-
-## **How to use it as a template for my new repos?**
-
-1. To create a new repository from this template [generate your new repository from this template](https://github.com/Josee9988/project-template/generate)
-for more information or guidance follow the [github guide](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/creating-a-repository-from-a-template).
-2. **Review** every single file and **modify** it with your data customizing it as you like.
-3. Build your project.
-
-* _Customize every file, and replace the usernames and emails with your own, this would take less than a couple of minutes_
+```
 
 ---
 
