@@ -20,7 +20,7 @@ Please read our Rules of Conduct at this repository's `.github/CODE_OF_CONDUCT.m
 ## **Which jobs/test(s) are failing**:
 <!-- The CI jobs or tests that are failing -->
 
-* 
+*
 
 ---
 
@@ -37,4 +37,4 @@ Please read our Rules of Conduct at this repository's `.github/CODE_OF_CONDUCT.m
 ### **Additional context**
 <!-- Add any other context or additional information about the problem here. -->
 
-* 
+*

@@ -21,7 +21,7 @@ Please read our Rules of Conduct at this repository's `.github/CODE_OF_CONDUCT.m
 ## **Is your feature request related to a problem? Please describe.**
 <!-- A clear and concise description of what the problem is. Ex. I'm always frustrated when [...] -->
 
-* 
+*
 
 ---
 
@@ -42,4 +42,4 @@ Please read our Rules of Conduct at this repository's `.github/CODE_OF_CONDUCT.m
 ### **Additional context**
 <!-- Add any other context or additional information about the problem here.-->
 
-* 
+*

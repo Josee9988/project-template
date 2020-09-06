@@ -41,7 +41,6 @@ The data that must NOT be posted here:
 * Information about political or religious affiliations
 * Information about race, ethnicity, sexual orientation, gender, or other identifying information that could be used for discriminatory purposes
 
-
 📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛-->
 
 # **⚠️ Security Report**
@@ -49,7 +48,7 @@ The data that must NOT be posted here:
 ## **Describe the security issue**
 <!-- A clear and concise description of what the bug is. -->
 
-* 
+*
 
 ---
 
@@ -74,7 +73,7 @@ The data that must NOT be posted here:
 ### **Expected behaviour**
 <!-- A clear and concise description of what you expected to happen. -->
 
-* 
+*
 
 ---
 
@@ -88,14 +87,14 @@ The data that must NOT be posted here:
 <!-- use all the applicable bulleted list element for this specific issue,
 and remove all the bulleted list elements that are not relevant for this issue. -->
 
- * OS: <!--[e.g. Ubuntu 5.4.0-26-generic x86_64 / Windows 1904 ...]--> 
- * Node version:
- * Npm version:
- * Browser name and version:
+* OS: <!--[e.g. Ubuntu 5.4.0-26-generic x86_64 / Windows 1904 ...]-->
+* Node version:
+* Npm version:
+* Browser name and version:
 
 ---
 
 ### **Additional context**
 <!-- Add any other context or additional information about the problem here.-->
 
-* 
+*

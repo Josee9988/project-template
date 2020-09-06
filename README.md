@@ -31,7 +31,7 @@
 
 ---
 
-## **How to use it as a template for my new repos?**
+## **How to use it as a template for my new repositories?**
 
 1. To create a new repository from this template [generate your new repository from this template](https://github.com/Josee9988/project-template/generate)
 for more information or guidance follow the [github guide](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/creating-a-repository-from-a-template).
@@ -46,12 +46,12 @@ for more information or guidance follow the [github guide](https://docs.github.c
 
 A couple of screenshots to delight you before you use this template.
 
-*. All the issue templates.
+* All the issue templates.
 <p align="center">
   <img width="70%" height="70%" src="https://i.imgur.com/BWOdDCb.png" alt="All the issue templates.">
 </p>
 
-*. An issue template opened.
+* An issue template opened.
 <p align="center">
   <img width="70%" height="70%" src="https://i.imgur.com/r5AiLWu.png" alt="Bug issue template opened.">
 </p>
