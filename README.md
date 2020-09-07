@@ -9,10 +9,13 @@
 
 ## **What does it include?**
 
-1. A `.gitignore` ignoring Jetbrains and VSCode IDE's folders and Linux files.
-1. A README.md file that should be deleted or modified with your own README.md.
+1. An **`EXECUTEME.sh`** script that **MUST be executed right when you clone your repository**.
+The script will replace Jose's username and email (the author) with yours.
+It will also remove all the content from the README.md and will auto remove itself (the script).
+1. A `.gitignore` ignoring Jetbrains/Intellij and VSCode IDE's folders and Linux files.
+1. A README.md file that its content will be erased when you run the `EXECUTEME.sh` script.
 1. A fully customized `.github` folder with:
-   1. A [funding](/.github/FUNDING.yml) to display a sponsor button. [Learn more with the Github guide](https://docs.github.com/en/github/administering-a-repository/displaying-a-sponsor-button-in-your-repository)
+   1. A [funding](/.github/FUNDING.yml) to display a sponsor button (should be manually modified). [Learn more with the Github guide](https://docs.github.com/en/github/administering-a-repository/displaying-a-sponsor-button-in-your-repository)
    1. A [issue_label_bot.yaml](/.github/issue_label_bot.yaml) to use the popular github bot. [Activate it or check its documentation](https://github.com/marketplace/issue-label-bot).
    1. A [CONTRIBUTING](/.github/CONTRIBUTING.md) explaining how to contribute to the project. [Learn more with the Github guide](https://docs.github.com/en/github/building-a-strong-community/setting-guidelines-for-repository-contributors).
    1. A [SUPPORT](/.github/SUPPORT.md) explaining how to support the project. [Learn more with the Github guide](https://docs.github.com/en/github/building-a-strong-community/adding-support-resources-to-your-project).
@@ -35,8 +38,10 @@
 
 1. To create a new repository from this template [generate your new repository from this template](https://github.com/Josee9988/project-template/generate)
 for more information or guidance follow the [github guide](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/creating-a-repository-from-a-template).
-2. **Review** every single file and **modify** it with your data customizing it as you like.
-3. Build your project.
+2. Execute the `EXECUTEME.sh` shell script to replace the author's username and email with yours.
+Use `bash EXECUTEME.sh` or `./EXECUTEME.sh`. (Manually modify the `.github/funding.yml`, this file will still contain author's data).
+3. **Review** every single file and **customize** it as you like.
+4. Build your project.
 
 * _Customize every file, and replace the usernames and emails with your own, this would take less than a couple of minutes_
 
@@ -67,6 +72,7 @@ A couple of screenshots to delight you before you use this template.
 
 ```text
 .
+├── EXECUTEME.sh
 ├── .github
 │   ├── CODE_OF_CONDUCT.md
 │   ├── CONTRIBUTING.md
@@ -86,17 +92,15 @@ A couple of screenshots to delight you before you use this template.
 │   ├── SECURITY.md
 │   └── SUPPORT.md
 ├── .gitignore
-├── README.md
-└── tree
-    └── README.md
+└── README.md
 
-4 directories, 18 files
+3 directories, 18 files
 ```
 
 ---
 
 > ⚠️Remember that this template should be reviewed and modified to fit your requirements.
-> There are files that reference my username (Josee9988) and my email (jgracia9988@gmail.com),
-> these should be changed with your own personal username and email.⚠️
+> The script **EXECUTEME.sh** should be executed right when you clone your new repository.
+> There will be files that will need manual revision (such as the funding.yml)⚠️
 
 _Made with a lot of ❤️❤️ by **[@Josee9988](https://github.com/Josee9988)**_
