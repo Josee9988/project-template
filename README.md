@@ -1,18 +1,38 @@
-# **Github Project Template**
+# **Josee9988's Github Project Template**
 
-## **What is this repository?**
+## **What is this template?**
 
 * This template, can be used as a base layer for any of your future repositories/projects.
 * Make your project easy to maintain with **7 issue templates**.
-* All the markdown follows [markdownlint rules](https://github.com/DavidAnson/markdownlint).
+* Make your _community healthier_ with all the guides like code of conduct, contributing, support, security...
 * Learn more with the [official Github guide on creating repositories from a template](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/creating-a-repository-from-a-template).
+* To start using it; "**[click use this template](https://github.com/Josee9988/project-template/generate)**", create your new repository,
+clone your new repository and execute the `EXECUTEME.sh` shell script to personalize the markdowns with your personal details.
+* All the markdown follows [MarkdownLint rules](https://github.com/DavidAnson/markdownlint).
+
+---
+
+## **How to use it as a template for my new repositories?**
+
+1. To create a new repository from this template [generate your new repository from this template](https://github.com/Josee9988/project-template/generate)
+for more information or guidance follow the [github guide](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/creating-a-repository-from-a-template).
+2. Execute the `EXECUTEME.sh` shell script to replace the author's username and email with yours.
+Use `bash EXECUTEME.sh` or `./EXECUTEME.sh`. (Manually modify the `.github/funding.yml`, this file will still contain the author's data).
+3. **Review** every single file and **customize** it as you like.
+4. Build your project.
+
+⚠️ _Customize every file, and replace the usernames and emails with your own, this would take less than a couple of minutes._ ⚠️
+
+---
 
 ## **What does it include?**
 
 1. An **`EXECUTEME.sh`** script that **MUST be executed right when you clone your repository**.
 The script will replace Jose's username and email (the author) with yours.
-It will also remove all the content from the README.md and will auto remove itself (the script).
+It will remove all the content from the CHANGELOG.md and write the basic structure for you to write your own.
+The script will also remove all the content from the README.md and will auto remove itself (the script).
 1. A `.gitignore` ignoring Jetbrains/Intellij and VSCode IDE's folders and Linux files.
+1. A CHANGELOG.md file that the `EXECUTEME.sh` script will remove to let you write your own.
 1. A README.md file that its content will be erased when you run the `EXECUTEME.sh` script.
 1. A fully customized `.github` folder with:
    1. A [funding](/.github/FUNDING.yml) to display a sponsor button (should be manually modified). [Learn more with the Github guide](https://docs.github.com/en/github/administering-a-repository/displaying-a-sponsor-button-in-your-repository)
@@ -34,44 +54,11 @@ It will also remove all the content from the README.md and will auto remove itse
 
 ---
 
-## **How to use it as a template for my new repositories?**
-
-1. To create a new repository from this template [generate your new repository from this template](https://github.com/Josee9988/project-template/generate)
-for more information or guidance follow the [github guide](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/creating-a-repository-from-a-template).
-2. Execute the `EXECUTEME.sh` shell script to replace the author's username and email with yours.
-Use `bash EXECUTEME.sh` or `./EXECUTEME.sh`. (Manually modify the `.github/funding.yml`, this file will still contain author's data).
-3. **Review** every single file and **customize** it as you like.
-4. Build your project.
-
-* _Customize every file, and replace the usernames and emails with your own, this would take less than a couple of minutes_
-
----
-
-## **Screenshots**
-
-A couple of screenshots to delight you before you use this template.
-
-* All the issue templates.
-<p align="center">
-  <img width="70%" height="70%" src="https://i.imgur.com/BWOdDCb.png" alt="All the issue templates.">
-</p>
-
-* An issue template opened.
-<p align="center">
-  <img width="70%" height="70%" src="https://i.imgur.com/r5AiLWu.png" alt="Bug issue template opened.">
-</p>
-
-* Security policy
-<p align="center">
-  <img width="70%" height="70%" src="https://i.imgur.com/ArwDQTi.png" alt="Security issue.">
-</p>
-
----
-
-## **Project tree**
+### **Project tree**
 
 ```text
 .
+├── CHANGELOG.md
 ├── EXECUTEME.sh
 ├── .github
 │   ├── CODE_OF_CONDUCT.md
@@ -94,8 +81,29 @@ A couple of screenshots to delight you before you use this template.
 ├── .gitignore
 └── README.md
 
-3 directories, 18 files
+3 directories, 19 files
 ```
+
+---
+
+## **Screenshots**
+
+A couple of screenshots to delight you before you use this template.
+
+* All the issue templates.
+<p align="center">
+  <img width="70%" height="70%" src="https://i.imgur.com/BWOdDCb.png" alt="All the issue templates.">
+</p>
+
+* An issue template opened.
+<p align="center">
+  <img width="70%" height="70%" src="https://i.imgur.com/r5AiLWu.png" alt="Bug issue template opened.">
+</p>
+
+* Security policy
+<p align="center">
+  <img width="70%" height="70%" src="https://i.imgur.com/ArwDQTi.png" alt="Security issue.">
+</p>
 
 ---
 
