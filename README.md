@@ -21,7 +21,7 @@ Use `bash EXECUTEME.sh` or `./EXECUTEME.sh`. (Manually modify the `.github/fundi
 3. **Review** every single file and **customize** it as you like.
 4. Build your project.
 
-⚠️ _Customize every file, and replace the usernames and emails with your own, this would take less than a couple of minutes._ ⚠️
+⚠️ _Customize every file to fit your requirements, make sure to fully change the funding.yml file._ ⚠️
 
 ---
 
@@ -75,14 +75,14 @@ and will auto remove itself (the script).
 │   │   ├── 6-question-support.md
 │   │   └── config.yml
 │   ├── ISSUE_TEMPLATE.md
-│   ├── PULL_REQUEST_TEMPLATE
-│   │   └── pull_request_template.md
+│   ├── pull_request_template.md
 │   ├── SECURITY.md
 │   └── SUPPORT.md
 ├── .gitignore
+├── LICENSE (will get removed)
 └── README.md
 
-3 directories, 19 files
+2 directories, 20 files
 ```
 
 ---
@@ -106,7 +106,18 @@ A couple of screenshots to delight you before you use this template.
   <img width="70%" height="70%" src="https://i.imgur.com/ArwDQTi.png" alt="Security issue.">
 </p>
 
+* Community profile at 100%
+<p align="center">
+  <img width="70%" height="70%" src="https://i.imgur.com/kRt3lPs.png" alt="Community profile.">
+</p>
+
+
 ---
+
+For the right maintenance of the CHANGELOG we recommend this [VSCode extension](https://github.com/Josee9988/Changelog-and-Markdown-snippets)
+and the read and understanding of the [keep a changelog guide](https://keepachangelog.com/en/1.0.0/).
+
+Enjoy!
 
 > ⚠️Remember that this template should be reviewed and modified to fit your requirements.
 > The script **EXECUTEME.sh** should be executed right when you clone your new repository.

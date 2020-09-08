@@ -1,5 +1,28 @@
 #!/bin/bash
 
+#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#
+# SCRIPT:        EXECUTEME.sh
+# USAGE:         bash EXECUTEME.sh | ./EXECUTEME.sh
+# PURPOSE:       Shell script that prompts the user for their GitHub username, email name of their project and
+#                the type of project that it is. Then it will replace the author's (josee9988) username and email
+#                with the new ones (the user that is using this template). It will fully remove the LICENSE file,
+#                delete all of the content of the README.md file, and add a simple header,
+#                delete all of the content of the CHANGELOG.md and add a basic CHANGELOG versioning and 1st version,
+#                then this script will auto remove itself, to leave the new project without this file (EXECUTEME.sh).
+# TITLE:         EXECUTEME.sh
+# AUTHOR:        Jose Gracia
+# VERSION:       1.0.0
+# NOTES:         This script will auto remove itself, and in case of wanting to run it again, the user must download
+#                it again or do a 'git stash' and revert the changes.
+# BASH_VERSION:  5.0.17(1)-release
+# LICENSE:       see in ../LICENSE (project root) or https://github.com/Josee9988/project-template/blob/master/LICENSE
+# GITHUB:        https://github.com/Josee9988/
+# REPOSITORY:    https://github.com/Josee9988/project-template
+# ISSUES:        https://github.com/Josee9988/project-template/issues
+# MAIL:          jgracia9988@gmail.com
+#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#
+
+# get the date.
 ACTUAL_DATE=$(date '+%Y-%m-%d')
 
 # prompt for the username and email
@@ -38,5 +61,3 @@ case "$choice" in
   n|N ) exit 0;;
   * ) echo "Invalid option";;
 esac
-
-
