@@ -29,8 +29,9 @@ Use `bash EXECUTEME.sh` or `./EXECUTEME.sh`. (Manually modify the `.github/fundi
 
 1. An **`EXECUTEME.sh`** script that **MUST be executed right when you clone your repository**.
 The script will replace Jose's username and email (the author) with yours.
-It will remove all the content from the CHANGELOG.md and write the basic structure for you to write your own.
-The script will also remove all the content from the README.md and will auto remove itself (the script).
+It will remove all the _content_ from the CHANGELOG.md and write the basic structure for you to write your own.
+The script will also remove all the _content_ from the README.md, will remove the LICENSE to let you freely choose your own
+and will auto remove itself (the script).
 1. A `.gitignore` ignoring Jetbrains/Intellij and VSCode IDE's folders and Linux files.
 1. A CHANGELOG.md file that the `EXECUTEME.sh` script will remove to let you write your own.
 1. A README.md file that its content will be erased when you run the `EXECUTEME.sh` script.
@@ -41,7 +42,7 @@ The script will also remove all the content from the README.md and will auto rem
    1. A [SUPPORT](/.github/SUPPORT.md) explaining how to support the project. [Learn more with the Github guide](https://docs.github.com/en/github/building-a-strong-community/adding-support-resources-to-your-project).
    1. A [SECURITY](/.github/SECURITY.md) with a guide on how to post a security issue. [Learn more with the Github guide](https://docs.github.com/es/github/managing-security-vulnerabilities/adding-a-security-policy-to-your-repository).
    1. A [CODE_OF_CONDUCT](/.github/CODE_OF_CONDUCT.md) with a basic code of conduct. [Learn more with the Github guide](https://docs.github.com/en/github/building-a-strong-community/adding-a-code-of-conduct-to-your-project).
-   1. A [PULL_REQUEST_TEMPLATE](/.github/PULL_REQUEST_TEMPLATE/pull_request_template.md) with a template for your pull request that closes issues with keywords. [Learn more with the Github guide](https://docs.github.com/es/github/building-a-strong-community/creating-a-pull-request-template-for-your-repository).
+   1. A [PULL_REQUEST_TEMPLATE](/.github/pull_request_template.md) with a template for your pull request that closes issues with keywords. [Learn more with the Github guide](https://docs.github.com/es/github/building-a-strong-community/creating-a-pull-request-template-for-your-repository).
    1. Multiple [issues templates](/.github/ISSUE_TEMPLATE) . [Learn more with the Github guide](https://docs.github.com/en/github/building-a-strong-community/configuring-issue-templates-for-your-repository).
       1. A [config.yml](/.github/ISSUE_TEMPLATE/config.yml) with the config and information about the issue templates.
       1. A [Blank issue template](/.github/ISSUE_TEMPLATE) with the super basic stuff, all the issues should contain.
