@@ -6,6 +6,16 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/) 
 
 ---
 
+## [**1.0.3**] - 2021-02-23
+
+### Removed
+
+* Josee's funding links.
+
+### Added
+
+* Shell script now checks if the .github directory exists.
+
 ## [**1.0.2**] - 2020-09-08
 
 ### Added
