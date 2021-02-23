@@ -62,7 +62,7 @@ y | Y)
   echo -e "* A \`.github/\` folder with issue templates, code of conduct, a contributing guide, pull request template security advisory file, a funding and support file and an issue label bot file." >>CHANGELOG.md
 
   # remove jose's custom funding links
-  echo -e "# add your own funding links" >.gitub/FUNDING.yml
+  echo -e "# add your own funding links" >.github/FUNDING.yml
 
   echo -e "Remember to review every file and customize it as you like.\nYou are ready to start your brand new awesome project🚀🚀."
 
