@@ -1,13 +1,13 @@
 # **Josee9988's Github Project Template**
 
-## **What is this template?**
+## **What is this template all about?**
 
 * This template, can be used as a base layer for any of your future repositories/projects.
 * Make your project easy to maintain with **7 issue templates**.
 * Make your _community healthier_ with all the guides like code of conduct, contributing, support, security...
 * Learn more with the [official Github guide on creating repositories from a template](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/creating-a-repository-from-a-template).
 * To start using it; "**[click use this template](https://github.com/Josee9988/project-template/generate)**", create your new repository,
-clone your new repository and execute the `EXECUTEME.sh` shell script to personalize the markdowns with your personal details.
+clone your new repository and execute the `EXECUTEME.sh` shell script to personalize the markdowns with your private details.
 * All the markdown follows [MarkdownLint rules](https://github.com/DavidAnson/markdownlint).
 
 ---
@@ -16,12 +16,18 @@ clone your new repository and execute the `EXECUTEME.sh` shell script to persona
 
 1. To create a new repository from this template [generate your new repository from this template](https://github.com/Josee9988/project-template/generate)
 for more information or guidance follow the [github guide](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/creating-a-repository-from-a-template).
-2. Execute the `EXECUTEME.sh` shell script to replace the author's username and email with yours.
-Use `bash EXECUTEME.sh` or `./EXECUTEME.sh`. (Manually modify the `.github/funding.yml`, this file will still contain the author's data).
-3. **Review** every single file and **customize** it as you like.
-4. Build your project.
+2. Clone your repo and cd into it.
+3. Execute the `EXECUTEME.sh` shell script to customize the files with your data.
+    Use `bash EXECUTEME.sh` or `./EXECUTEME.sh`.
 
-⚠️ _Customize every file to fit your requirements, make sure to fully change the funding.yml file._ ⚠️
+    ```bash
+    bash EXECUTEME.sh # execute the setup script.
+    ```
+
+4. **Review** every single file and **customize** it as you like.
+5. Build your project. 🚀
+
+⚠️ _Customize every file to fit your requirements_ ⚠️
 
 ---
 
@@ -110,7 +116,6 @@ A couple of screenshots to delight you before you use this template.
 <p align="center">
   <img width="70%" height="70%" src="https://i.imgur.com/kRt3lPs.png" alt="Community profile.">
 </p>
-
 
 ---
 

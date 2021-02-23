@@ -64,7 +64,7 @@ y | Y)
   # remove jose's custom funding links
   echo -e "# add your own funding links" >.gitub/FUNDING.yml
 
-  echo -e "Remember to review every file and customize it as you like.\nYou are ready to start your brand new awesome project."
+  echo -e "Remember to review every file and customize it as you like.\nYou are ready to start your brand new awesome project🚀🚀."
 
   # self remove this script
   rm -- "$0"
