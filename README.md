@@ -1,3 +1,4 @@
+<!-- markdownlint-disable MD032 MD033-->
 # **Josee9988's Github Project Template**
 
 ## **What is this template all about?**
