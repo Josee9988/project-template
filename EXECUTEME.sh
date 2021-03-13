@@ -22,13 +22,25 @@
 # MAIL:          jgracia9988@gmail.com
 #~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#
 
-# get the date.
 ACTUAL_DATE=$(date '+%Y-%m-%d')
+RED='\033[1;31m'
+NC='\033[0m' # No Color
+UPurple='\033[4;35m'
 
-### Check if a directory does not exist ###
+### Check if the .github directory does exist ###
 if [ ! -d ".github/" ]; then
-  echo "Directory .github/ DOES NOT EXIST."
-  exit 1 # die with error code 1
+  echo -e "${RED}Directory .github/ DOES NOT EXIST.${NC}"
+  exit 1 # exit with error code 1
+fi
+
+### Checks if the root giles exist ###
+if [ ! -f "CHANGELOG.md" ] || [ ! -f "README.md" ] || [ ! -f ".gitignore" ]; then
+  echo -e "${RED}There are files missing. Have you modified the repository before executing this command?${NC}"
+  echo -e "${RED}The script couldn't found one or many of these files${NC}: '${UPurple}CHANGELOG.md${NC}', '${UPurple}README.md${NC}' or '${UPurple}.gitignore${NC}'.\n"
+  echo -e "You should try to 'git stash' your changes and execute this script from the project root again, or clone again the repository without any changes.\n"
+  echo -e "For more information visit: ${UPurple}https://github.com/Josee9988/project-template${NC}"
+  echo -e "If you think this may be an issue please post it at: ${UPurple}https://github.com/Josee9988/project-template/issues${NC}"
+  exit 1 # exit with error code 1
 fi
 
 # prompt for the username and email
@@ -73,3 +85,5 @@ y | Y)
 n | N) exit 0 ;;
 *) echo "Invalid option" ;;
 esac
+
+exit 2 # if the option is invalid
