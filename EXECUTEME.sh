@@ -26,6 +26,8 @@ ACTUAL_DATE=$(date '+%Y-%m-%d')
 RED='\033[1;31m'
 NC='\033[0m' # No Color
 UPurple='\033[4;35m'
+BBLUE='\033[1;34m'
+GREEN='\033[1;32m'
 
 ### Check if the .github directory does exist ###
 if [ ! -d ".github/" ]; then
@@ -43,14 +45,14 @@ if [ ! -f "CHANGELOG.md" ] || [ ! -f "README.md" ] || [ ! -f ".gitignore" ]; the
   exit 1 # exit with error code 1
 fi
 
-# prompt for the username and email
-read -p "Enter your username (without '@'): " NEW_USERNAME
-read -p "Enter your email: " NEW_EMAIL
-read -p "Enter the name of the project: " PROJECT_NAME
-read -p "Enter what is your project (program/extension/API/web/CLI tool/backend/frontend/scrapper/automation tool/etc): " PROJECT_TYPE
+# prompt for the username, mail and name of the project
+read -p "Enter your $(echo -e "$BBLUE""username""$NC") (without '@'): " NEW_USERNAME
+read -p "Enter your $(echo -e "$BBLUE""email""$NC"): " NEW_EMAIL
+read -p "Enter the $(echo -e "$BBLUE""name of the project""$NC"): " PROJECT_NAME
+read -p "Enter $(echo -e "$BBLUE""what your project is""$NC") (program/extension/API/web/CLI tool/backend/frontend/scrapper/automation tool/etc): " PROJECT_TYPE
 
 # confirm that the data is correct
-read -p "Is this data correct: username \"$NEW_USERNAME\", email: \"$NEW_EMAIL\", project name: \"$PROJECT_NAME\", of type: \"$PROJECT_TYPE\" (y/n)?" choice
+read -p "Is this data correct: username \"$(echo -e "$GREEN""$NEW_USERNAME""$NC")\", email: \"$(echo -e "$GREEN""$NEW_EMAIL""$NC")\", project name: \"$(echo -e "$GREEN""$PROJECT_NAME""$NC")\", of type: \"$(echo -e "$GREEN""$PROJECT_TYPE""$NC")\" (y/n)? " choice
 case "$choice" in
 y | Y)
   # replace the username and email
@@ -82,8 +84,8 @@ y | Y)
   # self remove this script
   rm -- "$0"
   ;;
-n | N) exit 0 ;;
-*) echo "Invalid option" ;;
+n | N) echo "Then try it again!" ;;
+*) echo -e "${RED}Invalid option${NC}" ;;
 esac
 
-exit 2 # if the option is invalid
+exit 0
