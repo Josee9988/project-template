@@ -22,23 +22,37 @@
 # MAIL:          jgracia9988@gmail.com
 #~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#
 
-# get the date.
 ACTUAL_DATE=$(date '+%Y-%m-%d')
+RED='\033[1;31m'
+NC='\033[0m' # No Color
+UPurple='\033[4;35m'
+BBLUE='\033[1;34m'
+GREEN='\033[1;32m'
 
-### Check if a directory does not exist ###
+### Check if the .github directory does exist ###
 if [ ! -d ".github/" ]; then
-  echo "Directory .github/ DOES NOT EXIST."
-  exit 1 # die with error code 1
+  echo -e "${RED}Directory .github/ DOES NOT EXIST.${NC}"
+  exit 1 # exit with error code 1
 fi
 
-# prompt for the username and email
-read -p "Enter your username (without '@'): " NEW_USERNAME
-read -p "Enter your email: " NEW_EMAIL
-read -p "Enter the name of the project: " PROJECT_NAME
-read -p "Enter what is your project (program/extension/API/web/CLI tool/backend/frontend/scrapper/automation tool/etc): " PROJECT_TYPE
+### Checks if the root giles exist ###
+if [ ! -f "CHANGELOG.md" ] || [ ! -f "README.md" ] || [ ! -f ".gitignore" ]; then
+  echo -e "${RED}There are files missing. Have you modified the repository before executing this command?${NC}"
+  echo -e "${RED}The script couldn't found one or many of these files${NC}: '${UPurple}CHANGELOG.md${NC}', '${UPurple}README.md${NC}' or '${UPurple}.gitignore${NC}'.\n"
+  echo -e "You should try to 'git stash' your changes and execute this script from the project root again, or clone again the repository without any changes.\n"
+  echo -e "For more information visit: ${UPurple}https://github.com/Josee9988/project-template${NC}"
+  echo -e "If you think this may be an issue please post it at: ${UPurple}https://github.com/Josee9988/project-template/issues${NC}"
+  exit 1 # exit with error code 1
+fi
+
+# prompt for the username, mail and name of the project
+read -p "Enter your $(echo -e "$BBLUE""username""$NC") (without '@'): " NEW_USERNAME
+read -p "Enter your $(echo -e "$BBLUE""email""$NC"): " NEW_EMAIL
+read -p "Enter the $(echo -e "$BBLUE""name of the project""$NC"): " PROJECT_NAME
+read -p "Enter $(echo -e "$BBLUE""what your project is""$NC") (program/extension/API/web/CLI tool/backend/frontend/scrapper/automation tool/etc): " PROJECT_TYPE
 
 # confirm that the data is correct
-read -p "Is this data correct: username \"$NEW_USERNAME\", email: \"$NEW_EMAIL\", project name: \"$PROJECT_NAME\", of type: \"$PROJECT_TYPE\" (y/n)?" choice
+read -p "Is this data correct: username \"$(echo -e "$GREEN""$NEW_USERNAME""$NC")\", email: \"$(echo -e "$GREEN""$NEW_EMAIL""$NC")\", project name: \"$(echo -e "$GREEN""$PROJECT_NAME""$NC")\", of type: \"$(echo -e "$GREEN""$PROJECT_TYPE""$NC")\" (y/n)? " choice
 case "$choice" in
 y | Y)
   # replace the username and email
@@ -70,6 +84,8 @@ y | Y)
   # self remove this script
   rm -- "$0"
   ;;
-n | N) exit 0 ;;
-*) echo "Invalid option" ;;
+n | N) echo "Then try it again!" ;;
+*) echo -e "${RED}Invalid option${NC}" ;;
 esac
+
+exit 0
