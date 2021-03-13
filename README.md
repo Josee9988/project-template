@@ -8,7 +8,7 @@
 * Make your _community healthier_ with all the guides like code of conduct, contributing, support, security...
 * Learn more with the [official Github guide on creating repositories from a template](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/creating-a-repository-from-a-template).
 * To start using it; "**[click use this template](https://github.com/Josee9988/project-template/generate)**", create your new repository,
-clone your new repository and execute the `EXECUTEME.sh` shell script to personalize the markdowns with your private details.
+clone your new repository and execute the `EXECUTEME.sh` shell script to personalize the markdowns with your private details. Check how to execute it [here](https://asciinema.org/a/398761).
 * All the markdown follows [MarkdownLint rules](https://github.com/DavidAnson/markdownlint).
 
 ---
@@ -19,11 +19,14 @@ clone your new repository and execute the `EXECUTEME.sh` shell script to persona
 for more information or guidance follow the [github guide](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/creating-a-repository-from-a-template).
 2. Clone your repo and cd into it.
 3. Execute the `EXECUTEME.sh` shell script to customize the files with your data.
+  
     Use `bash EXECUTEME.sh` or `./EXECUTEME.sh`.
 
     ```bash
     bash EXECUTEME.sh # execute the setup script.
     ```
+
+      Aditionally watch *[this video](https://asciinema.org/a/398761)* to see **how to execute the script**.
 
 4. **Review** every single file and **customize** it as you like.
 5. Build your project. 🚀
