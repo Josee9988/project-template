@@ -1,39 +1,4 @@
-# Created by https://www.toptal.com/developers/gitignore/api/linux,visualstudiocode,jetbrains
-# Edit at https://www.toptal.com/developers/gitignore?templates=linux,visualstudiocode,jetbrains
-
-### JetBrains ###
-
-.idea/
-
-### Linux ###
-*~
-
-# temporary files which can be created if a process still has a handle open of a deleted file
-.fuse_hidden*
-
-# KDE directory preferences
-.directory
-
-# Linux trash folder which might appear on any partition or disk
-.Trash-*
-
-# .nfs files are created when an open file is removed but is still being accessed
-.nfs*
-
-### VisualStudioCode ###
-.vscode/*
-!.vscode/settings.json
-!.vscode/tasks.json
-!.vscode/launch.json
-!.vscode/extensions.json
-*.code-workspace
-
-### VisualStudioCode Patch ###
-# Ignore all local history of files
-.history
-
-# End of https://www.toptal.com/developers/gitignore/api/linux,visualstudiocode
-
 ###> Josee9988/project-template ###
-
+.vscode/
+.idea/
 ###< Josee9988/project-template ###

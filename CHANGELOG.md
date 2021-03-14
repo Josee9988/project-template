@@ -56,4 +56,4 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/) 
 ### Added
 
 * Added a CHANGELOG.md.
-* Support for the CHANGELOG in the EXECUTEME.sh file (when run, it will remove all of the content and create a new from scratch).
+* Support for the CHANGELOG in the EXECUTEME.sh file (when run, it will remove all of the content and create a new file from scratch).

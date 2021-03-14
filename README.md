@@ -123,7 +123,7 @@ A couple of screenshots to delight you before you use this template.
 
 ---
 
-For the right maintenance of the CHANGELOG we recommend this [VSCode extension](https://github.com/Josee9988/Changelog-and-Markdown-snippets)
+For the right maintenance of the CHANGELOG.md, we recommend this [VSCode extension](https://github.com/Josee9988/Changelog-and-Markdown-snippets)
 and the read and understanding of the [keep a changelog guide](https://keepachangelog.com/en/1.0.0/).
 
 Enjoy!

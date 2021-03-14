@@ -35,7 +35,7 @@ if [ ! -d ".github/" ]; then
   exit 1 # exit with error code 1
 fi
 
-### Checks if the root giles exist ###
+### Checks if the root files exist ###
 if [ ! -f "CHANGELOG.md" ] || [ ! -f "README.md" ] || [ ! -f ".gitignore" ]; then
   echo -e "${RED}There are files missing. Have you modified the repository before executing this command?${NC}"
   echo -e "${RED}The script couldn't found one or many of these files${NC}: '${UPurple}CHANGELOG.md${NC}', '${UPurple}README.md${NC}' or '${UPurple}.gitignore${NC}'.\n"
@@ -76,7 +76,7 @@ y | Y)
   echo -e "* A basic \`.gitignore\` file ignoring some linux files and IDE trash files." >>CHANGELOG.md
   echo -e "* A \`.github/\` folder with issue templates, code of conduct, a contributing guide, pull request template security advisory file, a funding and support file and an issue label bot file." >>CHANGELOG.md
 
-  # remove jose's custom funding links
+  # remove author's custom funding links
   echo -e "# add your own funding links" >.github/FUNDING.yml
 
   echo -e "Remember to review every file and customize it as you like.\nYou are ready to start your brand new awesome project🚀🚀."
