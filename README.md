@@ -130,6 +130,6 @@ Enjoy!
 
 > ⚠️Remember that this template should be reviewed and modified to fit your requirements.
 > The script **EXECUTEME.sh** should be executed right when you clone your new repository.
-> There will be files that will need manual revision (such as the funding.yml)⚠️
+> There will be files that will need manual revision⚠️
 
 _Made with a lot of ❤️❤️ by **[@Josee9988](https://github.com/Josee9988)**_
