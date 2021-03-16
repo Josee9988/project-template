@@ -11,7 +11,7 @@
 #                then this script will auto remove itself, to leave the new project without this file (EXECUTEME.sh).
 # TITLE:         EXECUTEME.sh
 # AUTHOR:        Jose Gracia
-# VERSION:       1.0.3
+# VERSION:       See in CHANGELOG.md
 # NOTES:         This script will auto remove itself, and in case of wanting to run it again, the user must download
 #                it again or do a 'git stash' and revert the changes.
 # BASH_VERSION:  5.0.17(1)-release
