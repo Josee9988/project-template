@@ -7,6 +7,16 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/) 
 
 ---
 
+## [**1.0.8**] - 2021-03-17
+
+### Changed
+
+* Improved README.md structure and fixed some typos.
+
+### Added
+
+* 'Extra recommendations' section in the README.md file.
+
 ## [**1.0.7**] - 2021-03-16
 
 ### Fixed
