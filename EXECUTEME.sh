@@ -79,7 +79,15 @@ y | Y)
   # remove author's custom funding links
   echo -e "# add your own funding links" >.github/FUNDING.yml
 
-  echo -e "Remember to review every file and customize it as you like.\nYou are ready to start your brand new awesome project🚀🚀."
+  # commit the new files
+  git add CHANGELOG.md README.md .gitignore .github EXECUTEME.sh LICENSE
+  git commit -m "Set up Josee9988's template: Personalized files by executing the EXECUTEME.sh script."
+
+  echo -e "Commiting the changes for you :)\n"
+
+  git -c color.status=always status | less -REX # show git status with colours
+
+  echo -e "\nRemember to review every file and customize it as you like.\nYou are ready to start your brand new awesome project🚀🚀."
 
   # self remove this script
   rm -- "$0"
