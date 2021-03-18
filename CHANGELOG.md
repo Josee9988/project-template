@@ -7,6 +7,13 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/) 
 
 ---
 
+## [**1.0.10**] - 2021-03-17
+
+### Changed
+
+* `EXECUTEME.sh` script changed to `SETUP_TEMPLATE.sh`.
+* Changed the execution video from the README.md file (asciinema's video).
+
 ## [**1.0.9**] - 2021-03-17
 
 ### Added
@@ -63,7 +70,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/) 
 ### Added
 
 * One more screenshot to the README.md file showing the community profile.
-* Documentation for the EXECUTEME.sh script.
+* Documentation for the SETUP_TEMPLATE.sh script.
 
 ### Changed
 
@@ -73,7 +80,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/) 
 
 ### Added
 
-* A LICENSE for the project that will be removed with the EXECUTEME.sh script.
+* A LICENSE for the project that will be removed with the SETUP_TEMPLATE.sh script.
 
 ### Changed
 
@@ -84,4 +91,4 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/) 
 ### Added
 
 * Added a CHANGELOG.md.
-* Support for the CHANGELOG in the EXECUTEME.sh file (when run, it will remove all of the content and create a new file from scratch).
+* Support for the CHANGELOG in the SETUP_TEMPLATE.sh file (when run, it will remove all of the content and create a new file from scratch).
