@@ -12,6 +12,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/) 
 ### Changed
 
 * `EXECUTEME.sh` script changed to `SETUP_TEMPLATE.sh`.
+* Changed the execution video from the README.md file (asciinema's video).
 
 ## [**1.0.9**] - 2021-03-17
 

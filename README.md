@@ -30,7 +30,7 @@ for more information or guidance follow the [Github guide](https://docs.github.c
     chmod u+x SETUP_TEMPLATE.sh && ./SETUP_TEMPLATE-sh # another way of executing it
     ```
 
-    Additionally watch *[this video](https://asciinema.org/a/398761)* to see **how to execute the script**.
+    Additionally watch *[this video](https://asciinema.org/a/400202)* to see **how to execute the script**.
 
 4. **Review** every single file and **customize** it as you like.
 5. Build your project. 🚀
