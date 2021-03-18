@@ -8,7 +8,7 @@
 * Make your _community healthier_ with all the guides like code of conduct, contributing, support, security...
 * Learn more with the [official Github guide on creating repositories from a template](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/creating-a-repository-from-a-template).
 * To start using it; "**[click use this template](https://github.com/Josee9988/project-template/generate)**", create your new repository,
-clone your new repository and execute the `EXECUTEME.sh` shell script to personalize the markdowns with your private details. Check how to execute it [here](https://asciinema.org/a/398761).
+clone your new repository and execute the `SETUP_TEMPLATE.sh` shell script to personalize the markdowns with your private details. Check how to execute it [here](https://asciinema.org/a/398761).
 * All the markdown follows [MarkdownLint rules](https://github.com/DavidAnson/markdownlint).
 
 ---
@@ -17,16 +17,20 @@ clone your new repository and execute the `EXECUTEME.sh` shell script to persona
 
 1. To create a new repository from this template [generate your new repository from this template](https://github.com/Josee9988/project-template/generate)
 for more information or guidance follow the [Github guide](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/creating-a-repository-from-a-template).
-2. Clone your repo and cd into it.
-3. Execute the `EXECUTEME.sh` shell script to customize the files with your data.
+2. Clone your repo and `cd` into it.
+3. **Execute** the `SETUP_TEMPLATE.sh` shell script to **customize** the files with your data.
   
-    Use `bash EXECUTEME.sh` or `./EXECUTEME.sh`.
-
     ```bash
-    bash EXECUTEME.sh # execute the setup script.
+    bash SETUP_TEMPLATE.sh # execute the setup script.
     ```
 
-      Additionally watch *[this video](https://asciinema.org/a/398761)* to see **how to execute the script**.
+    Or you can also do it like this:
+
+    ```bash
+    chmod u+x SETUP_TEMPLATE.sh && ./SETUP_TEMPLATE-sh # another way of executing it
+    ```
+
+    Additionally watch *[this video](https://asciinema.org/a/398761)* to see **how to execute the script**.
 
 4. **Review** every single file and **customize** it as you like.
 5. Build your project. 🚀
@@ -37,13 +41,13 @@ for more information or guidance follow the [Github guide](https://docs.github.c
 
 ## **What does it include?** 📚
 
-1. An **`EXECUTEME.sh`** script that **MUST be executed right when you clone your repository**.
+1. An **`SETUP_TEMPLATE.sh`** script that **MUST be executed right when you clone your repository**.
 The script will replace Jose's username and email (the author) with yours.
 It will remove all the _content_ from the CHANGELOG.md and write the basic structure for you to write your own.
 The script will also remove all the _content_ from the README.md, and it will remove the `LICENSE` file to let you freely choose your own and will auto remove itself (the script).
 1. A `.gitignore` ignoring Jetbrains/Intellij and VSCode IDE's folders and Linux files.
-1. A CHANGELOG.md file that the `EXECUTEME.sh` script will remove to let you write your own.
-1. A README.md file that its content will be erased when you run the `EXECUTEME.sh` script.
+1. A CHANGELOG.md file that the `SETUP_TEMPLATE.sh` script will remove to let you write your own.
+1. A README.md file that its content will be erased when you run the `SETUP_TEMPLATE.sh` script.
 1. A fully customized `.github` folder with:
    1. A [funding](/.github/FUNDING.yml) section to display a sponsor button (should be manually modified). [Learn more with the Github guide](https://docs.github.com/en/github/administering-a-repository/displaying-a-sponsor-button-in-your-repository)
    1. A [issue_label_bot.yaml](/.github/issue_label_bot.yaml) file to use the popular Github bot. [Activate it or check its documentation](https://github.com/marketplace/issue-label-bot).
@@ -69,7 +73,7 @@ The script will also remove all the _content_ from the README.md, and it will re
 ```text
 .
 ├── CHANGELOG.md
-├── EXECUTEME.sh (will get removed)
+├── SETUP_TEMPLATE.sh (will get removed)
 ├── .github
 │   ├── CODE_OF_CONDUCT.md
 │   ├── CONTRIBUTING.md
@@ -98,14 +102,14 @@ The script will also remove all the _content_ from the README.md, and it will re
 
 ## **Extra recommendations** 🕵️
 
-* After **[generating your new repo with this template](https://github.com/Josee9988/project-template/generate)**, make sure to, right after you clone it, run the script `EXECUTEME.sh`.
+* After **[generating your new repo with this template](https://github.com/Josee9988/project-template/generate)**, make sure to, right after you clone it, run the script `SETUP_TEMPLATE.sh`.
 
 * Then you will be presented with all the files modified with your project details and information. It is very important to **manually review every file** to check if it fits your requirements, and perform any necessary changes to customize the project as you want.
 
-* If you are using **Windows** and you don't know how to execute the `EXECUTEME.sh` script:
+* If you are using **Windows** and you don't know how to execute the `SETUP_TEMPLATE.sh` script:
   1. Install **[git for Windows](https://git-scm.com/download/win)**.
   2. Right-click on the git repository folder and click "*git bash here*".
-  3. Then just perform *`bash EXECUTEME.sh`* **or** *`chmod u+x EXECUTEME.sh && ./EXECUTEME.sh`*.
+  3. Then just perform *`bash SETUP_TEMPLATE.sh`* **or** *`chmod u+x SETUP_TEMPLATE.sh && ./SETUP_TEMPLATE.sh`*.
 
 ---
 
@@ -143,7 +147,7 @@ If you liked it please, make sure to star this project. ❤️
 Enjoy! 😃
 
 > ⚠️Remember that this template should be reviewed and modified to fit your requirements.
-> The script **EXECUTEME.sh** should be executed right when you clone your new repository.
+> The script **SETUP_TEMPLATE.sh** should be executed right when you clone your new repository.
 > There will be files that will need manual revision⚠️
 
 _Made with a lot of ❤️❤️ by **[@Josee9988](https://github.com/Josee9988)**_

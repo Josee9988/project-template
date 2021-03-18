@@ -1,15 +1,15 @@
 #!/bin/bash
 
 #~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#
-# SCRIPT:        EXECUTEME.sh
-# USAGE:         bash EXECUTEME.sh | ./EXECUTEME.sh
+# SCRIPT:        SETUP_TEMPLATE.sh
+# USAGE:         bash SETUP_TEMPLATE.sh | ./SETUP_TEMPLATE.sh
 # PURPOSE:       Shell script that prompts the user for their GitHub username, email name of their project and
 #                the type of project that it is. Then it will replace the author's (josee9988) username and email
 #                with the new ones (the user that is using this template). It will fully remove the LICENSE file,
 #                delete all of the content of the README.md file, and add a simple header,
 #                delete all of the content of the CHANGELOG.md and add a basic CHANGELOG versioning and 1st version,
-#                then this script will auto remove itself, to leave the new project without this file (EXECUTEME.sh).
-# TITLE:         EXECUTEME.sh
+#                then this script will auto remove itself, to leave the new project without this file (SETUP_TEMPLATE.sh).
+# TITLE:         SETUP_TEMPLATE
 # AUTHOR:        Jose Gracia
 # VERSION:       See in CHANGELOG.md
 # NOTES:         This script will auto remove itself, and in case of wanting to run it again, the user must download
@@ -80,8 +80,8 @@ y | Y)
   echo -e "# add your own funding links" >.github/FUNDING.yml
 
   # commit the new files
-  git add CHANGELOG.md README.md .gitignore .github EXECUTEME.sh LICENSE
-  git commit -m "Set up Josee9988's template: Personalized files by executing the EXECUTEME.sh script."
+  git add CHANGELOG.md README.md .gitignore .github SETUP_TEMPLATE.sh LICENSE
+  git commit -m "Set up Josee9988's template: Personalized files by executing the SETUP_TEMPLATE.sh script."
 
   echo -e "Commiting the changes for you :)\n"
 
