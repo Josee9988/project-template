@@ -7,6 +7,16 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/) 
 
 ---
 
+## [**1.0.11**] - 2021-03-20
+
+### Added
+
+* Social links of the repo in the README.md file.
+
+### Fixed
+
+* Some minor typos in the README.md file.
+
 ## [**1.0.10**] - 2021-03-17
 
 ### Changed
@@ -34,7 +44,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/) 
 
 ### Fixed
 
-* Some minnor typos
+* Some minor typos
 
 ## [**1.0.6**] - 2021-03-16
 
@@ -47,7 +57,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/) 
 ### Added
 
 * Checks to the shell script (check if the files exist)
-* Colorized the output of the script.
+* Colourized the output of the script.
 
 ## [**1.0.4**] - 2021-02-26
 
@@ -80,7 +90,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/) 
 
 ### Added
 
-* A LICENSE for the project that will be removed with the SETUP_TEMPLATE.sh script.
+* A LICENSE for the project be removed with the SETUP_TEMPLATE.sh script.
 
 ### Changed
 

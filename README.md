@@ -16,7 +16,7 @@ clone your new repository and execute the `SETUP_TEMPLATE.sh` shell script to pe
 ## **How to use it as a template for my new repositories?** 🚀
 
 1. To create a new repository from this template [generate your new repository from this template](https://github.com/Josee9988/project-template/generate)
-for more information or guidance follow the [Github guide](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/creating-a-repository-from-a-template).
+for more information or guidance, follow the [Github guide](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/creating-a-repository-from-a-template).
 2. Clone your repo and `cd` into it.
 3. **Execute** the `SETUP_TEMPLATE.sh` shell script to **customize** the files with your data.
   
@@ -30,7 +30,7 @@ for more information or guidance follow the [Github guide](https://docs.github.c
     chmod u+x SETUP_TEMPLATE.sh && ./SETUP_TEMPLATE-sh # another way of executing it
     ```
 
-    Additionally watch *[this video](https://asciinema.org/a/400202)* to see **how to execute the script**.
+    Additionally, watch *[this video](https://asciinema.org/a/400202)* to see **how to execute the script**.
 
 4. **Review** every single file and **customize** it as you like.
 5. Build your project. 🚀
@@ -41,16 +41,16 @@ for more information or guidance follow the [Github guide](https://docs.github.c
 
 ## **What does it include?** 📚
 
-1. An **`SETUP_TEMPLATE.sh`** script that **MUST be executed right when you clone your repository**.
+1. A **`SETUP_TEMPLATE.sh`** script that **MUST be executed right when you clone your repository**.
 The script will replace Jose's username and email (the author) with yours.
 It will remove all the _content_ from the CHANGELOG.md and write the basic structure for you to write your own.
 The script will also remove all the _content_ from the README.md, and it will remove the `LICENSE` file to let you freely choose your own and will auto remove itself (the script).
-1. A `.gitignore` ignoring Jetbrains/Intellij and VSCode IDE's folders and Linux files.
+1. A basic `.gitignore` file, ignoring Jetbrains/Intellij and VSCode IDE's folders.
 1. A CHANGELOG.md file that the `SETUP_TEMPLATE.sh` script will remove to let you write your own.
 1. A README.md file that its content will be erased when you run the `SETUP_TEMPLATE.sh` script.
 1. A fully customized `.github` folder with:
    1. A [funding](/.github/FUNDING.yml) section to display a sponsor button (should be manually modified). [Learn more with the Github guide](https://docs.github.com/en/github/administering-a-repository/displaying-a-sponsor-button-in-your-repository)
-   1. A [issue_label_bot.yaml](/.github/issue_label_bot.yaml) file to use the popular Github bot. [Activate it or check its documentation](https://github.com/marketplace/issue-label-bot).
+   1. An [issue_label_bot.yaml](/.github/issue_label_bot.yaml) file to use the popular Github bot. [Activate it or check its documentation](https://github.com/marketplace/issue-label-bot).
    1. A [CONTRIBUTING](/.github/CONTRIBUTING.md) explaining how to contribute to the project. [Learn more with the Github guide](https://docs.github.com/en/github/building-a-strong-community/setting-guidelines-for-repository-contributors).
    1. A [SUPPORT](/.github/SUPPORT.md) explaining how to support the project. [Learn more with the Github guide](https://docs.github.com/en/github/building-a-strong-community/adding-support-resources-to-your-project).
    1. A [SECURITY](/.github/SECURITY.md) with a guide on how to post a security issue. [Learn more with the Github guide](https://docs.github.com/es/github/managing-security-vulnerabilities/adding-a-security-policy-to-your-repository).
@@ -104,7 +104,7 @@ The script will also remove all the _content_ from the README.md, and it will re
 
 * After **[generating your new repo with this template](https://github.com/Josee9988/project-template/generate)**, make sure to, right after you clone it, run the script `SETUP_TEMPLATE.sh`.
 
-* Then you will be presented with all the files modified with your project details and information. It is very important to **manually review every file** to check if it fits your requirements, and perform any necessary changes to customize the project as you want.
+* Then you will be presented with all the files modified with your project details and information. It is very important to **manually review every file** to check if it fits your requirements and perform any necessary changes to customize the project as you want.
 
 * If you are using **Windows** and you don't know how to execute the `SETUP_TEMPLATE.sh` script:
   1. Install **[git for Windows](https://git-scm.com/download/win)**.
@@ -142,12 +142,19 @@ A couple of screenshots to delight you before you use this template.
 For the right maintenance of the CHANGELOG.md, we recommend this [VSCode extension](https://github.com/Josee9988/Changelog-and-Markdown-snippets)
 and the read and understanding of the [keep a changelog guide](https://keepachangelog.com/en/1.0.0/).
 
-If you liked it please, make sure to star this project. ❤️
+---
+
+## Was the template helpful? Help us raise these numbers up 🥰 🎉
+
+[![Github followers](https://img.shields.io/github/followers/Josee9988.svg?style=social)](#did-you-enjoy-the-template-help-us-raise-these-numbers-up--)
+[![Github stars](https://img.shields.io/github/stars/Josee9988/project-template.svg?style=social)](#did-you-enjoy-the-template-help-us-raise-these-numbers-up--)
+[![Github watchers](https://img.shields.io/github/watchers/Josee9988/project-template.svg?style=social)](#did-you-enjoy-the-template-help-us-raise-these-numbers-up--)
+[![Github forks](https://img.shields.io/github/forks/Josee9988/project-template.svg?style=social)](#did-you-enjoy-the-template-help-us-raise-these-numbers-up--)
 
 Enjoy! 😃
 
 > ⚠️Remember that this template should be reviewed and modified to fit your requirements.
 > The script **SETUP_TEMPLATE.sh** should be executed right when you clone your new repository.
-> There will be files that will need manual revision⚠️
+> There will be files that will need *manual revision*⚠️
 
 _Made with a lot of ❤️❤️ by **[@Josee9988](https://github.com/Josee9988)**_
