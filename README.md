@@ -15,6 +15,7 @@
   </a>
   <img src="https://img.shields.io/badge/use%20this-template-blue?logo=github&style=for-the-badge&color=red">
 </a>
+
 ---
 
 ## **What is this template all about?** 🔥
@@ -166,7 +167,6 @@ and the read and understanding of the [keep a changelog guide](https://keepachan
   </a>
 
 Enjoy! 😃
-
 
 > ⚠️Remember that this template should be reviewed and modified to fit your requirements.
 > The script **SETUP_TEMPLATE.sh** should be executed right when you clone your new repository.
