@@ -157,13 +157,11 @@ and the read and understanding of the [keep a changelog guide](https://keepachan
 
 ## Was the template helpful? Help us raise these numbers up 🥰 🎉
 
-[![Github followers](https://img.shields.io/github/followers/Josee9988.svg?style=social)](#did-you-enjoy-the-template-help-us-raise-these-numbers-up--)
-[![Github stars](https://img.shields.io/github/stars/Josee9988/project-template.svg?style=social)](#did-you-enjoy-the-template-help-us-raise-these-numbers-up--)
-[![Github watchers](https://img.shields.io/github/watchers/Josee9988/project-template.svg?style=social)](#did-you-enjoy-the-template-help-us-raise-these-numbers-up--)
-[![Github forks](https://img.shields.io/github/forks/Josee9988/project-template.svg?style=social)](#did-you-enjoy-the-template-help-us-raise-these-numbers-up--)
-<a href="https://github.com/sponsors/Josee9988">
-  <img alt="Sponsor" src="https://img.shields.io/static/v1?label=Sponsor&message=%E2%9D%A4&logo=github-sponsors&color=red&style=social" />
-</a>
+[![Github followers](https://img.shields.io/github/followers/Josee9988.svg?style=social)](https://github.com/Josee9988)
+[![Github stars](https://img.shields.io/github/stars/Josee9988/project-template.svg?style=social)](https://github.com/Josee9988/project-template/stargazers)
+[![Github watchers](https://img.shields.io/github/watchers/Josee9988/project-template.svg?style=social)](https://github.com/Josee9988/project-template/watchers)
+[![Github forks](https://img.shields.io/github/forks/Josee9988/project-template.svg?style=social)](https://github.com/Josee9988/project-template/network/members)
+[![Sponsor](https://img.shields.io/static/v1?label=Sponsor&message=%E2%9D%A4&logo=github-sponsors&color=red&style=social)](https://github.com/sponsors/Josee9988)
 
 Enjoy! 😃
 
