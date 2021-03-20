@@ -12,6 +12,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/) 
 ### Added
 
 * Social links of the repo in the README.md file.
+* Added badges in the README.md file.
+* Added sponsor link in the contributing.yml file.
 
 ### Fixed
 

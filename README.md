@@ -10,10 +10,9 @@
   <a href="https://github.com/josee9988/project-template/pulls">
     <img alt="GitHub pull requests" src="https://img.shields.io/github/issues-pr/Josee9988/project-template?color=0088ff&style=for-the-badge&logo=github" />
   </a>
-  <a href="https://github.com/josee9988/project-template/pulls">
-    <img alt="GitHub pull requests" src="https://img.shields.io/github/issues-pr/Josee9988/project-template?color=0088ff&style=for-the-badge&logo=github" />
+  <a href="https://github.com/Josee9988/project-template/generate">
+    <img src="https://img.shields.io/badge/use%20this-template-blue?logo=github-sponsors&style=for-the-badge&color=red">
   </a>
-  <img src="https://img.shields.io/badge/use%20this-template-blue?logo=github&style=for-the-badge&color=red">
 </a>
 
 ---
@@ -163,8 +162,8 @@ and the read and understanding of the [keep a changelog guide](https://keepachan
 [![Github watchers](https://img.shields.io/github/watchers/Josee9988/project-template.svg?style=social)](#did-you-enjoy-the-template-help-us-raise-these-numbers-up--)
 [![Github forks](https://img.shields.io/github/forks/Josee9988/project-template.svg?style=social)](#did-you-enjoy-the-template-help-us-raise-these-numbers-up--)
 <a href="https://github.com/sponsors/Josee9988">
-    <img alt="Sponsor" src="https://img.shields.io/static/v1?label=Sponsor&message=%E2%9D%A4&logo=github" />
-  </a>
+  <img alt="Sponsor" src="https://img.shields.io/static/v1?label=Sponsor&message=%E2%9D%A4&logo=github-sponsors&color=red&style=social" />
+</a>
 
 Enjoy! 😃
 
