@@ -1,6 +1,22 @@
 <!-- markdownlint-disable MD032 MD033-->
 # **Josee9988's Github Project Template**
 
+<p align="center">
+  <img width="100" height="100" src="https://i.imgur.com/Njl3HJc.png" alt="Logo">
+  <br>
+  <a href="https://github.com/Josee9988/project-template/issues">
+    <img alt="Issues" src="https://img.shields.io/github/issues/Josee9988/project-template?color=0088ff&style=for-the-badge&logo=github" />
+  </a>
+  <a href="https://github.com/josee9988/project-template/pulls">
+    <img alt="GitHub pull requests" src="https://img.shields.io/github/issues-pr/Josee9988/project-template?color=0088ff&style=for-the-badge&logo=github" />
+  </a>
+  <a href="https://github.com/josee9988/project-template/pulls">
+    <img alt="GitHub pull requests" src="https://img.shields.io/github/issues-pr/Josee9988/project-template?color=0088ff&style=for-the-badge&logo=github" />
+  </a>
+  <img src="https://img.shields.io/badge/use%20this-template-blue?logo=github&style=for-the-badge&color=red">
+</a>
+---
+
 ## **What is this template all about?** 🔥
 
 * This template can be used as a base layer for any of your future repositories/projects.
@@ -44,12 +60,7 @@ for more information or guidance, follow the [Github guide](https://docs.github.
 1. A **`SETUP_TEMPLATE.sh`** script that **MUST be executed right when you clone your repository**.
 The script will replace Jose's username and email (the author) with yours.
 It will remove all the _content_ from the CHANGELOG.md and write the basic structure for you to write your own.
-The script will also remove all the _content_ from the README.md, and it will remove the `LICENSE` file to let you freely choose your own and will auto remove itself (the script).
-1. A basic `.gitignore` file, ignoring Jetbrains/Intellij and VSCode IDE's folders.
-1. A CHANGELOG.md file that the `SETUP_TEMPLATE.sh` script will remove to let you write your own.
-1. A README.md file that its content will be erased when you run the `SETUP_TEMPLATE.sh` script.
-1. A fully customized `.github` folder with:
-   1. A [funding](/.github/FUNDING.yml) section to display a sponsor button (should be manually modified). [Learn more with the Github guide](https://docs.github.com/en/github/administering-a-repository/displaying-a-sponsor-button-in-your-repository)
+The script will also remove all the _content_ from the READMiframea sponsor button (should be manually modified). [Learn more with the Github guide](https://docs.github.com/en/github/administering-a-repository/displaying-a-sponsor-button-in-your-repository)
    1. An [issue_label_bot.yaml](/.github/issue_label_bot.yaml) file to use the popular Github bot. [Activate it or check its documentation](https://github.com/marketplace/issue-label-bot).
    1. A [CONTRIBUTING](/.github/CONTRIBUTING.md) explaining how to contribute to the project. [Learn more with the Github guide](https://docs.github.com/en/github/building-a-strong-community/setting-guidelines-for-repository-contributors).
    1. A [SUPPORT](/.github/SUPPORT.md) explaining how to support the project. [Learn more with the Github guide](https://docs.github.com/en/github/building-a-strong-community/adding-support-resources-to-your-project).
@@ -150,8 +161,12 @@ and the read and understanding of the [keep a changelog guide](https://keepachan
 [![Github stars](https://img.shields.io/github/stars/Josee9988/project-template.svg?style=social)](#did-you-enjoy-the-template-help-us-raise-these-numbers-up--)
 [![Github watchers](https://img.shields.io/github/watchers/Josee9988/project-template.svg?style=social)](#did-you-enjoy-the-template-help-us-raise-these-numbers-up--)
 [![Github forks](https://img.shields.io/github/forks/Josee9988/project-template.svg?style=social)](#did-you-enjoy-the-template-help-us-raise-these-numbers-up--)
+<a href="https://github.com/sponsors/Josee9988">
+    <img alt="Sponsor" src="https://img.shields.io/static/v1?label=Sponsor&message=%E2%9D%A4&logo=github" />
+  </a>
 
 Enjoy! 😃
+
 
 > ⚠️Remember that this template should be reviewed and modified to fit your requirements.
 > The script **SETUP_TEMPLATE.sh** should be executed right when you clone your new repository.
