@@ -13,7 +13,7 @@
   <a href="https://github.com/Josee9988/project-template/generate">
     <img src="https://img.shields.io/badge/use%20this-template-blue?logo=github-sponsors&style=for-the-badge&color=red">
   </a>
-</a>
+</p>
 
 ---
 
