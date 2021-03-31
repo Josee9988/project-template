@@ -7,6 +7,16 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/) 
 
 ---
 
+## [Unreleased]
+
+### Changed
+
+* Header's emoji from the end of the README.md headers to the beginning to be shown better by the new GitHub's README table of contents.
+
+### Fixed
+
+* Some typos in the CHANGELOG.md.
+
 ## [**1.0.11**] - 2021-03-20
 
 ### Added
@@ -65,7 +75,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/) 
 
 ### Added
 
-* Markdownlint disable rule in the CHANGELOG.md file"
+* Markdownlint disable the rule in the CHANGELOG.md file"
 
 ## [**1.0.3**] - 2021-02-23
 
@@ -92,7 +102,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/) 
 
 ### Added
 
-* A LICENSE for the project be removed with the SETUP_TEMPLATE.sh script.
+* A LICENSE for the project will be removed with the SETUP_TEMPLATE.sh script.
 
 ### Changed
 

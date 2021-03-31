@@ -1,5 +1,5 @@
 <!-- markdownlint-disable MD032 MD033-->
-# **Josee9988's Github Project Template**
+# **Josee9988's Github Project Template** 🔥
 
 <p align="center">
   <img width="100" height="100" src="https://i.imgur.com/Njl3HJc.png" alt="Logo">
@@ -17,7 +17,7 @@
 
 ---
 
-## **What is this template all about?** 🔥
+## 🤔 **What is this template all about?**
 
 * This template can be used as a base layer for any of your future repositories/projects.
 * Make your project easy to maintain with **7 issue templates**.
@@ -29,7 +29,7 @@ clone your new repository and execute the `SETUP_TEMPLATE.sh` shell script to pe
 
 ---
 
-## **How to use it as a template for my new repositories?** 🚀
+## 🚀 **How to use it as a template for my new repositories?**
 
 1. To create a new repository from this template [generate your new repository from this template](https://github.com/Josee9988/project-template/generate)
 for more information or guidance, follow the [Github guide](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/creating-a-repository-from-a-template).
@@ -55,7 +55,7 @@ for more information or guidance, follow the [Github guide](https://docs.github.
 
 ---
 
-## **What does it include?** 📚
+## 📚 **What does it include?**
 
 1. A **`SETUP_TEMPLATE.sh`** script that **MUST be executed right when you clone your repository**.
 The script will replace Jose's username and email (the author) with yours.
@@ -79,7 +79,7 @@ The script will also remove all the _content_ from the READMiframea sponsor butt
 
 ---
 
-### **Project tree** 🌲
+### 🌲 **Project tree**
 
 ```text
 .
@@ -111,7 +111,7 @@ The script will also remove all the _content_ from the READMiframea sponsor butt
 
 ---
 
-## **Extra recommendations** 🕵️
+## 🕵️ **Extra recommendations**
 
 * After **[generating your new repo with this template](https://github.com/Josee9988/project-template/generate)**, make sure to, right after you clone it, run the script `SETUP_TEMPLATE.sh`.
 
@@ -124,7 +124,7 @@ The script will also remove all the _content_ from the READMiframea sponsor butt
 
 ---
 
-## **Screenshots** 📷
+## 📸 **Screenshots**
 
 A couple of screenshots to delight you before you use this template.
 
@@ -155,7 +155,7 @@ and the read and understanding of the [keep a changelog guide](https://keepachan
 
 ---
 
-## Was the template helpful? Help us raise these numbers up 🥰 🎉
+## 🎉 Was the template helpful? Help us raise these numbers up
 
 [![Github followers](https://img.shields.io/github/followers/Josee9988.svg?style=social)](https://github.com/Josee9988)
 [![Github stars](https://img.shields.io/github/stars/Josee9988/project-template.svg?style=social)](https://github.com/Josee9988/project-template/stargazers)
