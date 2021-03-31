@@ -63,9 +63,8 @@ y | Y)
   # remove the license
   rm LICENSE
 
-  # delete the README.md and create one with just a header
-  echo -e "# **${NEW_USERNAME}'s project**" >README.md
-  echo "<!-- Write your own README.md file. Build something amazing! -->" >>README.md
+  # write the new README.md
+  writeREADME
 
   # write the basic structure of the CHANGELOG.md
   echo -e "<!-- markdownlint-disable MD024-->\n# **Change Log** 📜📝\n" >CHANGELOG.md
@@ -97,3 +96,43 @@ n | N) echo "Then try it again!" ;;
 esac
 
 exit 0
+
+writeREADME() {
+  bash -c "NEW_USERNAME='NEW_USERNAME' PROJECT_NAME='PROJECT_NAME'; cat << EOF > script.md
+<!-- Write your README.md file. Build something amazing! Modify this template as you wish -->
+# 🔥 **$NEW_USERNAME/$PROJECT_NAME**
+
+---
+
+# ⚡ **Getting started**
+
+* <!-- ... [YOU AWESOME TEXT HERE :D] -->
+
+---
+
+# 🚀 **Usage**
+
+* <!-- ... [YOU AWESOME TEXT HERE :D] -->
+
+---
+
+# 📝 **Aditional notes**
+
+* <!-- ... [YOU AWESOME TEXT HERE :D] -->
+
+---
+
+# ⚖️ **License and Changelog**
+
+See the license in **[LICENSE](LICENSE)** file.
+
+Watch the changes in the **[CHANGELOG.md](CHANGELOG.md)** file.
+
+---
+
+<!-- You may delete this if you want to -->
+This project was generated using *[Josee9988/project-template](https://github.com/Josee9988/project-template)* 📚
+
+_Made with a lot of ❤️❤️ by **[@$NEW_USERNAME](https://github.com/$NEW_USERNAME)**_
+EOF"
+}

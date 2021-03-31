@@ -9,6 +9,11 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/) 
 
 ## [Unreleased]
 
+### Added
+
+* Gitignore file ignores all \*.ignore.\* files.
+* Basic README.md template.
+
 ### Changed
 
 * Header's emoji from the end of the README.md headers to the beginning to be shown better by the new GitHub's README table of contents.
