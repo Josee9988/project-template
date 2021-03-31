@@ -1,5 +1,5 @@
 <!-- markdownlint-disable MD032 MD033-->
-# **Josee9988's Github Project Template**
+# 🔥 **Josee9988's Github Project Template**
 
 <p align="center">
   <img width="100" height="100" src="https://i.imgur.com/Njl3HJc.png" alt="Logo">
@@ -17,7 +17,7 @@
 
 ---
 
-## **What is this template all about?** 🔥
+## 🤔 **What is this template all about?**
 
 * This template can be used as a base layer for any of your future repositories/projects.
 * Make your project easy to maintain with **7 issue templates**.
@@ -29,7 +29,7 @@ clone your new repository and execute the `SETUP_TEMPLATE.sh` shell script to pe
 
 ---
 
-## **How to use it as a template for my new repositories?** 🚀
+## ⚡ **Installation**
 
 1. To create a new repository from this template [generate your new repository from this template](https://github.com/Josee9988/project-template/generate)
 for more information or guidance, follow the [Github guide](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/creating-a-repository-from-a-template).
@@ -55,12 +55,13 @@ for more information or guidance, follow the [Github guide](https://docs.github.
 
 ---
 
-## **What does it include?** 📚
+## 📚 **What does it include?**
 
 1. A **`SETUP_TEMPLATE.sh`** script that **MUST be executed right when you clone your repository**.
-The script will replace Jose's username and email (the author) with yours.
-It will remove all the _content_ from the CHANGELOG.md and write the basic structure for you to write your own.
-The script will also remove all the _content_ from the READMiframea sponsor button (should be manually modified). [Learn more with the Github guide](https://docs.github.com/en/github/administering-a-repository/displaying-a-sponsor-button-in-your-repository)
+The script will replace Jose's username and email (the author) with yours from all the.
+
+   1. A README template file with a default template to start documenting your project.
+   1. A CHANGELOG template file based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
    1. An [issue_label_bot.yaml](/.github/issue_label_bot.yaml) file to use the popular Github bot. [Activate it or check its documentation](https://github.com/marketplace/issue-label-bot).
    1. A [CONTRIBUTING](/.github/CONTRIBUTING.md) explaining how to contribute to the project. [Learn more with the Github guide](https://docs.github.com/en/github/building-a-strong-community/setting-guidelines-for-repository-contributors).
    1. A [SUPPORT](/.github/SUPPORT.md) explaining how to support the project. [Learn more with the Github guide](https://docs.github.com/en/github/building-a-strong-community/adding-support-resources-to-your-project).
@@ -79,12 +80,13 @@ The script will also remove all the _content_ from the READMiframea sponsor butt
 
 ---
 
-### **Project tree** 🌲
+### 🌲 **Project tree**
+
+Files that will get removed after the execution of `SETUP_TEMPLATE.sh` are not shown! 🙈
 
 ```text
 .
 ├── CHANGELOG.md
-├── SETUP_TEMPLATE.sh (will get removed)
 ├── .github
 │   ├── CODE_OF_CONDUCT.md
 │   ├── CONTRIBUTING.md
@@ -103,7 +105,6 @@ The script will also remove all the _content_ from the READMiframea sponsor butt
 │   ├── SECURITY.md
 │   └── SUPPORT.md
 ├── .gitignore
-├── LICENSE (will get removed)
 └── README.md
 
 2 directories, 20 files
@@ -111,7 +112,7 @@ The script will also remove all the _content_ from the READMiframea sponsor butt
 
 ---
 
-## **Extra recommendations** 🕵️
+## 🕵️ **Extra recommendations**
 
 * After **[generating your new repo with this template](https://github.com/Josee9988/project-template/generate)**, make sure to, right after you clone it, run the script `SETUP_TEMPLATE.sh`.
 
@@ -124,7 +125,7 @@ The script will also remove all the _content_ from the READMiframea sponsor butt
 
 ---
 
-## **Screenshots** 📷
+## 📸 **Screenshots**
 
 A couple of screenshots to delight you before you use this template.
 
@@ -136,6 +137,16 @@ A couple of screenshots to delight you before you use this template.
 * An issue template opened.
 <p align="center">
   <img width="70%" height="70%" src="https://i.imgur.com/r5AiLWu.png" alt="Bug issue template opened.">
+</p>
+
+* The README template.
+<p align="center">
+  <img width="70%" height="70%" src="https://i.imgur.com/YSmgUXg.png" alt="README.md template.">
+</p>
+
+* The CHANGELOG template.
+<p align="center">
+  <img width="70%" height="70%" src="https://i.imgur.com/ScWgQKI.png" alt="CHANGELOG.md template.">
 </p>
 
 * Security policy
@@ -155,7 +166,7 @@ and the read and understanding of the [keep a changelog guide](https://keepachan
 
 ---
 
-## Was the template helpful? Help us raise these numbers up 🥰 🎉
+## 🎉 Was the template helpful? Help us raise these numbers up
 
 [![Github followers](https://img.shields.io/github/followers/Josee9988.svg?style=social)](https://github.com/Josee9988)
 [![Github stars](https://img.shields.io/github/stars/Josee9988/project-template.svg?style=social)](https://github.com/Josee9988/project-template/stargazers)

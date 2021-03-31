@@ -1,4 +1,5 @@
 ###> Josee9988/project-template ###
 .vscode/
 .idea/
+*.ignore.*
 ###< Josee9988/project-template ###

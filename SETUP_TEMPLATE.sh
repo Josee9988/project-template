@@ -22,12 +22,12 @@
 # MAIL:          jgracia9988@gmail.com
 #~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#
 
-ACTUAL_DATE=$(date '+%Y-%m-%d')
 RED='\033[1;31m'
 NC='\033[0m' # No Color
 UPurple='\033[4;35m'
 BBLUE='\033[1;34m'
 GREEN='\033[1;32m'
+FILE_FUNCTION_HELPERS=bin/FUNCTION_HELPERS.sh
 
 ### Check if the .github directory does exist ###
 if [ ! -d ".github/" ]; then
@@ -43,6 +43,14 @@ if [ ! -f "CHANGELOG.md" ] || [ ! -f "README.md" ] || [ ! -f ".gitignore" ]; the
   echo -e "For more information visit: ${UPurple}https://github.com/Josee9988/project-template${NC}"
   echo -e "If you think this may be an issue please post it at: ${UPurple}https://github.com/Josee9988/project-template/issues${NC}"
   exit 1 # exit with error code 1
+fi
+
+if [ ! -f "$FILE_FUNCTION_HELPERS" ]; then # check if the function helpers file is found
+  echo -e "${RED}Can not find ${FILE_FUNCTION_HELPERS}"
+  exit 1 # it will exit if the function helpers file is not found
+else
+  # shellcheck source=bin/FUNCTION_HELPERS.sh disable=SC1091
+  source $FILE_FUNCTION_HELPERS || exit # obtain some global functions and variables, if the file isn't found exit
 fi
 
 # prompt for the username, mail and name of the project
@@ -63,29 +71,25 @@ y | Y)
   # remove the license
   rm LICENSE
 
-  # delete the README.md and create one with just a header
-  echo -e "# **${NEW_USERNAME}'s project**" >README.md
-  echo "<!-- Write your own README.md file. Build something amazing! -->" >>README.md
+  # remove the bin folder
+  rm -r bin/
+
+  # write the new README.md
+  writeREADME
 
   # write the basic structure of the CHANGELOG.md
-  echo -e "<!-- markdownlint-disable MD024-->\n# **Change Log** 📜📝\n" >CHANGELOG.md
-  echo -e "All notable changes to the \"**${PROJECT_NAME}**\" ${PROJECT_TYPE} will be documented in this file.\n" >>CHANGELOG.md
-  echo -e "The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/) and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).\n" >>CHANGELOG.md
-  echo -e "---\n\n## [**0.0.1**] - ${ACTUAL_DATE}\n\n### Added\n" >>CHANGELOG.md
-  echo -e "* The basic project structure of [josee9988's](https://github.com/Josee9988) [project template](https://github.com/Josee9988/project-template)." >>CHANGELOG.md
-  echo -e "* A basic \`.gitignore\` file ignoring some linux files and IDE trash files." >>CHANGELOG.md
-  echo -e "* A \`.github/\` folder with issue templates, code of conduct, a contributing guide, pull request template security advisory file, a funding and support file and an issue label bot file." >>CHANGELOG.md
+  writeCHANGELOG
 
   # remove author's custom funding links
   echo -e "# add your own funding links" >.github/FUNDING.yml
 
   # commit the new files
   git add CHANGELOG.md README.md .gitignore .github SETUP_TEMPLATE.sh LICENSE
-  git commit -m "Set up Josee9988's template: Personalized files by executing the SETUP_TEMPLATE.sh script."
-
-  echo -e "Commiting the changes for you :)\n"
 
   git -c color.status=always status | less -REX # show git status with colours
+  echo -e "Commiting the changes for you :)\n"
+
+  git commit -m "Set up Josee9988's template: Personalized files by executing the SETUP_TEMPLATE.sh script."
 
   echo -e "\nRemember to review every file and customize it as you like.\nYou are ready to start your brand new awesome project🚀🚀."
 

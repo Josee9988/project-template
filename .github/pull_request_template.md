@@ -13,16 +13,6 @@ List any dependencies that are required for this change if there are any.
 
 ---
 
-### **Type of change**
-
-<!-- Choose one or many of these options. -->
-
-* [] **Bug fix** (non-breaking change which fixes an issue).
-* [] **Enhancement** (non-breaking change which adds functionality).
-* [] **Breaking change** (fix or feature that would cause existing functionality to not work as expected).
-* [] This change requires a documentation update.
-* [] Other.
-
 ---
 
 ### **Additional context**
