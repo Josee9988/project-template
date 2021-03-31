@@ -22,7 +22,6 @@
 # MAIL:          jgracia9988@gmail.com
 #~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#
 
-ACTUAL_DATE=$(date '+%Y-%m-%d')
 RED='\033[1;31m'
 NC='\033[0m' # No Color
 UPurple='\033[4;35m'
@@ -67,13 +66,7 @@ y | Y)
   writeREADME
 
   # write the basic structure of the CHANGELOG.md
-  echo -e "<!-- markdownlint-disable MD024-->\n# **Change Log** 📜📝\n" >CHANGELOG.md
-  echo -e "All notable changes to the \"**${PROJECT_NAME}**\" ${PROJECT_TYPE} will be documented in this file.\n" >>CHANGELOG.md
-  echo -e "The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/) and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).\n" >>CHANGELOG.md
-  echo -e "---\n\n## [**0.0.1**] - ${ACTUAL_DATE}\n\n### Added\n" >>CHANGELOG.md
-  echo -e "* The basic project structure of [josee9988's](https://github.com/Josee9988) [project template](https://github.com/Josee9988/project-template)." >>CHANGELOG.md
-  echo -e "* A basic \`.gitignore\` file ignoring some linux files and IDE trash files." >>CHANGELOG.md
-  echo -e "* A \`.github/\` folder with issue templates, code of conduct, a contributing guide, pull request template security advisory file, a funding and support file and an issue label bot file." >>CHANGELOG.md
+  writeCHANGELOG
 
   # remove author's custom funding links
   echo -e "# add your own funding links" >.github/FUNDING.yml
@@ -96,43 +89,3 @@ n | N) echo "Then try it again!" ;;
 esac
 
 exit 0
-
-writeREADME() {
-  bash -c "NEW_USERNAME='NEW_USERNAME' PROJECT_NAME='PROJECT_NAME'; cat << EOF > script.md
-<!-- Write your README.md file. Build something amazing! Modify this template as you wish -->
-# 🔥 **$NEW_USERNAME/$PROJECT_NAME**
-
----
-
-# ⚡ **Getting started**
-
-* <!-- ... [YOU AWESOME TEXT HERE :D] -->
-
----
-
-# 🚀 **Usage**
-
-* <!-- ... [YOU AWESOME TEXT HERE :D] -->
-
----
-
-# 📝 **Aditional notes**
-
-* <!-- ... [YOU AWESOME TEXT HERE :D] -->
-
----
-
-# ⚖️ **License and Changelog**
-
-See the license in **[LICENSE](LICENSE)** file.
-
-Watch the changes in the **[CHANGELOG.md](CHANGELOG.md)** file.
-
----
-
-<!-- You may delete this if you want to -->
-This project was generated using *[Josee9988/project-template](https://github.com/Josee9988/project-template)* 📚
-
-_Made with a lot of ❤️❤️ by **[@$NEW_USERNAME](https://github.com/$NEW_USERNAME)**_
-EOF"
-}
