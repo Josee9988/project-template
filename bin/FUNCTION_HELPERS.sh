@@ -3,9 +3,18 @@
 # SCRIPT WITH EXPORTED FUNCTIONS AND VARIABLES
 
 writeREADME() {
-    bash -c "NEW_USERNAME='NEW_USERNAME' PROJECT_NAME='PROJECT_NAME'; cat << EOF > README.md
+    bash -c "NEW_USERNAME='NEW_USERNAME' PROJECT_NAME='PROJECT_NAME' PROJECT_TYPE='PROJECT_TYPE'; cat << EOF > README.md
 <!-- Write your README.md file. Build something amazing! Modify this template as you wish -->
 # 🔥 **$NEW_USERNAME/$PROJECT_NAME**
+
+<p align=\"center\">
+  <a href=\"https://github.com/$NEW_USERNAME/$PROJECT_NAME/issues\">
+    <img alt=\"Issues\" src=\"https://img.shields.io/github/issues/$NEW_USERNAME/$PROJECT_NAME?color=0088ff&style=for-the-badge&logo=github\"/>
+  </a>
+  <a href=\"https://github.com/$NEW_USERNAME/$PROJECT_NAME/pulls\">
+    <img alt=\"GitHub pull requests\" src=\"https://img.shields.io/github/issues-pr/$NEW_USERNAME/$PROJECT_NAME?color=0088ff&style=for-the-badge&logo=github\"/>
+  </a>
+</p>
 
 ---
 
@@ -37,6 +46,18 @@ Watch the changes in the **[CHANGELOG.md](CHANGELOG.md)** file.
 
 <!-- You may delete this if you want to -->
 This project was generated using *[Josee9988/project-template](https://github.com/Josee9988/project-template)* 📚
+
+---
+
+## 🎉 Was the $PROJECT_TYPE helpful? Help us raise these numbers up
+
+[![Github followers](https://img.shields.io/github/followers/$NEW_USERNAME.svg?style=social)](https://github.com/$NEW_USERNAME)
+[![Github stars](https://img.shields.io/github/stars/$NEW_USERNAME/$PROJECT_NAME.svg?style=social)](https://github.com/$NEW_USERNAME/$PROJECT_NAME/stargazers)
+[![Github watchers](https://img.shields.io/github/watchers/$NEW_USERNAME/$PROJECT_NAME.svg?style=social)](https://github.com/$NEW_USERNAME/$PROJECT_NAME/watchers)
+[![Github forks](https://img.shields.io/github/forks/$NEW_USERNAME/$PROJECT_NAME.svg?style=social)](https://github.com/$NEW_USERNAME/$PROJECT_NAME/network/members)
+[![Sponsor](https://img.shields.io/static/v1?label=Sponsor&message=%E2%9D%A4&logo=github-sponsors&color=red&style=social)](https://github.com/sponsors/$NEW_USERNAME)
+
+Enjoy! 😃
 
 _Made with a lot of ❤️❤️ by **[@$NEW_USERNAME](https://github.com/$NEW_USERNAME)**_
 EOF"
