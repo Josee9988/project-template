@@ -1,5 +1,5 @@
 <!-- markdownlint-disable MD032 MD033-->
-# **Josee9988's Github Project Template** 🔥
+# 🔥 **Josee9988's Github Project Template**
 
 <p align="center">
   <img width="100" height="100" src="https://i.imgur.com/Njl3HJc.png" alt="Logo">
@@ -29,7 +29,7 @@ clone your new repository and execute the `SETUP_TEMPLATE.sh` shell script to pe
 
 ---
 
-## 🚀 **How to use it as a template for my new repositories?**
+## ⚡ **Installation**
 
 1. To create a new repository from this template [generate your new repository from this template](https://github.com/Josee9988/project-template/generate)
 for more information or guidance, follow the [Github guide](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/creating-a-repository-from-a-template).
@@ -58,9 +58,10 @@ for more information or guidance, follow the [Github guide](https://docs.github.
 ## 📚 **What does it include?**
 
 1. A **`SETUP_TEMPLATE.sh`** script that **MUST be executed right when you clone your repository**.
-The script will replace Jose's username and email (the author) with yours.
-It will remove all the _content_ from the CHANGELOG.md and write the basic structure for you to write your own.
-The script will also remove all the _content_ from the READMiframea sponsor button (should be manually modified). [Learn more with the Github guide](https://docs.github.com/en/github/administering-a-repository/displaying-a-sponsor-button-in-your-repository)
+The script will replace Jose's username and email (the author) with yours from all the.
+
+   1. A README template file with a default template to start documenting your project.
+   1. A CHANGELOG template file based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
    1. An [issue_label_bot.yaml](/.github/issue_label_bot.yaml) file to use the popular Github bot. [Activate it or check its documentation](https://github.com/marketplace/issue-label-bot).
    1. A [CONTRIBUTING](/.github/CONTRIBUTING.md) explaining how to contribute to the project. [Learn more with the Github guide](https://docs.github.com/en/github/building-a-strong-community/setting-guidelines-for-repository-contributors).
    1. A [SUPPORT](/.github/SUPPORT.md) explaining how to support the project. [Learn more with the Github guide](https://docs.github.com/en/github/building-a-strong-community/adding-support-resources-to-your-project).

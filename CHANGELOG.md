@@ -21,6 +21,10 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/) 
 
 ### Fixed
 
+* Git status is shown before the commit.
+
+### Fixed
+
 * Some typos in the CHANGELOG.md.
 
 ## [**1.0.11**] - 2021-03-20
