@@ -27,6 +27,7 @@ NC='\033[0m' # No Color
 UPurple='\033[4;35m'
 BBLUE='\033[1;34m'
 GREEN='\033[1;32m'
+FILE_FUNCTION_HELPERS=bin/FUNCTION_HELPERS.sh
 
 ### Check if the .github directory does exist ###
 if [ ! -d ".github/" ]; then
@@ -42,6 +43,14 @@ if [ ! -f "CHANGELOG.md" ] || [ ! -f "README.md" ] || [ ! -f ".gitignore" ]; the
   echo -e "For more information visit: ${UPurple}https://github.com/Josee9988/project-template${NC}"
   echo -e "If you think this may be an issue please post it at: ${UPurple}https://github.com/Josee9988/project-template/issues${NC}"
   exit 1 # exit with error code 1
+fi
+
+if [ ! -f "$FILE_FUNCTION_HELPERS" ]; then # check if the function helpers file is found
+  echo -e "${RED}Can not find ${FILE_FUNCTION_HELPERS}"
+  exit 1 # it will exit if the function helpers file is not found
+else
+  # shellcheck source=bin/FUNCTION_HELPERS.sh disable=SC1091
+  source $FILE_FUNCTION_HELPERS || exit # obtain some global functions and variables, if the file isn't found exit
 fi
 
 # prompt for the username, mail and name of the project
@@ -62,6 +71,9 @@ y | Y)
   # remove the license
   rm LICENSE
 
+  # remove the bin folder
+  rm -r bin/
+
   # write the new README.md
   writeREADME
 
@@ -73,11 +85,11 @@ y | Y)
 
   # commit the new files
   git add CHANGELOG.md README.md .gitignore .github SETUP_TEMPLATE.sh LICENSE
-  git commit -m "Set up Josee9988's template: Personalized files by executing the SETUP_TEMPLATE.sh script."
-
-  echo -e "Commiting the changes for you :)\n"
 
   git -c color.status=always status | less -REX # show git status with colours
+  echo -e "Commiting the changes for you :)\n"
+
+  git commit -m "Set up Josee9988's template: Personalized files by executing the SETUP_TEMPLATE.sh script."
 
   echo -e "\nRemember to review every file and customize it as you like.\nYou are ready to start your brand new awesome project🚀🚀."
 
