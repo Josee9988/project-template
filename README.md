@@ -139,6 +139,16 @@ A couple of screenshots to delight you before you use this template.
   <img width="70%" height="70%" src="https://i.imgur.com/r5AiLWu.png" alt="Bug issue template opened.">
 </p>
 
+* The README template.
+<p align="center">
+  <img width="70%" height="70%" src="https://i.imgur.com/YSmgUXg.png" alt="README.md template.">
+</p>
+
+* The CHANGELOG template.
+<p align="center">
+  <img width="70%" height="70%" src="https://i.imgur.com/ScWgQKI.png" alt="CHANGELOG.md template.">
+</p>
+
 * Security policy
 <p align="center">
   <img width="70%" height="70%" src="https://i.imgur.com/ArwDQTi.png" alt="Security issue.">
