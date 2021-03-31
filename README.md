@@ -81,10 +81,11 @@ The script will also remove all the _content_ from the READMiframea sponsor butt
 
 ### 🌲 **Project tree**
 
+Files that will get removed after the execution of `SETUP_TEMPLATE.sh` are not shown! 🙈
+
 ```text
 .
 ├── CHANGELOG.md
-├── SETUP_TEMPLATE.sh (will get removed)
 ├── .github
 │   ├── CODE_OF_CONDUCT.md
 │   ├── CONTRIBUTING.md
@@ -103,7 +104,6 @@ The script will also remove all the _content_ from the READMiframea sponsor butt
 │   ├── SECURITY.md
 │   └── SUPPORT.md
 ├── .gitignore
-├── LICENSE (will get removed)
 └── README.md
 
 2 directories, 20 files

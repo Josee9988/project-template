@@ -7,12 +7,13 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/) 
 
 ---
 
-## [Unreleased]
+## [**1.1.0**] - 2021-03-31
 
 ### Added
 
 * Gitignore file ignores all \*.ignore.\* files.
 * Basic README.md template.
+* bin/FUNCTION_HELPERS script to improve the readability of the SETUP_TEMPLATE.sh file.
 
 ### Changed
 
