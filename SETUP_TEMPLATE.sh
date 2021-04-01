@@ -54,9 +54,9 @@ else
 fi
 
 # prompt for the username, mail and name of the project
-read -p "Enter your $(echo -e "$BBLUE""username""$NC") (without '@'): " NEW_USERNAME
+read -p "Enter your $(echo -e "$BBLUE""Github username""$NC") (without '@'): " NEW_USERNAME
 read -p "Enter your $(echo -e "$BBLUE""email""$NC"): " NEW_EMAIL
-read -p "Enter the $(echo -e "$BBLUE""name of the project""$NC"): " PROJECT_NAME
+read -p "Enter the name of the $(echo -e "$BBLUE""Github's project""$NC"): " PROJECT_NAME
 read -p "Enter $(echo -e "$BBLUE""what your project is""$NC") (program/extension/API/web/CLI tool/backend/frontend/scrapper/automation tool/etc): " PROJECT_TYPE
 
 # confirm that the data is correct
