@@ -21,6 +21,7 @@
 
 * This template can be used as a base layer for any of your future repositories/projects.
 * Make your project easy to maintain with **7 issue templates**.
+* Quickstart your documentation with **badges** and a cool readme structure.
 * Make your _community healthier_ with all the guides like code of conduct, contributing, support, security...
 * Learn more with the [official Github guide on creating repositories from a template](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/creating-a-repository-from-a-template).
 * To start using it; "**[click use this template](https://github.com/Josee9988/project-template/generate)**", create your new repository,
@@ -60,7 +61,7 @@ for more information or guidance, follow the [Github guide](https://docs.github.
 1. A **`SETUP_TEMPLATE.sh`** script that **MUST be executed right when you clone your repository**.
 The script will replace Jose's username and email (the author) with yours from all the.
 
-   1. A README template file with a default template to start documenting your project.
+   1. A README template file with a default template to start documenting your project. (it includes personalized badges and text with your project details)
    1. A CHANGELOG template file based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
    1. An [issue_label_bot.yaml](/.github/issue_label_bot.yaml) file to use the popular Github bot. [Activate it or check its documentation](https://github.com/marketplace/issue-label-bot).
    1. A [CONTRIBUTING](/.github/CONTRIBUTING.md) explaining how to contribute to the project. [Learn more with the Github guide](https://docs.github.com/en/github/building-a-strong-community/setting-guidelines-for-repository-contributors).
@@ -116,7 +117,7 @@ Files that will get removed after the execution of `SETUP_TEMPLATE.sh` are not s
 
 * After **[generating your new repo with this template](https://github.com/Josee9988/project-template/generate)**, make sure to, right after you clone it, run the script `SETUP_TEMPLATE.sh`.
 
-* Then you will be presented with all the files modified with your project details and information. It is very important to **manually review every file** to check if it fits your requirements and perform any necessary changes to customize the project as you want.
+* Then you will be presented with all the files modified with your project details and information. It is very important to **manually review every file** to check if it fits your requirements and performs any necessary changes to customize the project as you want.
 
 * If you are using **Windows** and you don't know how to execute the `SETUP_TEMPLATE.sh` script:
   1. Install **[git for Windows](https://git-scm.com/download/win)**.
@@ -139,12 +140,12 @@ A couple of screenshots to delight you before you use this template.
   <img width="70%" height="70%" src="https://i.imgur.com/r5AiLWu.png" alt="Bug issue template opened.">
 </p>
 
-* The README template.
+* The README template. (badges and texts will be replaced with your project details)
 <p align="center">
-  <img width="70%" height="70%" src="https://i.imgur.com/YSmgUXg.png" alt="README.md template.">
+  <img width="70%" height="70%" src="https://i.imgur.com/uo7P6SW.png" alt="README.md template.">
 </p>
 
-* The CHANGELOG template.
+* The CHANGELOG template. (project name and project type will be replaced with yours)
 <p align="center">
   <img width="70%" height="70%" src="https://i.imgur.com/ScWgQKI.png" alt="CHANGELOG.md template.">
 </p>
