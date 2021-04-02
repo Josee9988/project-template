@@ -53,10 +53,23 @@ else
   source $FILE_FUNCTION_HELPERS || exit # obtain some global functions and variables, if the file isn't found exit
 fi
 
-# prompt for the username, mail and name of the project
-read -p "Enter your $(echo -e "$BBLUE""Github username""$NC") (without '@'): " NEW_USERNAME
+# READ GITHUB USERNAME AND GITHUB PROJECT NAME
+NAME_AND_PROJECT_UNPARSED=$(git ls-remote --get-url)
+
+if [ -z "$1" ]; then # if the username has been manually specified
+  NEW_USERNAME=$(echo "$NAME_AND_PROJECT_UNPARSED" | cut -d':' -f 2 | cut -d'/' -f 1)
+else
+  NEW_USERNAME=$1
+fi
+
+if [ -z "$2" ]; then # if the project name has been manually specified
+  PROJECT_NAME=$(echo "$NAME_AND_PROJECT_UNPARSED" | cut -d'/' -f 2 | cut -d'.' -f 1)
+else
+  PROJECT_NAME=$2
+fi
+
+# prompt for the, mail and type of the project
 read -p "Enter your $(echo -e "$BBLUE""email""$NC"): " NEW_EMAIL
-read -p "Enter the name of the $(echo -e "$BBLUE""Github's project""$NC"): " PROJECT_NAME
 read -p "Enter $(echo -e "$BBLUE""what your project is""$NC") (program/extension/API/web/CLI tool/backend/frontend/scrapper/automation tool/etc): " PROJECT_TYPE
 
 # confirm that the data is correct
