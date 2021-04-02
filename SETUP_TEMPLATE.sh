@@ -110,7 +110,12 @@ y | Y)
   # self remove this script
   rm -- "$0"
   ;;
-n | N) echo "Then try it again!" ;;
+n | N)
+  echo -e "\nIf your username or project name are NOT right (the autoselection wasn't successful), execute the script and give as a first argument your username and as a second argument your project name."
+  echo "As an example:"
+  echo -e "${UPurple}$0 MyCorrectUsername MyCorrectProjectName${NC}"
+  echo "Being the profile as: $0 <Username> <Project-Name>"
+  ;;
 *) echo -e "${RED}Invalid option${NC}" ;;
 esac
 

@@ -38,13 +38,13 @@ for more information or guidance, follow the [Github guide](https://docs.github.
 3. **Execute** the `SETUP_TEMPLATE.sh` shell script to **customize** the files with your data.
   
     ```bash
-    bash SETUP_TEMPLATE.sh # execute the setup script.
+    bash SETUP_TEMPLATE.sh
     ```
 
     Or you can also do it like this:
 
     ```bash
-    chmod u+x SETUP_TEMPLATE.sh && ./SETUP_TEMPLATE-sh # another way of executing it
+    chmod u+x SETUP_TEMPLATE.sh && ./SETUP_TEMPLATE.sh
     ```
 
     Additionally, watch *[this video](https://asciinema.org/a/400202)* to see **how to execute the script**.
