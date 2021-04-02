@@ -7,6 +7,16 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/) 
 
 ---
 
+## [**1.1.1**] - 2021-04-02
+
+### Added
+
+* Username and project name are automatically selected (user can manually force change them using bash parameters [Username] [Project-Name])
+
+### Changed
+
+* Asciinema video
+
 ## [**1.1.0**] - 2021-03-31
 
 ### Added

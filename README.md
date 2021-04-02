@@ -38,16 +38,18 @@ for more information or guidance, follow the [Github guide](https://docs.github.
 3. **Execute** the `SETUP_TEMPLATE.sh` shell script to **customize** the files with your data.
   
     ```bash
-    bash SETUP_TEMPLATE.sh # execute the setup script.
+    bash SETUP_TEMPLATE.sh # additional parameters [Username] [Project-Name]
     ```
 
     Or you can also do it like this:
 
     ```bash
-    chmod u+x SETUP_TEMPLATE.sh && ./SETUP_TEMPLATE-sh # another way of executing it
+    chmod u+x SETUP_TEMPLATE.sh && ./SETUP_TEMPLATE.sh # additional parameters [Username] [Project-Name]
     ```
 
-    Additionally, watch *[this video](https://asciinema.org/a/400202)* to see **how to execute the script**.
+    Additionally, watch *[this video](https://asciinema.org/a/404568)* to see **how to execute the script**.
+  
+    If the automatic detection of the username and project name are NOT right, please post an issue, and you can **manually correct** them like: `bash SETUP_TEMPLATE.sh RightUsername RightProjectName` being `$1` the new username and `$2` the new project name.
 
 4. **Review** every single file and **customize** it as you like.
 5. Build your project. 🚀
