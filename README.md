@@ -146,7 +146,7 @@ A couple of screenshots to delight you before you use this template.
 <p align="center">
   <img width="70%" height="70%" src="https://i.imgur.com/dKKh53K.png" alt="README.md template.">
   
-  <img width="70%" height="70%" src="https://i.imgur.com/tKs4fFc.mp4" alt="README.md template.">
+  Or watch a [this video](https://i.imgur.com/tKs4fFc.mp4) to see the whole README template.
 </p>
 
 * The CHANGELOG template. (project name and project type will be replaced with yours)
