@@ -31,15 +31,15 @@ writeREADME() {
 
 ---
 
-### 🚀 **Usage**
+## 🚀 **Usage**
 
 * <!-- ... [SHOW HOW YOUR PROJECT IS USED] -->
 
 ---
 
-### 🌲 **Project tree**
+## 🌲 **Project tree**
 
-* <!-- ... [SHOW YOUR PROJECT TREE] -->
+* <!-- ... [SHOW YOUR PROJECT TREE HERE IF USEFUL] -->
 
 ---
 
@@ -62,7 +62,7 @@ We are currently looking for new donators to help and maintain this project! ❤
 By donating, you will help the development of this project and, *you will be featured in this $PROJECT_NAME's README.md* so everyone can see your kindness and visit your content ⭐.
 
 <a href=\"https://github.com/sponsors/$NEW_USERNAME\"> <!-- MODIFY THIS LINK TO YOUR MAIN DONATING SITE IF YOU ARE NOT IN THE GITHUB SPONSORS PROGRAM -->
-  <img src=\"https://img.shields.io/badge/Sponsor-$PROJECT_NAME-blue?logo=github-sponsors&style=for-the-badge&color=red\">
+  <img src=\"https://img.shields.io/badge/Sponsor-$NEW_USERNAME/$PROJECT_NAME-blue?logo=github-sponsors&style=for-the-badge&color=red\">
 </a>
 
 <!-- LINK TO YOUR DONATING PAGES HERE -->
