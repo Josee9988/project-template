@@ -3,6 +3,7 @@
 # SCRIPT WITH EXPORTED FUNCTIONS AND VARIABLES
 
 writeREADME() {
+  PROJECT_NAME=${PROJECT_NAME/-/ }
   bash -c "NEW_USERNAME='NEW_USERNAME' PROJECT_NAME='PROJECT_NAME' PROJECT_TYPE='PROJECT_TYPE'; cat << EOF > README.md
 <!-- Write your README.md file. Build something amazing! This README.md template can guide you to build your project documentation, but feel free to modify it as you wish -->
 # 🔥 **$NEW_USERNAME/$PROJECT_NAME**
@@ -61,7 +62,7 @@ We are currently looking for new donators to help and maintain this project! ❤
 By donating, you will help the development of this project and, *you will be featured in this $PROJECT_NAME's README.md* so everyone can see your kindness and visit your content ⭐.
 
 <a href=\"https://github.com/sponsors/$NEW_USERNAME\"> <!-- MODIFY THIS LINK TO YOUR MAIN DONATING SITE IF YOU ARE NOT IN THE GITHUB SPONSORS PROGRAM -->
-  <img src=\"https://img.shields.io/badge/Sponsor-this%20$PROJECT_NAME-blue?logo=github-sponsors&style=for-the-badge&color=red\">
+  <img src=\"https://img.shields.io/badge/Sponsor-$PROJECT_NAME-blue?logo=github-sponsors&style=for-the-badge&color=red\">
 </a>
 
 <!-- LINK TO YOUR DONATING PAGES HERE -->
