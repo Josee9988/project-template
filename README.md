@@ -115,7 +115,7 @@ Files that will get removed after the execution of `SETUP_TEMPLATE.sh` are not s
 
 ---
 
-## 🕵️ **Extra recommendations**
+## 📝 **Additional notes**
 
 * After **[generating your new repo with this template](https://github.com/Josee9988/project-template/generate)**, make sure to, right after you clone it, run the script `SETUP_TEMPLATE.sh`.
 
@@ -163,6 +163,8 @@ A couple of screenshots to delight you before you use this template.
 </p>
 
 ---
+
+## 🕵️ **Extra recommendations**
 
 For the right maintenance of the CHANGELOG.md, we recommend this [VSCode extension](https://github.com/Josee9988/Changelog-and-Markdown-snippets)
 and the read and understanding of the [keep a changelog guide](https://keepachangelog.com/en/1.0.0/).
