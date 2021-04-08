@@ -7,6 +7,14 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/) 
 
 ---
 
+## [**1.2.0**] - 2021-04-07
+
+### Added
+
+* Bug report issue templates have the preceding "[BUG]" title.
+* Multiple readme template headings (About the project, project tree, screenshots, donators).
+* Improved README.md template by fixing some minor problems.
+
 ## [**1.1.1**] - 2021-04-02
 
 ### Added

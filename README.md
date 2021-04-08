@@ -115,7 +115,7 @@ Files that will get removed after the execution of `SETUP_TEMPLATE.sh` are not s
 
 ---
 
-## 🕵️ **Extra recommendations**
+## 📝 **Additional notes**
 
 * After **[generating your new repo with this template](https://github.com/Josee9988/project-template/generate)**, make sure to, right after you clone it, run the script `SETUP_TEMPLATE.sh`.
 
@@ -144,7 +144,9 @@ A couple of screenshots to delight you before you use this template.
 
 * The README template. (badges and texts will be replaced with your project details)
 <p align="center">
-  <img width="70%" height="70%" src="https://i.imgur.com/uo7P6SW.png" alt="README.md template.">
+  <img width="70%" height="70%" src="https://i.imgur.com/dKKh53K.png" alt="README.md template.">
+  
+  <img width="70%" height="70%" src="https://i.imgur.com/tKs4fFc.mp4" alt="README.md template.">
 </p>
 
 * The CHANGELOG template. (project name and project type will be replaced with yours)
@@ -163,6 +165,8 @@ A couple of screenshots to delight you before you use this template.
 </p>
 
 ---
+
+## 🕵️ **Extra recommendations**
 
 For the right maintenance of the CHANGELOG.md, we recommend this [VSCode extension](https://github.com/Josee9988/Changelog-and-Markdown-snippets)
 and the read and understanding of the [keep a changelog guide](https://keepachangelog.com/en/1.0.0/).
