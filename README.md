@@ -32,9 +32,9 @@ clone your new repository and execute the `SETUP_TEMPLATE.sh` shell script to pe
 
 ## ⚡ **Installation**
 
-1. To create a new repository from this template [generate your new repository from this template](https://github.com/Josee9988/project-template/generate)
+1. To create a new repository from this template **[generate your new repository from this template](https://github.com/Josee9988/project-template/generate)**
 for more information or guidance, follow the [Github guide](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/creating-a-repository-from-a-template).
-2. Clone your repo and `cd` into it.
+2. Clone your new repository **[generated from this template](https://github.com/Josee9988/project-template/generate)** and `cd` into it.
 3. **Execute** the `SETUP_TEMPLATE.sh` shell script to **customize** the files with your data.
   
     ```bash
@@ -69,9 +69,10 @@ The script will replace Jose's username and email (the author) with yours from a
    1. A [CONTRIBUTING](/.github/CONTRIBUTING.md) explaining how to contribute to the project. [Learn more with the Github guide](https://docs.github.com/en/github/building-a-strong-community/setting-guidelines-for-repository-contributors).
    1. A [SUPPORT](/.github/SUPPORT.md) explaining how to support the project. [Learn more with the Github guide](https://docs.github.com/en/github/building-a-strong-community/adding-support-resources-to-your-project).
    1. A [SECURITY](/.github/SECURITY.md) with a guide on how to post a security issue. [Learn more with the Github guide](https://docs.github.com/es/github/managing-security-vulnerabilities/adding-a-security-policy-to-your-repository).
-   1. A [CODE_OF_CONDUCT](/.github/CODE_OF_CONDUCT.md) with a basic code of conduct. [Learn more with the Github guide](https://docs.github.com/en/github/building-a-strong-community/adding-a-code-of-conduct-to-your-project).
-   1. A [PULL_REQUEST_TEMPLATE](/.github/pull_request_template.md) with a template for your pull request that closes issues with keywords. [Learn more with the Github guide](https://docs.github.com/es/github/building-a-strong-community/creating-a-pull-request-template-for-your-repository).
-   1. Multiple [issues templates](/.github/ISSUE_TEMPLATE). [Learn more with the Github guide](https://docs.github.com/en/github/building-a-strong-community/configuring-issue-templates-for-your-repository).
+1. A [CODEOWNERS](/.github/CODEOWNERS) with the new user as the main owner. [Learn more with the Github guide](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/about-code-owners).
+1. A [CODE_OF_CONDUCT](/.github/CODE_OF_CONDUCT.md) with a basic code of conduct. [Learn more with the Github guide](https://docs.github.com/en/github/building-a-strong-community/adding-a-code-of-conduct-to-your-project).
+1. A [PULL_REQUEST_TEMPLATE](/.github/pull_request_template.md) with a template for your pull request that closes issues with keywords. [Learn more with the Github guide](https://docs.github.com/es/github/building-a-strong-community/creating-a-pull-request-template-for-your-repository).
+1. Multiple [issues templates](/.github/ISSUE_TEMPLATE). [Learn more with the Github guide](https://docs.github.com/en/github/building-a-strong-community/configuring-issue-templates-for-your-repository).
       1. A [config.yml](/.github/ISSUE_TEMPLATE/config.yml) with the config and information about the issue templates.
       1. A [Blank issue template](/.github/ISSUE_TEMPLATE) with the super basic stuff, all the issues should contain.
       1. A [Bug issue template](/.github/ISSUE_TEMPLATE/1-bug-report.md).
@@ -91,6 +92,7 @@ Files that will get removed after the execution of `SETUP_TEMPLATE.sh` are not s
 .
 ├── CHANGELOG.md
 ├── .github
+│   ├── CODEOWNERS
 │   ├── CODE_OF_CONDUCT.md
 │   ├── CONTRIBUTING.md
 │   ├── FUNDING.yml
@@ -110,7 +112,7 @@ Files that will get removed after the execution of `SETUP_TEMPLATE.sh` are not s
 ├── .gitignore
 └── README.md
 
-2 directories, 20 files
+2 directories, 21 files
 ```
 
 ---
@@ -132,34 +134,44 @@ Files that will get removed after the execution of `SETUP_TEMPLATE.sh` are not s
 
 A couple of screenshots to delight you before you use this template.
 
-* All the issue templates.
+### 🔺 All the issue templates
+
 <p align="center">
   <img width="70%" height="70%" src="https://i.imgur.com/BWOdDCb.png" alt="All the issue templates.">
 </p>
 
-* An issue template opened.
+### 🔻 An issue template opened
+
 <p align="center">
   <img width="70%" height="70%" src="https://i.imgur.com/r5AiLWu.png" alt="Bug issue template opened.">
 </p>
 
-* The README template. (badges and texts will be replaced with your project details)
+### 📘 The README template
+
+(badges and texts will be replaced with your project details)
+
 <p align="center">
   <img width="70%" height="70%" src="https://i.imgur.com/dKKh53K.png" alt="README.md template.">
   
-  Or watch a [this video](https://gifs.com/gif/josee9988-s-readme-md-MwO5E3) to see the whole README template.
+  Or watch [this video](https://gifs.com/gif/josee9988-s-readme-md-MwO5E3) to see the whole README template.
 </p>
 
-* The CHANGELOG template. (project name and project type will be replaced with yours)
+### 📝 The CHANGELOG template
+
+(project name and project type will be replaced with yours)
+
 <p align="center">
   <img width="70%" height="70%" src="https://i.imgur.com/ScWgQKI.png" alt="CHANGELOG.md template.">
 </p>
 
-* Security policy
+### 🛡️ Security policy
+
 <p align="center">
   <img width="70%" height="70%" src="https://i.imgur.com/ArwDQTi.png" alt="Security issue.">
 </p>
 
-* Community profile at 100%
+### 💼 Community profile at 100%
+
 <p align="center">
   <img width="70%" height="70%" src="https://i.imgur.com/kRt3lPs.png" alt="Community profile.">
 </p>
