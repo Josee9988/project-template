@@ -7,6 +7,13 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/) 
 
 ---
 
+## [Unreleased]
+
+### Added
+
+* Readme section with the recommended/used bots that the users should install.
+* Some informational comments in the script referencing the project's documentation.
+
 ## [**1.3.0**] - 2021-04-14
 
 ### Added

@@ -29,6 +29,7 @@ BBLUE='\033[1;34m'
 GREEN='\033[1;32m'
 FILE_FUNCTION_HELPERS=bin/FUNCTION_HELPERS.sh
 
+###### CHECKS BEFORE THE SCRIPT STARTS ######
 ### Check if the .github directory does exist ###
 if [ ! -d ".github/" ]; then
   echo -e "${RED}Directory .github/ DOES NOT EXIST.${NC}"
@@ -68,6 +69,8 @@ else
   PROJECT_NAME=$2
 fi
 
+###### START OF THE SCRIPT ######
+echo -e "Read carefully all the documentation before you continue executing this script: \t${UPurple}https://github.com/Josee9988/project-template${NC}"
 # prompt for the, mail and type of the project
 read -p "Enter your $(echo -e "$BBLUE""email""$NC"): " NEW_EMAIL
 read -p "Enter $(echo -e "$BBLUE""what your project is""$NC") (program/extension/API/web/CLI tool/backend/frontend/scrapper/automation tool/etc): " PROJECT_TYPE

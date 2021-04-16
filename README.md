@@ -128,6 +128,10 @@ Files that will get removed after the execution of `SETUP_TEMPLATE.sh` are not s
   2. Right-click on the git repository folder and click "*git bash here*".
   3. Then just perform *`bash SETUP_TEMPLATE.sh`* **or** *`chmod u+x SETUP_TEMPLATE.sh && ./SETUP_TEMPLATE.sh`*.
 
+### 🤖 **Used Github bots**
+
+1. The `issue_label_bot.yaml` file depends on the **[issue label bot](https://github.com/marketplace/issue-label-bot)**.
+
 ---
 
 ## 📸 **Screenshots**
@@ -183,6 +187,7 @@ A couple of screenshots to delight you before you use this template.
 For the right maintenance of the CHANGELOG.md, we recommend this [VSCode extension](https://github.com/Josee9988/Changelog-and-Markdown-snippets)
 and the read and understanding of the [keep a changelog guide](https://keepachangelog.com/en/1.0.0/).
 Read and comment about it in this [dev.to post](https://dev.to/josee9988/the-ultimate-github-project-template-1264).
+We also recommend installing all the used bots.
 
 ---
 
