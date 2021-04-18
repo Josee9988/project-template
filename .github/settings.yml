@@ -42,32 +42,36 @@ repository:
 
 # Labels: define labels for Issues and Pull Requests
 labels:
-    - name: Bug
-      color: CC0000
+    - name: 'bug'
+      color: 'CC0000'
       description: '🐞 An issue with the project'
-    - name: Feature
-      color: 486DB8
+      oldname: 'bug'
+    - name: 'Feature'
+      color: '486DB8'
       description: '🚀 Suggest a new feature for the project'
-    - name: Invalid
-      color: E2E62E
+      oldname: 'enhancement'
+    - name: 'Invalid'
+      color: 'E2E62E'
       description: "⚠️ This issue doesn't seem right"
-    - name: Question
-      color: 962EE6
+      oldname: 'invalid'
+    - name: 'Question'
+      color: '962EE6'
       description: '❓ This issue is just a question'
-    - name: Extra information needed
-      color: D9840D
+      oldname: 'question'
+    - name: 'Extra information needed'
+      color: 'D9840D'
       description: "This won't be solved until we have more information about the issue"
-    - name: 3rd party issue
-      color: D90D8B
+    - name: '3rd party issue'
+      color: 'D90D8B'
       description: '📦 This issue might be caused by a 3rd party script/package/...'
-    - name: Windows
-      color: 2E65E6
+    - name: 'Windows'
+      color: '2E65E6'
       Description: 'Is windows-specific'
-    - name: Mac
-      color: AEB1C2
+    - name: 'Mac'
+      color: 'AEB1C2'
       Description: 'Is mac-specific'
-    - name: Linux
-      color: B56838
+    - name: 'Linux'
+      color: 'B56838'
       Description: 'Is linux-specific'
 # # Collaborators: give specific users access to this repository.
 # # See https://developer.github.com/v3/repos/collaborators/#add-user-as-a-collaborator for available options
