@@ -13,6 +13,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/) 
 
 * Readme section with the recommended/used bots that the users should install.
 * Some informational comments in the script referencing the project's documentation.
+* A total of 18 new labels that will be created right when you clone your repo using github probot settings.
 
 ## [**1.3.0**] - 2021-04-14
 

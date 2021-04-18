@@ -73,17 +73,17 @@ labels:
 
     - name: 'Duplicate'
       color: EB862D
-      description: Duplicate of another task.
+      description: Duplicate of another issue.
 
     - name: 'Invalid'
       color: faef50
       description: This issue doesn't seem right.
 
-    - name: 'Priority: High'
+    - name: 'Priority: High +'
       color: ff0aa4
       description: Task is considered higher-priority.
 
-    - name: 'Priority: Low'
+    - name: 'Priority: Low -'
       color: 871c4b
       description: Task is considered lower-priority.
 
@@ -105,15 +105,15 @@ labels:
 
     - name: 'Windows'
       color: 2E65E6
-      Description: Is windows-specific
+      description: Is Windows-specific
 
     - name: 'Mac'
       color: AEB1C2
-      Description: Is mac-specific
+      description: Is Mac-specific
 
     - name: 'Linux'
       color: E95420
-      Description: Is linux-specific
+      description: Is Linux-specific
 # # Collaborators: give specific users access to this repository.
 # # See https://developer.github.com/v3/repos/collaborators/#add-user-as-a-collaborator for available options
 # collaborators:
