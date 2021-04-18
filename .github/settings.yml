@@ -41,38 +41,79 @@ repository:
     #allow_rebase_merge: true
 
 # Labels: define labels for Issues and Pull Requests
+
 labels:
-    - name: 'bug'
-      color: 'CC0000'
-      description: '🐞 An issue with the project'
-      oldname: 'bug'
-    - name: 'Feature'
-      color: '486DB8'
-      description: '🚀 Suggest a new feature for the project'
-      oldname: 'enhancement'
+    - name: 'Type: Bug'
+      color: CC0000
+      description: Something isn't working as expected.
+
+    - name: 'Type: Feature'
+      color: 486DB8
+      description: Suggest an improvement for an existing feature.
+
+    - name: 'Type: Enhancement'
+      color: 486DB8
+      description: Suggest a new feature.
+
+    - name: 'Type: Question'
+      color: 312DEB
+      description: Request for information.
+
+    - name: 'Status: Awaiting Review'
+      color: 24d15d
+      description: Ready for review.
+
+    - name: 'Status: Waiting'
+      color: EBCB2D
+      description: Waiting on something else to be ready.
+
+    - name: 'Status: Stale'
+      color: C8D9E6
+      description: Has had no activity for some time.
+
+    - name: 'Duplicate'
+      color: EB862D
+      description: Duplicate of another task.
+
     - name: 'Invalid'
-      color: 'E2E62E'
-      description: "⚠️ This issue doesn't seem right"
-      oldname: 'invalid'
-    - name: 'Question'
-      color: '962EE6'
-      description: '❓ This issue is just a question'
-      oldname: 'question'
-    - name: 'Extra information needed'
-      color: 'D9840D'
-      description: "This won't be solved until we have more information about the issue"
+      color: EB862D
+      description: This issue doesn't seem right.
+
+    - name: 'Priority: High'
+      color: cf1d8d
+      description: Task is considered higher-priority.
+
+    - name: 'Priority: Low'
+      color: 992389
+      description: Task is considered lower-priority.
+
+    - name: 'WIP'
+      color: f0cc1d
+      description: Currently being worked on.
+
+    - name: 'Documentation'
+      color: 2fbceb
+      description: An issue with the documentation.
+
+    - name: "Won't Fix"
+      color: C8D9E6
+      description: Reported issue is working as intended.
+
     - name: '3rd party issue'
-      color: 'D90D8B'
-      description: '📦 This issue might be caused by a 3rd party script/package/...'
+      color: D90D8B
+      description: This issue might be caused by a 3rd party script/package/...
+
     - name: 'Windows'
-      color: '2E65E6'
-      Description: 'Is windows-specific'
+      color: 2E65E6
+      Description: Is windows-specific
+
     - name: 'Mac'
-      color: 'AEB1C2'
-      Description: 'Is mac-specific'
+      color: AEB1C2
+      Description: Is mac-specific
+
     - name: 'Linux'
-      color: 'B56838'
-      Description: 'Is linux-specific'
+      color: B56838
+      Description: Is linux-specific
 # # Collaborators: give specific users access to this repository.
 # # See https://developer.github.com/v3/repos/collaborators/#add-user-as-a-collaborator for available options
 # collaborators:
