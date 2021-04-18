@@ -48,15 +48,15 @@ labels:
       description: Something isn't working as expected.
 
     - name: 'Type: Feature'
-      color: 486DB8
+      color: 6694f2
       description: Suggest an improvement for an existing feature.
 
     - name: 'Type: Enhancement'
-      color: 486DB8
+      color: 6694f2
       description: Suggest a new feature.
 
     - name: 'Type: Question'
-      color: 312DEB
+      color: 9309ab
       description: Request for information.
 
     - name: 'Status: Awaiting Review'
@@ -64,7 +64,7 @@ labels:
       description: Ready for review.
 
     - name: 'Status: Waiting'
-      color: EBCB2D
+      color: 38C968
       description: Waiting on something else to be ready.
 
     - name: 'Status: Stale'
@@ -76,15 +76,15 @@ labels:
       description: Duplicate of another task.
 
     - name: 'Invalid'
-      color: EB862D
+      color: faef50
       description: This issue doesn't seem right.
 
     - name: 'Priority: High'
-      color: cf1d8d
+      color: ff0aa4
       description: Task is considered higher-priority.
 
     - name: 'Priority: Low'
-      color: 992389
+      color: 871c4b
       description: Task is considered lower-priority.
 
     - name: 'WIP'
@@ -112,7 +112,7 @@ labels:
       Description: Is mac-specific
 
     - name: 'Linux'
-      color: B56838
+      color: E95420
       Description: Is linux-specific
 # # Collaborators: give specific users access to this repository.
 # # See https://developer.github.com/v3/repos/collaborators/#add-user-as-a-collaborator for available options
