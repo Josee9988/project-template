@@ -44,7 +44,7 @@ repository:
 
 labels:
     - name: 'Type: Bug'
-      color: CC0000
+      color: e80c0c
       description: Something isn't working as expected.
 
     - name: 'Type: Feature'
@@ -63,12 +63,16 @@ labels:
       color: 24d15d
       description: Ready for review.
 
+    - name: 'Status: WIP'
+      color: 07b340
+      description: Currently being worked on.
+
     - name: 'Status: Waiting'
       color: 38C968
       description: Waiting on something else to be ready.
 
     - name: 'Status: Stale'
-      color: C8D9E6
+      color: 66b38a
       description: Has had no activity for some time.
 
     - name: 'Duplicate'
@@ -80,39 +84,35 @@ labels:
       description: This issue doesn't seem right.
 
     - name: 'Priority: High +'
-      color: ff0aa4
+      color: ff008c
       description: Task is considered higher-priority.
 
     - name: 'Priority: Low -'
-      color: 871c4b
+      color: 690a34
       description: Task is considered lower-priority.
-
-    - name: 'WIP'
-      color: f0cc1d
-      description: Currently being worked on.
 
     - name: 'Documentation'
       color: 2fbceb
       description: An issue with the documentation.
 
-    - name: "Won't Fix"
+    - name: "Won't fix"
       color: C8D9E6
       description: Reported issue is working as intended.
 
     - name: '3rd party issue'
-      color: D90D8B
-      description: This issue might be caused by a 3rd party script/package/...
+      color: e88707
+      description: This issue might be caused by a 3rd party script/package/other reasons
 
-    - name: 'Windows'
-      color: 2E65E6
+    - name: 'Os: Windows'
+      color: AEB1C2
       description: Is Windows-specific
 
-    - name: 'Mac'
+    - name: 'Os: Mac'
       color: AEB1C2
       description: Is Mac-specific
 
-    - name: 'Linux'
-      color: E95420
+    - name: 'Os: Linux'
+      color: AEB1C2
       description: Is Linux-specific
 # # Collaborators: give specific users access to this repository.
 # # See https://developer.github.com/v3/repos/collaborators/#add-user-as-a-collaborator for available options
