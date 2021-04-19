@@ -21,7 +21,8 @@
 
 * This template can be used as a base layer for any of your future repositories/projects.
 * Make your project easy to maintain with **7 issue templates**.
-* Quickstart your documentation with **badges** and a cool readme structure.
+* Quickstart your documentation with personalized **readme badges** and a cool readme structure.
+* Manage your issues with **18 issue labels** created just for you!
 * Make your _community healthier_ with all the guides like code of conduct, contributing, support, security...
 * Learn more with the [official Github guide on creating repositories from a template](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/creating-a-repository-from-a-template).
 * To start using it; "**[click use this template](https://github.com/Josee9988/project-template/generate)**", create your new repository,
@@ -66,7 +67,7 @@ The script will replace Jose's username and email (the author) with yours from a
    1. A README template file with a default template to start documenting your project. (it includes personalized badges and text with your project details)
    1. A CHANGELOG template file based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
    1. An [issue_label_bot.yaml](/.github/issue_label_bot.yaml) file to use the issue adder Github bot. [Activate it or check its documentation](https://github.com/marketplace/issue-label-bot).
-   1. An [settings.yml](/.github/settings.yml) file to use the popular settings Github bot. [Activate it or check its documentation](https://probot.github.io/apps/settings/).
+   1. A [settings.yml](/.github/settings.yml) file to use the popular settings Github bot. [Activate it or check its documentation](https://probot.github.io/apps/settings/).
    1. A [CONTRIBUTING](/.github/CONTRIBUTING.md) explaining how to contribute to the project. [Learn more with the Github guide](https://docs.github.com/en/github/building-a-strong-community/setting-guidelines-for-repository-contributors).
    1. A [SUPPORT](/.github/SUPPORT.md) explaining how to support the project. [Learn more with the Github guide](https://docs.github.com/en/github/building-a-strong-community/adding-support-resources-to-your-project).
    1. A [SECURITY](/.github/SECURITY.md) with a guide on how to post a security issue. [Learn more with the Github guide](https://docs.github.com/es/github/managing-security-vulnerabilities/adding-a-security-policy-to-your-repository).
@@ -134,7 +135,6 @@ Files that will get removed after the execution of `SETUP_TEMPLATE.sh` are not s
 
 1. The `issue_label_bot.yaml` file depends on the **[issue label bot](https://github.com/marketplace/issue-label-bot)**.
 2. The `settings.yml` file depends on the **[settings label bot](https://probot.github.io/apps/settings/)**.
-3.
 
 ---
 
@@ -156,7 +156,7 @@ A couple of screenshots to delight you before you use this template.
 
 ### 📘 The README template
 
-(badges and texts will be replaced with your project details)
+Badges and texts will be replaced with your project details!
 
 <p align="center">
   <img width="70%" height="70%" src="https://i.imgur.com/dKKh53K.png" alt="README.md template.">
@@ -169,7 +169,7 @@ A couple of screenshots to delight you before you use this template.
 If the bot [probot-settings](https://probot.github.io/apps/settings/) is not installed you will not have these beautiful labels!
 
 <p align="center">
-  <img width="70%" height="70%" src="" alt="LABELS"> <!-- TODO: add it-->
+  <img width="70%" height="70%" src="https://i.imgur.com/jhfEYcn.png" alt="LABELS">
 </p>
 
 ### 📝 The CHANGELOG template
