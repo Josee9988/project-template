@@ -47,12 +47,12 @@ labels:
       color: e80c0c
       description: Something isn't working as expected.
 
-    - name: 'Type: Feature'
-      color: 6694f2
+    - name: 'Type: Enhancement'
+      color: 54b2ff
       description: Suggest an improvement for an existing feature.
 
-    - name: 'Type: Enhancement'
-      color: 6694f2
+    - name: 'Type: Feature'
+      color: 54b2ff
       description: Suggest a new feature.
 
     - name: 'Type: Question'
