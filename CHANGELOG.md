@@ -7,6 +7,12 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/) 
 
 ---
 
+## [**1.4.2**] - 2021-04-20
+
+### Fixed
+
+* Issue templates now auto asigns the new labels.
+
 ## [**1.4.1**] - 2021-04-20
 
 ### Added
@@ -90,7 +96,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/) 
 ### Changed
 
 * `EXECUTEME.sh` script changed to `SETUP_TEMPLATE.sh`.
-* Changed the execution video from the README.md file (asciinema's video).
+* Changed the execution video from the README.md file (Asciinema's video).
 
 ## [**1.0.9**] - 2021-03-17
 

@@ -2,7 +2,7 @@
 name: "⚠️ Security Report"
 about: "Report an issue to help the project improve."
 title: ""
-labels: bug, security
+labels: "Type: Security"
 assignees: Josee9988
 
 ---
