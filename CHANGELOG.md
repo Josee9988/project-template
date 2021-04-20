@@ -7,6 +7,16 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/) 
 
 ---
 
+## [**1.4.1**] - 2021-04-20
+
+### Added
+
+* Security label
+
+### Changed
+
+* Project tree to its updated version.
+
 ## [**1.4.0**] - 2021-04-19
 
 ### Added
