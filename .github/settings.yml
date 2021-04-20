@@ -55,6 +55,10 @@ labels:
       color: 54b2ff
       description: Suggest a new feature.
 
+    - name: 'Type: Security'
+      color: fbff00
+      description: A problem or enhancement related to a security issue.
+
     - name: 'Type: Question'
       color: 9309ab
       description: Request for information.
@@ -93,7 +97,7 @@ labels:
 
     - name: 'Documentation'
       color: 2fbceb
-      description: An issue with the documentation.
+      description: An issue/change with the documentation.
 
     - name: "Won't fix"
       color: C8D9E6
