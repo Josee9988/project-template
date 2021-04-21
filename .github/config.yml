@@ -17,4 +17,4 @@ firstPRMergeComment: >
     Congrats on merging your first pull request! Keep making great things with us, thanks!!
 
 todo:
-    keyword: '@issue'
+    keyword: '@todo'

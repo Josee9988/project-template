@@ -7,11 +7,6 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/) 
 
 ---
 
-<!--
-# @issue Tests label
-# @body add label for tests
- -->
-
 ## [**1.4.3**] - 2021-04-21
 
 ### Added
