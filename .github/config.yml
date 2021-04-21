@@ -15,3 +15,6 @@ newPRWelcomeComment: >
 # Comment to be posted to on pull requests merged by a first time user
 firstPRMergeComment: >
     Congrats on merging your first pull request! Keep making great things with us, thanks!!
+
+todo:
+    keyword: '@issue'

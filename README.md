@@ -135,9 +135,12 @@ Files that will get removed after the execution of `SETUP_TEMPLATE.sh` are not s
 
 ### 🤖 **Used Github bots**
 
+These are recommended bots that are prepared and configured for this template. If you install them your coding experience will probably be much better.
+We deeply recommend at least installing the [issue label bot](https://github.com/marketplace/issue-label-bot) as this bot is the one that adds all the labels used in the issue templates.
+
 1. The `issue_label_bot.yaml` file depends on the **[issue label bot](https://github.com/marketplace/issue-label-bot)**.
 2. The `settings.yml` file depends on the **[settings label bot](https://probot.github.io/apps/settings/)**.
-3. The `config.yml` file depends on the bot **[welcome bot](https://probot.github.io/apps/welcome/)**.
+3. The `config.yml` file depends on the bot **[welcome bot](https://probot.github.io/apps/welcome/)** and **[todo bot](https://probot.github.io/apps/todo/)**
 
 ---
 
