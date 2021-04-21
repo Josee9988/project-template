@@ -9,6 +9,11 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/) 
 
 ## [**1.4.2**] - 2021-04-20
 
+### Added
+
+* An extra informational message in the script.
+* Welcome bot and its config (.github/config.yml)
+
 ### Fixed
 
 * Issue templates now auto asigns the new labels.
