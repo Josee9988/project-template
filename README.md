@@ -67,6 +67,7 @@ The script will replace Jose's username and email (the author) with yours from a
    1. A README template file with a default template to start documenting your project. (it includes personalized badges and text with your project details)
    1. A CHANGELOG template file based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
    1. An [issue_label_bot.yaml](/.github/issue_label_bot.yaml) file to use the issue adder Github bot. [Activate it or check its documentation](https://github.com/marketplace/issue-label-bot).
+   1. A [config.yml](/.github/config.yml) file to modify multiple bot's behaviour.
    1. A [settings.yml](/.github/settings.yml) file to use the popular settings Github bot. [Activate it or check its documentation](https://probot.github.io/apps/settings/).
    1. A [CONTRIBUTING](/.github/CONTRIBUTING.md) explaining how to contribute to the project. [Learn more with the Github guide](https://docs.github.com/en/github/building-a-strong-community/setting-guidelines-for-repository-contributors).
    1. A [SUPPORT](/.github/SUPPORT.md) explaining how to support the project. [Learn more with the Github guide](https://docs.github.com/en/github/building-a-strong-community/adding-support-resources-to-your-project).
@@ -99,6 +100,7 @@ Files that will get removed after the execution of `SETUP_TEMPLATE.sh` are not s
 │   ├── CONTRIBUTING.md
 │   ├── FUNDING.yml
 │   ├── issue_label_bot.yaml
+│   ├── config.yml
 │   ├── ISSUE_TEMPLATE
 │   │   ├── 1-bug-report.md
 │   │   ├── 2-failing-test.md
@@ -135,6 +137,7 @@ Files that will get removed after the execution of `SETUP_TEMPLATE.sh` are not s
 
 1. The `issue_label_bot.yaml` file depends on the **[issue label bot](https://github.com/marketplace/issue-label-bot)**.
 2. The `settings.yml` file depends on the **[settings label bot](https://probot.github.io/apps/settings/)**.
+3. The `config.yml` file depends on the bot **[welcome bot](https://probot.github.io/apps/welcome/)**.
 
 ---
 
