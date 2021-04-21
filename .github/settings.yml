@@ -41,7 +41,8 @@ repository:
     #allow_rebase_merge: true
 
 # Labels: define labels for Issues and Pull Requests
-
+# @todo
+# @body add label for tests
 labels:
     - name: 'Type: Bug'
       color: e80c0c
