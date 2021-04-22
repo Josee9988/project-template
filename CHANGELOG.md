@@ -7,6 +7,13 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/) 
 
 ---
 
+## [**1.4.4**] - 2021-04-22
+
+### Added
+
+* --help option in the script.
+* More documentation and information for the user in the script prompts
+
 ## [**1.4.3**] - 2021-04-21
 
 ### Added
