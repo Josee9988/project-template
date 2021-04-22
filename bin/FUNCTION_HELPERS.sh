@@ -149,3 +149,13 @@ displayErrorInstructions() {
   echo -e "For more information visit: ${UPurple}https://github.com/Josee9988/project-template${NC}"
   echo -e "If you think this may be an issue please post it at: ${UPurple}https://github.com/Josee9988/project-template/issues${NC}"
 }
+
+helpCommand() {
+  if [[ "$1" == *"--help" ]] || [[ "$1" == *"-h" ]]; then # if the user specified help command
+    echo -e "Script usage: ${BBLUE}$0 [Username] [Project-Name]${NC}\n"
+    echo "Arguments of username and project-name are automatically gathered from your git repository and git config, so they are optional in case they are not detected correctly."
+    echo -e "Make sure you have ${BBLUE}read the documentation before executing${NC} this script: ${UPurple}https://github.com/Josee9988/project-template${NC}"
+    echo -e "If you have any questions or if any issue is found, please make sure to report it at: ${UPurple}https://github.com/Josee9988/project-template/issues${NC}"
+    exit 0
+  fi
+}

@@ -37,6 +37,9 @@ else
   source $FILE_FUNCTION_HELPERS || exit # obtain some global functions and variables, if the file isn't found exit
 fi
 
+# check if the help argument has been specified
+helpCommand "$1"
+
 ###### CHECKS BEFORE THE SCRIPT STARTS ######
 checkFiles
 
