@@ -1,6 +1,9 @@
 #!/bin/bash
 
-# SCRIPT WITH EXPORTED FUNCTIONS AND VARIABLES
+UPurple='\033[4;35m'
+NC='\033[0m' # No Color
+
+# SCRIPT WITH EXPORTED FUNCTIONS AND VARIABLES USED IN THE MAIN SETUP_TEMPLATE
 
 writeREADME() {
   PROJECT_NAME_PARSED=${PROJECT_NAME/-/ }
@@ -122,4 +125,27 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/) 
 
 * The basic project structure from **[josee9988/project-template](https://github.com/Josee9988/project-template)**.
 EOF"
+}
+
+checkFiles() {
+  ### Check if the .github directory does exist ###
+  if [ ! -d ".github/" ] || [ ! -d ".github/ISSUE_TEMPLATE" ]; then
+    echo -e "${RED}Directory .github/ DOES NOT EXIST WITH ALL THE FILES NEEDED.${NC}"
+    displayErrorInstructions
+    exit 1 # exit with error code 1
+  fi
+
+  ### Checks if the root files exist and some extra important files ###
+  if [ ! -f "CHANGELOG.md" ] || [ ! -f "README.md" ] || [ ! -f ".gitignore" ] || [ ! -f "LICENSE" ] || [ ! -f ".github/settings.yml" ] || [ ! -f ".github/pull_request_template.md" ] || [ ! -f ".github/ISSUE_TEMPLATE/1-bug-report.md" ] || [ ! -f ".github/ISSUE_TEMPLATE/config.yml" ]; then
+    echo -e "${RED}There are files missing. Have you modified the repository before executing this command?${NC}"
+    echo -e "${RED}The script couldn't find one or many of the template main files${NC}."
+    displayErrorInstructions
+    exit 1 # exit with error code 1
+  fi
+}
+
+displayErrorInstructions() {
+  echo -e "\nYou should try to 'git stash' your changes and execute this script from the project root again, or clone again the repository (the template) without any changes.\n"
+  echo -e "For more information visit: ${UPurple}https://github.com/Josee9988/project-template${NC}"
+  echo -e "If you think this may be an issue please post it at: ${UPurple}https://github.com/Josee9988/project-template/issues${NC}"
 }

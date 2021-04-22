@@ -29,30 +29,16 @@ BBLUE='\033[1;34m'
 GREEN='\033[1;32m'
 FILE_FUNCTION_HELPERS=bin/FUNCTION_HELPERS.sh
 
-###### CHECKS BEFORE THE SCRIPT STARTS ######
-### Check if the .github directory does exist ###
-if [ ! -d ".github/" ]; then
-  echo -e "${RED}Directory .github/ DOES NOT EXIST.${NC}"
-  exit 1 # exit with error code 1
-fi
-
-### Checks if the root files exist ###
-if [ ! -f "CHANGELOG.md" ] || [ ! -f "README.md" ] || [ ! -f ".gitignore" ]; then
-  echo -e "${RED}There are files missing. Have you modified the repository before executing this command?${NC}"
-  echo -e "${RED}The script couldn't found one or many of these files${NC}: '${UPurple}CHANGELOG.md${NC}', '${UPurple}README.md${NC}' or '${UPurple}.gitignore${NC}'.\n"
-  echo -e "You should try to 'git stash' your changes and execute this script from the project root again, or clone again the repository without any changes.\n"
-  echo -e "For more information visit: ${UPurple}https://github.com/Josee9988/project-template${NC}"
-  echo -e "If you think this may be an issue please post it at: ${UPurple}https://github.com/Josee9988/project-template/issues${NC}"
-  exit 1 # exit with error code 1
-fi
-
-if [ ! -f "$FILE_FUNCTION_HELPERS" ]; then # check if the function helpers file is found
+if [ ! -f "$FILE_FUNCTION_HELPERS" ]; then # check if the function helpers file is not found
   echo -e "${RED}Can not find ${FILE_FUNCTION_HELPERS}"
   exit 1 # it will exit if the function helpers file is not found
 else
   # shellcheck source=bin/FUNCTION_HELPERS.sh disable=SC1091
   source $FILE_FUNCTION_HELPERS || exit # obtain some global functions and variables, if the file isn't found exit
 fi
+
+###### CHECKS BEFORE THE SCRIPT STARTS ######
+checkFiles
 
 # READ GITHUB USERNAME AND GITHUB PROJECT NAME
 NAME_AND_PROJECT_UNPARSED=$(git ls-remote --get-url)
@@ -71,7 +57,7 @@ fi
 
 ###### START OF THE SCRIPT ######
 echo -e "Thanks for using ${GREEN}Josee9988/project-template${NC}"
-echo -e "Read carefully all the documentation before you continue executing this script: \t${UPurple}https://github.com/Josee9988/project-template${NC}\n"
+echo -e "Read carefully all the documentation before you continue executing this script: ${UPurple}https://github.com/Josee9988/project-template${NC}\n"
 # prompt for the, mail and type of the project
 read -p "Enter your $(echo -e "$BBLUE""email""$NC"): " NEW_EMAIL
 read -p "Enter $(echo -e "$BBLUE""what your project is""$NC") (program/extension/API/web/CLI tool/backend/frontend/scrapper/automation tool/etc): " PROJECT_TYPE
