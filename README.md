@@ -11,7 +11,7 @@
     <img alt="GitHub pull requests" src="https://img.shields.io/github/issues-pr/Josee9988/project-template?color=0088ff&style=for-the-badge&logo=github" />
   </a>
   <a href="https://github.com/Josee9988/project-template/generate">
-    <img src="https://img.shields.io/badge/use%20this-template-blue?logo=github-sponsors&style=for-the-badge&color=red">
+    <img src="https://img.shields.io/badge/use%20this-template-blue?logo=github-sponsors&style=for-the-badge&color=green">
   </a>
 </p>
 
@@ -67,23 +67,23 @@ The script will replace Jose's username and email (the author) with yours from a
    1. A README template file with a default template to start documenting your project. (it includes personalized badges and text with your project details)
    1. A CHANGELOG template file based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
    1. An [issue_label_bot.yaml](/.github/issue_label_bot.yaml) file to use the issue adder Github bot. [Activate it or check its documentation](https://github.com/marketplace/issue-label-bot).
-   1. A [config.yml](/.github/config.yml) file to modify multiple bot's behaviour.
+   1. A [config.yml](/.github/config.yml) file to modify multiple bot's behaviours.
    1. A [settings.yml](/.github/settings.yml) file to use the popular settings Github bot. [Activate it or check its documentation](https://probot.github.io/apps/settings/).
    1. A [CONTRIBUTING](/.github/CONTRIBUTING.md) explaining how to contribute to the project. [Learn more with the Github guide](https://docs.github.com/en/github/building-a-strong-community/setting-guidelines-for-repository-contributors).
    1. A [SUPPORT](/.github/SUPPORT.md) explaining how to support the project. [Learn more with the Github guide](https://docs.github.com/en/github/building-a-strong-community/adding-support-resources-to-your-project).
    1. A [SECURITY](/.github/SECURITY.md) with a guide on how to post a security issue. [Learn more with the Github guide](https://docs.github.com/es/github/managing-security-vulnerabilities/adding-a-security-policy-to-your-repository).
-1. A [CODEOWNERS](/.github/CODEOWNERS) with the new user as the main owner. [Learn more with the Github guide](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/about-code-owners).
-1. A [CODE_OF_CONDUCT](/.github/CODE_OF_CONDUCT.md) with a basic code of conduct. [Learn more with the Github guide](https://docs.github.com/en/github/building-a-strong-community/adding-a-code-of-conduct-to-your-project).
-1. A [PULL_REQUEST_TEMPLATE](/.github/pull_request_template.md) with a template for your pull request that closes issues with keywords. [Learn more with the Github guide](https://docs.github.com/es/github/building-a-strong-community/creating-a-pull-request-template-for-your-repository).
-1. Multiple [issues templates](/.github/ISSUE_TEMPLATE). [Learn more with the Github guide](https://docs.github.com/en/github/building-a-strong-community/configuring-issue-templates-for-your-repository).
-      1. A [config.yml](/.github/ISSUE_TEMPLATE/config.yml) with the config and information about the issue templates.
-      1. A [Blank issue template](/.github/ISSUE_TEMPLATE) with the super basic stuff, all the issues should contain.
-      1. A [Bug issue template](/.github/ISSUE_TEMPLATE/1-bug-report.md).
-      1. A [Failing test issue template](/.github/ISSUE_TEMPLATE/2-failing-test.md).
-      1. A [Documentation issue template](/.github/ISSUE_TEMPLATE/3-docs-bug.md).
-      1. A [Feature request issue template](/.github/ISSUE_TEMPLATE/4-feature-request.md).
-      1. A [Security report issue template](/.github/ISSUE_TEMPLATE/5-security-report.md).
-      1. A [Question or support issue template](/.github/ISSUE_TEMPLATE/6-question-support.md).
+   1. A [CODEOWNERS](/.github/CODEOWNERS) with the new user as the main owner. [Learn more with the Github guide](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/about-code-owners).
+   1. A [CODE_OF_CONDUCT](/.github/CODE_OF_CONDUCT.md) with a basic code of conduct. [Learn more with the Github guide](https://docs.github.com/en/github/building-a-strong-community/adding-a-code-of-conduct-to-your-project).
+   1. A [PULL_REQUEST_TEMPLATE](/.github/pull_request_template.md) with a template for your pull request that closes issues with keywords. [Learn more with the Github guide](https://docs.github.com/es/github/building-a-strong-community/creating-a-pull-request-template-for-your-repository).
+   1. Multiple [issues templates](/.github/ISSUE_TEMPLATE). [Learn more with the Github guide](https://docs.github.com/en/github/building-a-strong-community/configuring-issue-templates-for-your-repository).
+        1. A [config.yml](/.github/ISSUE_TEMPLATE/config.yml) with the config and information about the issue templates.
+        1. A [Blank issue template](/.github/ISSUE_TEMPLATE) with the super basic stuff, all the issues should contain.
+        1. A [Bug issue template](/.github/ISSUE_TEMPLATE/1-bug-report.md).
+        1. A [Failing test issue template](/.github/ISSUE_TEMPLATE/2-failing-test.md).
+        1. A [Documentation issue template](/.github/ISSUE_TEMPLATE/3-docs-bug.md).
+        1. A [Feature request issue template](/.github/ISSUE_TEMPLATE/4-feature-request.md).
+        1. A [Security report issue template](/.github/ISSUE_TEMPLATE/5-security-report.md).
+        1. A [Question or support issue template](/.github/ISSUE_TEMPLATE/6-question-support.md).
 
 ---
 
@@ -209,13 +209,24 @@ We also recommend installing all the [used bots](https://github.com/Josee9988/pr
 
 ---
 
+## 🍰 **Supporters and donators**
+
+We are currently looking for new donators to help and maintain this project! ❤️
+
+By donating, you will help the development of this project and, *you will be featured in this project's README.md* so everyone can see your kindness and visit your content ⭐.
+
+<a href="https://github.com/sponsors/Josee9988">
+  <img src="https://img.shields.io/badge/Sponsor-Josee9988/project template-blue?logo=github-sponsors&style=for-the-badge&color=red">
+</a>
+
+---
+
 ## 🎉 Was the template helpful? Help us raise these numbers up
 
 [![Github followers](https://img.shields.io/github/followers/Josee9988.svg?style=social)](https://github.com/Josee9988)
 [![Github stars](https://img.shields.io/github/stars/Josee9988/project-template.svg?style=social)](https://github.com/Josee9988/project-template/stargazers)
 [![Github watchers](https://img.shields.io/github/watchers/Josee9988/project-template.svg?style=social)](https://github.com/Josee9988/project-template/watchers)
 [![Github forks](https://img.shields.io/github/forks/Josee9988/project-template.svg?style=social)](https://github.com/Josee9988/project-template/network/members)
-[![Sponsor](https://img.shields.io/static/v1?label=Sponsor&message=%E2%9D%A4&logo=github-sponsors&color=red&style=social)](https://github.com/sponsors/Josee9988)
 
 Enjoy! 😃
 

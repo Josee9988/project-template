@@ -7,6 +7,18 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/) 
 
 ---
 
+## [Unreleased]
+
+### Added
+
+* Sponsor section in the project's main readme.md.
+* Improved and added documentation in the scripts.
+
+### Fixed
+
+* Readme "What does it include" fixed list of files.
+* Sponsor link in the generated README.md file.
+
 ## [**1.4.4**] - 2021-04-22
 
 ### Added

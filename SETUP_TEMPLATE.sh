@@ -37,11 +37,8 @@ else
   source $FILE_FUNCTION_HELPERS || exit # obtain some global functions and variables, if the file isn't found exit
 fi
 
-# check if the help argument has been specified
-helpCommand "$1"
-
-###### CHECKS BEFORE THE SCRIPT STARTS ######
-checkFiles
+helpCommand "$1" # check if the help argument has been specified; if so it will exit
+checkFiles       # check if the main files exists before starting the project
 
 # READ GITHUB USERNAME AND GITHUB PROJECT NAME
 NAME_AND_PROJECT_UNPARSED=$(git ls-remote --get-url)
@@ -74,32 +71,17 @@ y | Y)
   find .github/ -type f -name "*" -print0 | xargs -0 sed -i "s/jgracia9988@gmail.com/${NEW_EMAIL}/g"
   find .gitignore -type f -name "*" -print0 | xargs -0 sed -i "s/Josee9988\/project-template/${NEW_USERNAME}\/${PROJECT_NAME}/g"
 
-  # remove the license
-  rm LICENSE
+  rm LICENSE                                                  # remove the license
+  rm -r bin/                                                  # remove the bin folder
+  writeREADME                                                 # write the new README.md
+  writeCHANGELOG                                              # write the basic structure of the CHANGELOG.md
+  echo -e "# add your own funding links" >.github/FUNDING.yml # remove author's custom funding links
 
-  # remove the bin folder
-  rm -r bin/
-
-  # write the new README.md
-  writeREADME
-
-  # write the basic structure of the CHANGELOG.md
-  writeCHANGELOG
-
-  # remove author's custom funding links
-  echo -e "# add your own funding links" >.github/FUNDING.yml
-
-  # commit the new files
-  git add CHANGELOG.md README.md .gitignore .github SETUP_TEMPLATE.sh LICENSE bin
-
-  git -c color.status=always status | less -REX # show git status with colours
-
+  git add CHANGELOG.md README.md .gitignore .github SETUP_TEMPLATE.sh LICENSE bin # commit the new files
+  git -c color.status=always status | less -REX                                   # show git status with colours
   echo -e "Commiting the changes for you :)\n"
-
-  git commit -m "Set up 'Josee9988/project-template' template: Personalized files by executing the SETUP_TEMPLATE.sh script.🚀"
-
+  git commit -m "Set up '@Josee9988/project-template' template: Personalized files by executing the SETUP_TEMPLATE.sh script.🚀"
   echo -e "\nRemember to review every file and customize it as you like.\nYou are ready to start your brand new awesome project🚀🚀."
-
   # self remove this script
   rm -- "$0"
   ;;
