@@ -15,7 +15,7 @@
 # NOTES:         This script will auto remove itself, and in case of wanting to run it again, the user must download
 #                it again or do a 'git stash' and revert the changes.
 # BASH_VERSION:  5.0.17(1)-release
-# LICENSE:       see in ../LICENSE (project root) or https://github.com/Josee9988/project-template/blob/master/LICENSE
+# LICENSE:       see in LICENSE (project root) or https://github.com/Josee9988/project-template/blob/master/LICENSE
 # GITHUB:        https://github.com/Josee9988/
 # REPOSITORY:    https://github.com/Josee9988/project-template
 # ISSUES:        https://github.com/Josee9988/project-template/issues
@@ -38,7 +38,7 @@ else
 fi
 
 helpCommand "$1" # check if the help argument has been specified; if so it will exit
-checkFiles       # check if the main files exists before starting the project
+checkFiles       # check if the main files exist before starting the project
 
 # READ GITHUB USERNAME AND GITHUB PROJECT NAME
 NAME_AND_PROJECT_UNPARSED=$(git ls-remote --get-url)
@@ -79,14 +79,14 @@ y | Y)
 
   git add CHANGELOG.md README.md .gitignore .github SETUP_TEMPLATE.sh LICENSE bin # commit the new files
   git -c color.status=always status | less -REX                                   # show git status with colours
-  echo -e "Commiting the changes for you :)\n"
+  echo -e "Committing the changes for you :)\n"
   git commit -m "Set up '@Josee9988/project-template' template: Personalized files by executing the SETUP_TEMPLATE.sh script.🚀"
   echo -e "\nRemember to review every file and customize it as you like.\nYou are ready to start your brand new awesome project🚀🚀."
   # self remove this script
   rm -- "$0"
   ;;
 n | N)
-  echo -e "\nIf your username or project name are NOT right (the autoselection wasn't successful), execute the script and give as a first argument your username and as a second argument your project name."
+  echo -e "\nIf your username or project name are NOT right (the auto selection wasn't successful), execute the script and give as a first argument your username and as a second argument your project name."
   echo "As an example:"
   echo -e "${UPurple}$0 MyCorrectUsername MyCorrectProjectName${NC}"
   echo "Being the profile as: $0 [Username] [Project-Name]"

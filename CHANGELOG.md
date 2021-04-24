@@ -7,17 +7,18 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/) 
 
 ---
 
-## [Unreleased]
+## [**1.4.5**] - 2021-04-24
 
 ### Added
 
-* Sponsor section in the project's main readme.md.
+* Sponsor section in the project's main readme.md file.
 * Improved and added documentation in the scripts.
 
 ### Fixed
 
 * Readme "What does it include" fixed list of files.
 * Sponsor link in the generated README.md file.
+* Some typos
 
 ## [**1.4.4**] - 2021-04-22
 
@@ -30,7 +31,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/) 
 
 ### Added
 
-* Support for github todo app.
+* Support for Github todo app.
 
 ## [**1.4.2**] - 2021-04-20
 
@@ -41,7 +42,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/) 
 
 ### Fixed
 
-* Issue templates now auto asigns the new labels.
+* Issue templates now auto assigns the new labels.
 
 ## [**1.4.1**] - 2021-04-20
 
