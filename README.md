@@ -48,7 +48,7 @@ for more information or guidance, follow the [Github guide](https://docs.github.
     chmod u+x SETUP_TEMPLATE.sh && ./SETUP_TEMPLATE.sh # additional parameters [Username] [Project-Name]
     ```
 
-    Additionally, watch *[this video](https://asciinema.org/a/404568)* to see **how to execute the script** or use `bash SETUP_TEMPLATE.sh --help` to obtain some extra information..
+    Additionally, watch *[this video](https://asciinema.org/a/404568)* to see **how to execute the script** or use `bash SETUP_TEMPLATE.sh --help` to obtain some extra information.
   
     If the automatic detection of the username and project name are NOT right, please post an issue, and you can **manually correct** them like: `bash SETUP_TEMPLATE.sh RightUsername RightProjectName` being `$1` the new username and `$2` the new project name.
 

@@ -1,5 +1,21 @@
 #!/bin/bash
 
+#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#
+# PURPOSE:       Secondary script that is called by the main SETUP_TEMPLATE.sh file by
+#                obtaining some functions to better modularize the code.
+# TITLE:         FUNCTION_HELPERS
+# AUTHOR:        Jose Gracia
+# VERSION:       See in CHANGELOG.md
+# NOTES:         This script will auto remove itself, and in case of wanting to run it again, the user must download
+#                it again or do a 'git stash' and revert the changes.
+# BASH_VERSION:  5.0.17(1)-release
+# LICENSE:       see in ../LICENSE (project root) or https://github.com/Josee9988/project-template/blob/master/LICENSE
+# GITHUB:        https://github.com/Josee9988/
+# REPOSITORY:    https://github.com/Josee9988/project-template
+# ISSUES:        https://github.com/Josee9988/project-template/issues
+# MAIL:          jgracia9988@gmail.com
+#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#
+
 # SCRIPT WITH EXPORTED FUNCTIONS AND VARIABLES USED IN THE MAIN SETUP_TEMPLATE
 RED='\033[1;31m'
 NC='\033[0m' # No Color
@@ -23,7 +39,7 @@ checkFiles() {
 }
 
 displayErrorInstructions() {
-  echo -e "${RED}There are files missing. Have you modified the repository before executing this command?${NC}"
+  echo -e "${RED}There are files missing! Have you modified the repository before executing this command?${NC}"
   echo -e "\nYou should try to 'git stash' your changes and execute this script from the project root again, or clone again the repository (the template) without any changes.\n"
   echo -e "For more information visit: ${UPurple}https://github.com/Josee9988/project-template${NC}"
   echo -e "If you think this may be an issue please post it at: ${UPurple}https://github.com/Josee9988/project-template/issues${NC}"
