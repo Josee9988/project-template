@@ -72,7 +72,7 @@ read -p "Is this data correct: username \"$(echo -e "$GREEN""$NEW_USERNAME""$NC"
 case "$choice" in
 y | Y)
   center "Setting everything up for you ;)"
-  exit 0
+
   # replace the username and email
   find .github/ -type f -name "*" -print0 | xargs -0 sed -i "s/Josee9988/${NEW_USERNAME}/g"
   find .github/ -type f -name "*" -print0 | xargs -0 sed -i "s/jgracia9988@gmail.com/${NEW_EMAIL}/g"
