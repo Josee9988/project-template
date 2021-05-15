@@ -55,11 +55,16 @@ else
   PROJECT_NAME=$2
 fi
 
+if [ -z "$3" ]; then # if the user mail has been manually specified
+  NEW_EMAIL=$(git config user.email)
+else
+  NEW_EMAIL=$3
+fi
+
 ###### START OF THE SCRIPT ######
 echo -e "Thanks for using ${GREEN}Josee9988/project-template${NC}"
 echo -e "Read carefully all the documentation before you continue executing this script: ${UPurple}https://github.com/Josee9988/project-template${NC}\n"
 # prompt for the, mail and type of the project
-read -p "Enter your $(echo -e "$BBLUE""email""$NC"): " NEW_EMAIL
 read -p "Enter $(echo -e "$BBLUE""what your project is""$NC") (program/extension/API/web/CLI tool/backend/frontend/scrapper/automation tool/etc): " PROJECT_TYPE
 
 # confirm that the data is correct
