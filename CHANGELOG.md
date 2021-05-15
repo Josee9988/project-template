@@ -7,6 +7,12 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/) 
 
 ---
 
+## [**1.5.0**] - 2021-05-15
+
+### Added
+
+* Auto-detection of user email.
+
 ## [**1.4.5**] - 2021-04-24
 
 ### Added

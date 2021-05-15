@@ -22,6 +22,13 @@ NC='\033[0m' # No Color
 UPurple='\033[4;35m'
 BBLUE='\033[1;34m'
 
+# Function that centers a text in the terminal
+center() {
+  term_width="$(tput cols)"
+  padding="$(printf '%0.1s' ={1..500})"
+  echo -e "\n\n${BBLUE}$(printf '%*.*s %s %*.*s\n' 0 "$(((term_width - 2 - ${#1}) / 2))" "$padding" "$1" 0 "$(((term_width - 1 - ${#1}) / 2))" "$padding")${NC}\n"
+}
+
 checkFiles() {
   ### Check if the .github directory does exist ###
   if [ ! -d ".github/" ] || [ ! -d ".github/ISSUE_TEMPLATE" ]; then
@@ -47,12 +54,17 @@ displayErrorInstructions() {
 
 helpCommand() {
   if [[ "$1" == *"--help" ]] || [[ "$1" == *"-h" ]]; then # if the user specified help command
-    echo -e "Script usage: ${BBLUE}$0 [Username] [Project-Name]${NC}\n"
-    echo "Arguments of username and project-name are automatically gathered from your git repository and git config, so they are optional in case they are not detected correctly."
-    echo -e "Make sure you have ${BBLUE}read the documentation before executing${NC} this script: ${UPurple}https://github.com/Josee9988/project-template${NC}"
-    echo -e "If you have any questions or if any issue is found, please make sure to report it at: ${UPurple}https://github.com/Josee9988/project-template/issues${NC}"
+    displayHelpTexts
     exit 0
   fi
+}
+
+displayHelpTexts() {
+  center "User help"
+  echo -e "Script usage: ${BBLUE}$0 [Username] [Project-Name] [Email]${NC} (The project name should not contain spaces)${NC}\n"
+  echo "Arguments of username, project-name and email are automatically gathered from your git repository and git config, so they are optional in case they are not detected correctly."
+  echo -e "Make sure you have ${BBLUE}read the documentation before executing${NC} this script: ${UPurple}https://github.com/Josee9988/project-template${NC}"
+  echo -e "If you have any questions or if any issue is found, please make sure to report it at: ${UPurple}https://github.com/Josee9988/project-template/issues${NC}"
 }
 
 writeREADME() {

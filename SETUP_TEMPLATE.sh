@@ -55,17 +55,24 @@ else
   PROJECT_NAME=$2
 fi
 
+if [ -z "$3" ]; then # if the user mail has been manually specified
+  NEW_EMAIL=$(git config user.email)
+else
+  NEW_EMAIL=$3
+fi
+
 ###### START OF THE SCRIPT ######
 echo -e "Thanks for using ${GREEN}Josee9988/project-template${NC}"
 echo -e "Read carefully all the documentation before you continue executing this script: ${UPurple}https://github.com/Josee9988/project-template${NC}\n"
 # prompt for the, mail and type of the project
-read -p "Enter your $(echo -e "$BBLUE""email""$NC"): " NEW_EMAIL
 read -p "Enter $(echo -e "$BBLUE""what your project is""$NC") (program/extension/API/web/CLI tool/backend/frontend/scrapper/automation tool/etc): " PROJECT_TYPE
 
 # confirm that the data is correct
 read -p "Is this data correct: username \"$(echo -e "$GREEN""$NEW_USERNAME""$NC")\", email: \"$(echo -e "$GREEN""$NEW_EMAIL""$NC")\", project name: \"$(echo -e "$GREEN""$PROJECT_NAME""$NC")\", of type: \"$(echo -e "$GREEN""$PROJECT_TYPE""$NC")\" (y/n)? " choice
 case "$choice" in
 y | Y)
+  center "Setting everything up for you ;)"
+
   # replace the username and email
   find .github/ -type f -name "*" -print0 | xargs -0 sed -i "s/Josee9988/${NEW_USERNAME}/g"
   find .github/ -type f -name "*" -print0 | xargs -0 sed -i "s/jgracia9988@gmail.com/${NEW_EMAIL}/g"
@@ -86,10 +93,8 @@ y | Y)
   rm -- "$0"
   ;;
 n | N)
-  echo -e "\nIf your username or project name are NOT right (the auto selection wasn't successful), execute the script and give as a first argument your username and as a second argument your project name."
-  echo "As an example:"
-  echo -e "${UPurple}$0 MyCorrectUsername MyCorrectProjectName${NC}"
-  echo "Being the profile as: $0 [Username] [Project-Name]"
+  echo -e "\nIf your username, project name or email were NOT right (the auto selection wasn't successful), execute the script and give as a first argument your username, as a second argument your project name and as a third you email.\n"
+  displayHelpTexts
   ;;
 *) echo -e "${RED}Invalid option${NC}" ;;
 esac
