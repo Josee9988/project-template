@@ -1,7 +1,7 @@
 #!/bin/bash
 
 #~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#
-# PURPOSE:       Secondary script that is called by the main SETUP_TEMPLATE.sh file by
+# PURPOSE:       Secondary (helper) script that is called by the main SETUP_TEMPLATE.sh file by
 #                obtaining some functions to better modularize the code.
 # TITLE:         FUNCTION_HELPERS
 # AUTHOR:        Jose Gracia
