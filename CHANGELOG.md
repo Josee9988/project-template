@@ -7,6 +7,16 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/) 
 
 ---
 
+## [**1.6.0**] - 2021-05-21
+
+### Added
+
+* Divided the feature request into feature and enhancement request, each one with its respective labels.
+
+### Changed
+
+* Position of disclaimers and comments in the issue templates are moved to the bottom (but the security report) as some users directly erased everything to not read the text.
+
 ## [**1.5.0**] - 2021-05-15
 
 ### Added

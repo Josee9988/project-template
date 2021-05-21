@@ -20,7 +20,7 @@
 ## 🤔 **What is this template all about?**
 
 * This template can be used as a base layer for any of your future repositories/projects.
-* Make your project easy to maintain with **7 issue templates**.
+* Make your project easy to maintain with **8 issue templates**.
 * Quickstart your documentation with personalized **readme badges** and a cool readme structure.
 * Manage your issues with **19 issue labels** created just for you!
 * Make your _community healthier_ with all the guides like code of conduct, contributing, support, security...
@@ -103,12 +103,13 @@ Files that will get removed after the execution of `SETUP_TEMPLATE.sh` are not s
 │   ├── config.yml
 │   ├── ISSUE_TEMPLATE
 │   │   ├── 1-bug-report.md
-│   │   ├── 2-failing-test.md
-│   │   ├── 3-docs-bug.md
-│   │   ├── 4-feature-request.md
-│   │   ├── 5-security-report.md
-│   │   ├── 6-question-support.md
-│   │   └── config.yml
+│   │   ├── 2-failing-test.md
+│   │   ├── 3-docs-bug.md
+│   │   ├── 4-feature-request.md
+│   │   ├── 5-enhancement-request.md
+│   │   ├── 6-security-report.md
+│   │   ├── 7-question-support.md
+│   │   └── config.yml
 │   ├── ISSUE_TEMPLATE.md
 │   ├── pull_request_template.md
 │   ├── SECURITY.md
@@ -117,7 +118,7 @@ Files that will get removed after the execution of `SETUP_TEMPLATE.sh` are not s
 ├── .gitignore
 └── README.md
 
-2 directories, 20 files
+2 directories, 21 files
 ```
 
 ---
