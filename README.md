@@ -152,7 +152,7 @@ A couple of screenshots to delight you before you use this template.
 ### 🔺 All the issue templates
 
 <p align="center">
-  <img width="70%" height="70%" src="https://i.imgur.com/BWOdDCb.png" alt="All the issue templates.">
+  <img width="70%" height="70%" src="https://i.imgur.com/SDJixBz.png" alt="All the issue templates.">
 </p>
 
 ### 🔻 An issue template opened

@@ -16,6 +16,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/) 
 ### Changed
 
 * Position of disclaimers and comments in the issue templates are moved to the bottom (but the security report) as some users directly erased everything to not read the text.
+* Image of the issue templates in the readme.md file.
 
 ## [**1.5.0**] - 2021-05-15
 
