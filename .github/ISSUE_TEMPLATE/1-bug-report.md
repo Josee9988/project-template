@@ -7,15 +7,6 @@ assignees: Josee9988
 
 ---
 
-<!--📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛
-
-Oh hi there! 😄
-
-To expedite issue processing please search open and closed issues before submitting a new one.
-Please read our Rules of Conduct at this repository's `.github/CODE_OF_CONDUCT.md`
-
-📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛-->
-
 # **🐞 Bug Report**
 
 ## **Describe the bug**
@@ -77,3 +68,12 @@ and remove all the bulleted list elements that are not relevant for this issue. 
 <!-- Add any other context or additional information about the problem here.-->
 
 *
+
+<!--📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛
+
+Oh hi there! 😄
+
+To expedite issue processing please search open and closed issues before submitting a new one.
+Please read our Rules of Conduct at this repository's `.github/CODE_OF_CONDUCT.md`
+
+📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛-->
