@@ -6,7 +6,6 @@ labels: "Documentation"
 assignees: Josee9988
 
 ---
-
 # **📚 Documentation Issue Report**
 
 ## **Describe the bug**

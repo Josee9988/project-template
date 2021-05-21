@@ -9,7 +9,7 @@ assignees: Josee9988
 
 # **💉 Failing Test**
 
-## **Which jobs/test(s) are failing**:
+## **Which jobs/test(s) are failing**
 <!-- The CI jobs or tests that are failing -->
 
 *
