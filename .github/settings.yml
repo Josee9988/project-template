@@ -62,6 +62,10 @@ labels:
       color: 9309ab
       description: Request for information.
 
+    - name: 'Type: Test'
+      color: ce54e3
+      description: A problem or enhancement related to a test.
+
     - name: 'Status: Awaiting Review'
       color: 24d15d
       description: Ready for review.

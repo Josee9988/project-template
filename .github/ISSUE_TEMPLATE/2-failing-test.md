@@ -1,8 +1,8 @@
 ---
 name: "💉 Failing Test"
 about: "Report failing tests or CI jobs."
-title: ""
-labels: "Type: Bug"
+title: "[Test] "
+labels: "Type: Test"
 assignees: Josee9988
 
 ---
