@@ -7,6 +7,14 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/) 
 
 ---
 
+## [**1.7.0**] - 2021-06-01
+
+### Added
+
+* Type: Test issue label.
+* Failing test issue template adds the new Type Test issue label.
+* Updated README.md with the new label.
+
 ## [**1.6.0**] - 2021-05-21
 
 ### Added

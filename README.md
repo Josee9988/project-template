@@ -22,7 +22,7 @@
 * This template can be used as a base layer for any of your future repositories/projects.
 * Make your project easy to maintain with **8 issue templates**.
 * Quickstart your documentation with personalized **readme badges** and a cool readme structure.
-* Manage your issues with **19 issue labels** created just for you!
+* Manage your issues with **20 issue labels** created just for you!
 * Make your _community healthier_ with all the guides like code of conduct, contributing, support, security...
 * Learn more with the [official Github guide on creating repositories from a template](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/creating-a-repository-from-a-template).
 * To start using it; "**[click use this template](https://github.com/Josee9988/project-template/generate)**", create your new repository,
@@ -173,7 +173,7 @@ Badges and texts will be replaced with your project details!
 
 ### 🔖 The labels for your issues
 
-If the bot [probot-settings](https://probot.github.io/apps/settings/) is not installed you will not have these beautiful labels!
+If the bot [probot-settings](https://probot.github.io/apps/settings/) is not installed you will not have these beautiful labels! (there are actually 1 more issue label than in the screenshot!)
 
 <p align="center">
   <img width="70%" height="70%" src="https://i.imgur.com/dS91k6R.png" alt="LABELS">
