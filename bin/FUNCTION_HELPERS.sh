@@ -70,7 +70,8 @@ displayHelpTexts() {
 writeREADME() {
   PROJECT_NAME_PARSED=${PROJECT_NAME/-/ }
   bash -c "NEW_USERNAME='NEW_USERNAME' PROJECT_NAME='PROJECT_NAME' PROJECT_TYPE='PROJECT_TYPE'; cat << EOF > README.md
-<!-- Write your README.md file. Build something amazing! This README.md template can guide you to build your project documentation, but feel free to modify it as you wish -->
+<!-- markdownlint-disable MD032 MD033-->
+<!-- Write your README.md file. Build something amazing! This README.md template can guide you to build your project documentation, but feel free to modify it as you wish 🥰 -->
 # 🔥 **$NEW_USERNAME/$PROJECT_NAME**
 
 <div align=\"center\">
@@ -104,7 +105,7 @@ writeREADME() {
 
 ## 🌲 **Project tree**
 
-* <!-- ... [SHOW YOUR PROJECT TREE HERE IF USEFUL] -->
+<!-- ... [SHOW YOUR PROJECT TREE HERE IF USEFUL] -->
 
 ---
 
@@ -138,7 +139,7 @@ $PROJECT_NAME was generated from *[Josee9988/project-template](https://github.co
 
 ---
 
-🕵️ Extra recommendations
+## 🕵️ Extra recommendations
 
 * <!-- If you recommend installing anything special, or if you recommend using X thing for the good use of your project...-->
 
