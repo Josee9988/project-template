@@ -7,6 +7,16 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/) 
 
 ---
 
+## [**1.7.2**] - 2021-07-08
+
+### Added
+
+* Multiple new .gitignore lines and improved its comment structure.
+
+### Fixed
+
+* Minnor typo in the generated README.md
+
 ## [**1.7.1**] - 2021-07-01
 
 ### Added
