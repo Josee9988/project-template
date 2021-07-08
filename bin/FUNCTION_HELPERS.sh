@@ -31,14 +31,14 @@ center() {
 
 checkFiles() {
   ### Check if the .github directory does exist ###
-  if [ ! -d ".github/" ] || [ ! -d ".github/ISSUE_TEMPLATE" ]; then
+  if [ ! -d ".github/" ] && [ ! -d ".github/ISSUE_TEMPLATE" ]; then
     echo -e "${RED}Directory .github/ DOES NOT EXIST WITH ALL THE FILES NEEDED.${NC}"
     displayErrorInstructions
     exit 1 # exit with error code 1
   fi
 
   ### Checks if the root files exist and some extra important files ###
-  if [ ! -f "CHANGELOG.md" ] || [ ! -f "README.md" ] || [ ! -f ".gitignore" ] || [ ! -f "LICENSE" ] || [ ! -f ".github/settings.yml" ] || [ ! -f ".github/pull_request_template.md" ] || [ ! -f ".github/ISSUE_TEMPLATE/1-bug-report.md" ] || [ ! -f ".github/ISSUE_TEMPLATE/config.yml" ]; then
+  if [ ! -f "CHANGELOG.md" ] && [ ! -f "README.md" ] && [ ! -f ".gitignore" ] && [ ! -f "LICENSE" ] && [ ! -f ".github/settings.yml" ] && [ ! -f ".github/pull_request_template.md" ] && [ ! -f ".github/ISSUE_TEMPLATE/1-bug-report.md" ] && [ ! -f ".github/ISSUE_TEMPLATE/config.yml" ]; then
     echo -e "${RED}The script couldn't find one or many of the template main files${NC}."
     displayErrorInstructions
     exit 1 # exit with error code 1
