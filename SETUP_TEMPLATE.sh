@@ -28,6 +28,7 @@ UPurple='\033[4;35m'
 BBLUE='\033[1;34m'
 GREEN='\033[1;32m'
 FILE_FUNCTION_HELPERS=bin/FUNCTION_HELPERS.sh
+OMIT_STR="--omit-commit-and-confirmation"
 
 if [ ! -f "$FILE_FUNCTION_HELPERS" ]; then # check if the function helpers file is not found
   echo -e "${RED}Can not find ${FILE_FUNCTION_HELPERS}"
@@ -61,14 +62,19 @@ else
   NEW_EMAIL=$3
 fi
 
-###### START OF THE SCRIPT ######
 echo -e "Thanks for using ${GREEN}Josee9988/project-template${NC}"
 echo -e "Read carefully all the documentation before you continue executing this script: ${UPurple}https://github.com/Josee9988/project-template${NC}\n"
-# prompt for the, mail and type of the project
-read -p "Enter $(echo -e "$BBLUE""what your project is""$NC") (program/extension/API/web/CLI tool/backend/frontend/scrapper/automation tool/etc): " PROJECT_TYPE
+
+if [ ! $4 = "$OMIT_STR" ]; then # if the project's type has been manually specified
+  read -p "Enter $(echo -e "$BBLUE""what your project is""$NC") (program/extension/API/web/CLI tool/backend/frontend/scrapper/automation tool/etc): " PROJECT_TYPE
+  read -p "Is this data correct: username \"$(echo -e "$GREEN""$NEW_USERNAME""$NC")\", email: \"$(echo -e "$GREEN""$NEW_EMAIL""$NC")\", project name: \"$(echo -e "$GREEN""$PROJECT_NAME""$NC")\", of type: \"$(echo -e "$GREEN""$PROJECT_TYPE""$NC")\" (y/n)? " choice
+else
+  choice="y"
+fi
+
+###### START OF THE SCRIPT ######
 
 # confirm that the data is correct
-read -p "Is this data correct: username \"$(echo -e "$GREEN""$NEW_USERNAME""$NC")\", email: \"$(echo -e "$GREEN""$NEW_EMAIL""$NC")\", project name: \"$(echo -e "$GREEN""$PROJECT_NAME""$NC")\", of type: \"$(echo -e "$GREEN""$PROJECT_TYPE""$NC")\" (y/n)? " choice
 case "$choice" in
 y | Y)
   center "Setting everything up for you ;)"
@@ -85,11 +91,14 @@ y | Y)
   writeCHANGELOG                                              # write the basic structure of the CHANGELOG.md
   echo -e "# add your own funding links" >.github/FUNDING.yml # remove author's custom funding links
 
-  git add CHANGELOG.md README.md .gitignore .github SETUP_TEMPLATE.sh LICENSE bin # commit the new files
-  git -c color.status=always status | less -REX                                   # show git status with colours
-  echo -e "Committing the changes for you :)\n"
-  git commit -m "Set up '@Josee9988/project-template' template: Personalized files by executing the SETUP_TEMPLATE.sh script.🚀"
-  echo -e "\nRemember to review every file and customize it as you like.\nYou are ready to start your brand new awesome project🚀🚀."
+  if [ ! "$4" = "$OMIT_STR" ]; then                                                 # if the ignore option for tests has been specified
+    git add CHANGELOG.md README.md .gitignore .github SETUP_TEMPLATE.sh LICENSE bin # commit the new files
+    git -c color.status=always status | less -REX                                   # show git status with colours
+    echo -e "Committing the changes for you :)\n"
+    git commit -m "Set up '@Josee9988/project-template' template: Personalized files by executing the SETUP_TEMPLATE.sh script.🚀"
+    echo -e "\nRemember to review every file and customize it as you like.\nYou are ready to start your brand new awesome project🚀🚀." else
+  fi
+
   # self remove this script
   rm -- "$0"
   ;;
