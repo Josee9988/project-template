@@ -24,11 +24,13 @@ oneTimeTearDown() {
 
 # TESTS
 suite() {
-
     suite_addTest testDotGithubFolder
     suite_addTest testDotGithubISSUE_TEMPLATE
     suite_addTest testDotGithubISSUE_TEMPLATEFiles
     suite_addTest testDotGithubFiles
+    suite_addTest testTestRemovedFiles
+    suite_addTest testGlobalFiles
+    suite_addTest testRemovedFiles
 }
 
 testDotGithubFolder() {
@@ -62,6 +64,30 @@ testDotGithubFiles() {
         filesFound=1
     fi
     assertEquals 1 $filesFound
+}
+
+testTestRemovedFiles() {
+    filesFound=0
+    if [ -e "tests/" ] && [ -e "tests/shunit2" ] && [ -e "tests/TESTS_RUNNER.sh" ]; then
+        filesFound=1
+    fi
+    assertNotEquals 1 $filesFound
+}
+
+testGlobalFiles() {
+    filesFound=0
+    if [ -e ".gitignore" ] && [ -e "CHANGELOG.md" ] && [ -e "README.md" ]; then
+        filesFound=1
+    fi
+    assertEquals 1 $filesFound
+}
+
+testRemovedFiles() {
+    filesFound=0
+    if [ -e "LICENSE" ] && [ -e "bin" ] && [ -e "bin/FUNCTION_HELPERS.sh" ]; then
+        filesFound=1
+    fi
+    assertNotEquals 1 $filesFound
 }
 
 # Load and run shUnit2.

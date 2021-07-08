@@ -8,7 +8,7 @@ declare -a files=("tests/project_scaffolding_test.sh" "tests/custom_data_test.sh
 center() {
     term_width="$(tput cols)"
     padding="$(printf '%0.1s' +{1..500})"
-    echo -e "\n\n${LGREEN}$(printf '%*.*s %s %*.*s\n' 0 "$(((term_width - 2 - ${#1}) / 2))" "$padding" "$1" 0 "$(((term_width - 1 - ${#1}) / 2))" "$padding")${NC}\n"
+    echo -e "\n${LGREEN}$(printf '%*.*s %s %*.*s\n' 0 "$(((term_width - 2 - ${#1}) / 2))" "$padding" "$1" 0 "$(((term_width - 1 - ${#1}) / 2))" "$padding")${NC}"
 }
 
 for file in "${files[@]}"; do
