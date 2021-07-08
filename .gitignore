@@ -1,4 +1,4 @@
-###> a/b ###
+###> Josee9988/project-template ###
 
 # Folders
 .vscode/
@@ -13,4 +13,4 @@ ignore.*
 .env.test
 *.pem
 
-###< a/b ###
+###< Josee9988/project-template ###

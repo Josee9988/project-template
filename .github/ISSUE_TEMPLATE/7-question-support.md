@@ -3,7 +3,7 @@ name: "❓ Question or Support Request"
 about: "Questions and requests for support."
 title: ""
 labels: "Type: Question"
-assignees: a
+assignees: Josee9988
 
 ---
 

@@ -3,7 +3,7 @@ name: "🚀➕ Enhancement Request"
 about: "Suggest an enhancement for this project. Improve an existing feature"
 title: ""
 labels: "Type: Enhancement"
-assignees: a
+assignees: Josee9988
 
 ---
 
