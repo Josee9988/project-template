@@ -61,14 +61,24 @@ else
   NEW_EMAIL=$3
 fi
 
-###### START OF THE SCRIPT ######
 echo -e "Thanks for using ${GREEN}Josee9988/project-template${NC}"
 echo -e "Read carefully all the documentation before you continue executing this script: ${UPurple}https://github.com/Josee9988/project-template${NC}\n"
-# prompt for the, mail and type of the project
-read -p "Enter $(echo -e "$BBLUE""what your project is""$NC") (program/extension/API/web/CLI tool/backend/frontend/scrapper/automation tool/etc): " PROJECT_TYPE
+
+if [ -z "$4" ]; then # if the project's type has been manually specified
+  read -p "Enter $(echo -e "$BBLUE""what your project is""$NC") (program/extension/API/web/CLI tool/backend/frontend/scrapper/automation tool/etc): " PROJECT_TYPE
+else
+  PROJECT_TYPE=$3
+fi
+
+if [ -z "$4" ]; then # if the ignore option for tests has been specified
+  read -p "Is this data correct: username \"$(echo -e "$GREEN""$NEW_USERNAME""$NC")\", email: \"$(echo -e "$GREEN""$NEW_EMAIL""$NC")\", project name: \"$(echo -e "$GREEN""$PROJECT_NAME""$NC")\", of type: \"$(echo -e "$GREEN""$PROJECT_TYPE""$NC")\" (y/n)? " choice
+else
+  choice="y"
+fi
+
+###### START OF THE SCRIPT ######
 
 # confirm that the data is correct
-read -p "Is this data correct: username \"$(echo -e "$GREEN""$NEW_USERNAME""$NC")\", email: \"$(echo -e "$GREEN""$NEW_EMAIL""$NC")\", project name: \"$(echo -e "$GREEN""$PROJECT_NAME""$NC")\", of type: \"$(echo -e "$GREEN""$PROJECT_TYPE""$NC")\" (y/n)? " choice
 case "$choice" in
 y | Y)
   center "Setting everything up for you ;)"

@@ -2,7 +2,7 @@
 
 # Comment to be posted to on first time issues
 newIssueWelcomeComment: >
-    Thanks for opening your first issue in Josee9988/project-template! Be sure to follow the issue template and provide every bit of information to help the developers!
+    Thanks for opening your first issue in a/project-template! Be sure to follow the issue template and provide every bit of information to help the developers!
 
 # Configuration for new-pr-welcome - https://github.com/behaviorbot/new-pr-welcome
 
