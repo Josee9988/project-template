@@ -1,5 +1,5 @@
 #! /bin/bash
-# file: examples/arguments_test.sh
+# file: examples/custom_data_test.sh
 
 TESTS_TRASH_DIR="tests/.ignore.tests_trash"
 USERNAME="FAKE_USERNAME_TESTS"
@@ -7,25 +7,28 @@ NAME="FAKE_NAME_TESTS"
 MAIL="FAKE_EMAIL_TESTS"
 OMIT_STR="--omit-commit-and-confirmation"
 
-cp -r * $TESTS_TRASH_DIR --copy-content 2>/dev/null || :
-cp -r .github/ $TESTS_TRASH_DIR --copy-contents
-cp -r bin/ $TESTS_TRASH_DIR --copy-contents
-cp .gitignore $TESTS_TRASH_DIR --copy-contents
-rm -r $TESTS_TRASH_DIR/tests/ 2>/dev/null || :
-rm -r $TESTS_TRASH_DIR/.git/ 2>/dev/null || :
+oneTimeSetUp() {
+    cp -r * $TESTS_TRASH_DIR --copy-content 2>/dev/null || :
+    cp -r .github/ $TESTS_TRASH_DIR --copy-contents
+    cp -r bin/ $TESTS_TRASH_DIR --copy-contents
+    cp .gitignore $TESTS_TRASH_DIR --copy-contents
+    rm -r $TESTS_TRASH_DIR/tests/ 2>/dev/null || :
+    rm -r $TESTS_TRASH_DIR/.git/ 2>/dev/null || :
+    cd $TESTS_TRASH_DIR || exit
+    bash SETUP_TEMPLATE.sh $USERNAME $NAME $MAIL $OMIT_STR >/dev/null
+}
+
+oneTimeTearDown() {
+    cd "../.." || exit
+}
 
 # TESTS
-
 suite() {
-    cd $TESTS_TRASH_DIR || exit
-
-    bash SETUP_TEMPLATE.sh $USERNAME $NAME $MAIL $OMIT_STR
 
     suite_addTest testDotGithubFolder
     suite_addTest testDotGithubISSUE_TEMPLATE
     suite_addTest testDotGithubISSUE_TEMPLATEFiles
     suite_addTest testDotGithubFiles
-
 }
 
 testDotGithubFolder() {
@@ -63,4 +66,3 @@ testDotGithubFiles() {
 
 # Load and run shUnit2.
 . tests/shunit2
-cd "../.." || exit
