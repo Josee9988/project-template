@@ -5,6 +5,7 @@ TESTS_TRASH_DIR="tests/.ignore.tests_trash"
 USERNAME="FAKE_USERNAME_TESTS"
 NAME="FAKE_NAME_TESTS"
 MAIL="FAKE_EMAIL_TESTS"
+TYPE="FAKE_TYPE_TESTS"
 OMIT_STR="--omit-commit-and-confirmation"
 
 oneTimeSetUp() {
@@ -15,7 +16,7 @@ oneTimeSetUp() {
     rm -r $TESTS_TRASH_DIR/tests/ 2>/dev/null || :
     rm -r $TESTS_TRASH_DIR/.git/ 2>/dev/null || :
     cd $TESTS_TRASH_DIR || exit
-    bash SETUP_TEMPLATE.sh $USERNAME $NAME $MAIL $OMIT_STR >/dev/null
+    bash SETUP_TEMPLATE.sh $USERNAME $NAME $MAIL $TYPE $OMIT_STR >/dev/null
 }
 
 oneTimeTearDown() {
@@ -39,7 +40,6 @@ testDotGithubFolder() {
         githubFolderFound=1
     fi
     assertEquals 1 $githubFolderFound
-
 }
 
 testDotGithubISSUE_TEMPLATE() {
@@ -51,19 +51,25 @@ testDotGithubISSUE_TEMPLATE() {
 }
 
 testDotGithubISSUE_TEMPLATEFiles() {
-    filesFound=0
-    if [ -e ".github/ISSUE_TEMPLATE/1-bug-report.md" ] && [ -e ".github/ISSUE_TEMPLATE/2-failing-test.md" ] && [ -e ".github/ISSUE_TEMPLATE/3-docs-bug.md" ] && [ -e ".github/ISSUE_TEMPLATE/4-feature-request.md" ] && [ -e ".github/ISSUE_TEMPLATE/5-enhancement-request.md" ] && [ -e ".github/ISSUE_TEMPLATE/6-security-report.md" ] && [ -e ".github/ISSUE_TEMPLATE/7-question-support.md" ] && [ -e ".github/ISSUE_TEMPLATE/config.yml" ]; then
-        filesFound=1
-    fi
-    assertEquals 1 $filesFound
+    declare -a files=(
+        ".github/ISSUE_TEMPLATE/1-bug-report.md" ".github/ISSUE_TEMPLATE/2-failing-test.md"
+        ".github/ISSUE_TEMPLATE/3-docs-bug.md" ".github/ISSUE_TEMPLATE/4-feature-request.md"
+        ".github/ISSUE_TEMPLATE/5-enhancement-request.md" ".github/ISSUE_TEMPLATE/6-security-report.md"
+        ".github/ISSUE_TEMPLATE/7-question-support.md")
+
+    for file in "${files[@]}"; do
+        assertTrue " $file does not exist" "[ -e \"$file\" ]"
+    done
 }
 
 testDotGithubFiles() {
-    filesFound=0
-    if [ -e ".github/CODEOWNERS" ] && [ -e ".github/CODE_OF_CONDUCT.md" ] && [ -e ".github/CONTRIBUTING.md" ] && [ -e ".github/ISSUE_TEMPLATE.md" ] && [ -e ".github/pull_request_template.md" ] && [ -e ".github/SECURITY.md" ] && [ -e ".github/SUPPORT.md" ] && [ -e ".github/issue_label_bot.yaml" ] && [ -e ".github/config.yml" ] && [ -e ".github/FUNDING.yml" ] && [ -e ".github/settings.yml" ]; then
-        filesFound=1
-    fi
-    assertEquals 1 $filesFound
+    declare -a files=(
+        ".github/CODEOWNERS" ".github/CODE_OF_CONDUCT.md" ".github/CONTRIBUTING.md" ".github/ISSUE_TEMPLATE.md"
+        ".github/pull_request_template.md" ".github/SECURITY.md" ".github/SUPPORT.md" ".github/issue_label_bot.yaml"
+        ".github/config.yml" ".github/FUNDING.yml" ".github/settings.yml")
+    for file in "${files[@]}"; do
+        assertTrue " $file does not exist" "[ -e \"$file\" ]"
+    done
 }
 
 testTestRemovedFiles() {
