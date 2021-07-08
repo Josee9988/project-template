@@ -214,7 +214,7 @@ We also recommend installing all the [used bots](https://github.com/Josee9988/pr
 
 We are currently looking for new donators to help and maintain this project! ❤️
 
-By donating, you will help the development of this project and, *you will be featured in this project's README.md* so everyone can see your kindness and visit your content ⭐.
+By donating, you will help the development of this project, and *you will be featured in this project's README.md* so everyone can see your kindness and visit your content ⭐.
 
 <a href="https://github.com/sponsors/Josee9988">
   <img src="https://img.shields.io/badge/Sponsor-Josee9988/project template-blue?logo=github-sponsors&style=for-the-badge&color=red">
