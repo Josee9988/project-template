@@ -1,4 +1,4 @@
-###> FAKE_TEST_USERNAME/FAKE_TEST_PROJECT_NAME ###
+###> Josee9988/project-template ###
 
 # Folders
 .vscode/
@@ -13,4 +13,4 @@ ignore.*
 .env.test
 *.pem
 
-###< FAKE_TEST_USERNAME/FAKE_TEST_PROJECT_NAME ###
+###< Josee9988/project-template ###

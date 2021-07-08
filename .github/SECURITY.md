@@ -8,6 +8,6 @@ To report a security issue, go to the project's issues and create a new issue us
 
 Read carefully the instructions of this issue template, and if your report could leak data or might expose
 how to gain access to a restricted area or break the system,
-please email [FAKE_TEST_EMAIL](mailto:FAKE_TEST_EMAIL) and include the word "SECURITY" in the subject line.
+please email [jgracia9988@gmail.com](mailto:jgracia9988@gmail.com) and include the word "SECURITY" in the subject line.
 
 We'll endeavour to respond quickly, and will keep you updated throughout the process.

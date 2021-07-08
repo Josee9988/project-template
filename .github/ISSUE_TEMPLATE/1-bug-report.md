@@ -3,7 +3,7 @@ name: "🐞 Bug Report"
 about: "Report an issue to help the project improve."
 title: "[Bug] "
 labels: "Type: Bug"
-assignees: FAKE_TEST_USERNAME
+assignees: Josee9988
 
 ---
 

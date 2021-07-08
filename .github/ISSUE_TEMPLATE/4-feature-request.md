@@ -3,7 +3,7 @@ name: "🚀🆕 Feature Request"
 about: "Suggest an idea or possible new feature for this project."
 title: ""
 labels: "Type: Feature"
-assignees: FAKE_TEST_USERNAME
+assignees: Josee9988
 
 ---
 
