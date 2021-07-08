@@ -27,8 +27,8 @@ NC='\033[0m' # No Color
 UPurple='\033[4;35m'
 BBLUE='\033[1;34m'
 GREEN='\033[1;32m'
-FILE_FUNCTION_HELPERS=bin/FUNCTION_HELPERS.sh
 OMIT_STR="--omit-commit-and-confirmation"
+FILE_FUNCTION_HELPERS=bin/FUNCTION_HELPERS.sh
 
 if [ ! -f "$FILE_FUNCTION_HELPERS" ]; then # check if the function helpers file is not found
   echo -e "${RED}Can not find ${FILE_FUNCTION_HELPERS}"
@@ -65,7 +65,7 @@ fi
 echo -e "Thanks for using ${GREEN}Josee9988/project-template${NC}"
 echo -e "Read carefully all the documentation before you continue executing this script: ${UPurple}https://github.com/Josee9988/project-template${NC}\n"
 
-if [ ! $4 = "$OMIT_STR" ]; then # if the project's type has been manually specified
+if [ ! "$4" = "$OMIT_STR" ]; then # if the project's type has been manually specified
   read -p "Enter $(echo -e "$BBLUE""what your project is""$NC") (program/extension/API/web/CLI tool/backend/frontend/scrapper/automation tool/etc): " PROJECT_TYPE
   read -p "Is this data correct: username \"$(echo -e "$GREEN""$NEW_USERNAME""$NC")\", email: \"$(echo -e "$GREEN""$NEW_EMAIL""$NC")\", project name: \"$(echo -e "$GREEN""$PROJECT_NAME""$NC")\", of type: \"$(echo -e "$GREEN""$PROJECT_TYPE""$NC")\" (y/n)? " choice
 else
