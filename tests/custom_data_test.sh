@@ -31,11 +31,10 @@ suite() {
     suite_addTest testDotGithubSecurity
     suite_addTest testDotGithubCODEOWNERS
     suite_addTest testDotGitignore
-    suite_addTest testDotChangelog
+    suite_addTest testChangelog
 }
 
 testDotGithubISSUE_TEMPLATEAsignees() {
-    isTheAssigneeNotFound=0
     assigneesWithName="assignees: $USERNAME"
     declare -a files=(
         ".github/ISSUE_TEMPLATE/1-bug-report.md" ".github/ISSUE_TEMPLATE/2-failing-test.md"
@@ -44,76 +43,44 @@ testDotGithubISSUE_TEMPLATEAsignees() {
         ".github/ISSUE_TEMPLATE/7-question-support.md")
 
     for file in "${files[@]}"; do
-        if ! grep -q "$assigneesWithName" "$file"; then
-            isTheAssigneeNotFound=1
-        fi
+        assertTrue " assignee was not found for file $file" "grep -q \"$assigneesWithName\" \"$file\""
     done
-    assertNotEquals 1 $isTheAssigneeNotFound
 }
-
 testDotGithubISSUE_TEMPLATEConfig() {
-    isTheAssigneeNotFound=0
     mailInConfig="url: mailto:$MAIL"
-
-    if grep -q "$mailInConfig" ".github/ISSUE_TEMPLATE/config.yml"; then
-        isTheAssigneeNotFound=1
-    fi
-    assertEquals 1 $isTheAssigneeNotFound
+    assertTrue "The mail $MAIL was not found in .github/ISSUE_TEMPLATE/config.yml" "grep -q \"$mailInConfig\" \".github/ISSUE_TEMPLATE/config.yml\""
 }
 
 testDotGithubConfig() {
-    isNewIssueWelcomeCommentFound=0
     newIssueWelcomeComment="Thanks for opening your first issue in $USERNAME/$NAME! Be sure to"
-
-    if grep -q "$newIssueWelcomeComment" ".github/config.yml"; then
-        isNewIssueWelcomeCommentFound=1
-    fi
-    assertEquals 1 $isNewIssueWelcomeCommentFound
+    assertTrue "The $USERNAME/$NAME was not found in " "grep -q \"$newIssueWelcomeComment\" \".github/config.yml\""
 }
 
 testDotGithubSecurity() {
-    isSecurityDataFound=0
     securityData1="(mailto:$MAIL)"
     securityData2="[$MAIL]"
     securityData3="he project's team and community take security issues"
-
-    if grep -q "$securityData1" ".github/SECURITY.md" && grep -q "$securityData2" ".github/SECURITY.md" && grep -q "$securityData3" ".github/SECURITY.md"; then
-        isSecurityDataFound=1
-    fi
-    assertEquals 1 $isSecurityDataFound
+    assertTrue "The mail $MAIL was not found in .github/SECURITY.md" "grep -q \"$securityData1\" \".github/SECURITY.md\" && grep -q \"$securityData2\" \".github/SECURITY.md\" && grep -q \"$securityData3\" \".github/SECURITY.md\""
 }
 
 testDotGithubCODEOWNERS() {
-    isCodeownersDataFound=0
     usernameData="$USERNAME"
-
-    if grep -q "$usernameData" ".github/CODEOWNERS"; then
-        isCodeownersDataFound=1
-    fi
-    assertEquals 1 $isCodeownersDataFound
+    assertTrue "Could not find the username $USERNAME in the file .github/CODEOWNERS" "grep -q \"$usernameData\" \".github/CODEOWNERS\""
 }
 
 testDotGitignore() {
-    isGitignoreDataFound=0
     gitignoreData1="###> $USERNAME/$NAME ###"
     gitignoreData2="###< $USERNAME/$NAME ###"
 
-    if grep -q "$gitignoreData1" ".gitignore" && grep -q "$gitignoreData2" ".gitignore"; then
-        isGitignoreDataFound=1
-    fi
-    assertEquals 1 $isGitignoreDataFound
+    assertTrue "Could not find the username $USERNAME and the name $NAME in the .gitignore file" "grep -q \"$gitignoreData1\" \".gitignore\" && grep -q \"$gitignoreData2\" \".gitignore\""
 }
 
-testDotChangelog() {
-    isChangelogDataFound=0
+testChangelog() {
     changelogData1="All notable changes to the"
     changelogData2="**$NAME**"
     changelogData3="$TYPE will be documented in this file."
 
-    if grep -q "$changelogData1" "CHANGELOG.md" && grep -q "$changelogData2" "CHANGELOG.md" && grep -q "$changelogData3" "CHANGELOG.md"; then
-        isChangelogDataFound=1
-    fi
-    assertEquals 1 $isChangelogDataFound
+    assertTrue "Could not find the name $NAME or the type $TYPE in the CHANGELOG.md file" "grep -q \"$changelogData1\" \"CHANGELOG.md\" && grep -q \"$changelogData2\" \"CHANGELOG.md\" && grep -q \"$changelogData3\" \"CHANGELOG.md\""
 }
 
 # Load and run shUnit2.
