@@ -208,6 +208,16 @@ and the read and understanding of the [keep a changelog guide](https://keepachan
 Read and comment about it in this [dev.to post](https://dev.to/josee9988/the-ultimate-github-project-template-1264).
 We also recommend installing all the [used bots](https://github.com/Josee9988/project-template#-used-github-bots).
 
+## 💉 **Project tests**
+
+If you want to improve the development of this project, you must, after changing or improving whatever run the project's tests to prove that they are working.
+
+To do so:
+
+```bash
+bash tests/TESTS_RUNNER.sh
+```
+
 ---
 
 ## 🍰 **Supporters and donators**
