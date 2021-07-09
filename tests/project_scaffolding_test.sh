@@ -35,19 +35,15 @@ suite() {
 }
 
 testDotGithubFolder() {
-    githubFolderFound=0
-    if [ -e ".github/" ]; then
-        githubFolderFound=1
+    if [ ! -e ".github/" ]; then
+        assertEquals ".github file does not exist" 1 0 # error
     fi
-    assertEquals 1 $githubFolderFound
 }
 
 testDotGithubISSUE_TEMPLATE() {
-    folderFound=0
-    if [ -e ".github/ISSUE_TEMPLATE" ]; then
-        folderFound=1
+    if [ ! -e ".github/ISSUE_TEMPLATE" ]; then
+        assertEquals ".github/ISSUE_TEMPLATE was not found" 1 0 # error
     fi
-    assertEquals 1 $folderFound
 }
 
 testDotGithubISSUE_TEMPLATEFiles() {
@@ -67,6 +63,7 @@ testDotGithubFiles() {
         ".github/CODEOWNERS" ".github/CODE_OF_CONDUCT.md" ".github/CONTRIBUTING.md" ".github/ISSUE_TEMPLATE.md"
         ".github/pull_request_template.md" ".github/SECURITY.md" ".github/SUPPORT.md" ".github/issue_label_bot.yaml"
         ".github/config.yml" ".github/FUNDING.yml" ".github/settings.yml")
+
     for file in "${files[@]}"; do
         assertTrue " $file does not exist" "[ -e \"$file\" ]"
     done
@@ -77,7 +74,7 @@ testTestRemovedFiles() {
     if [ -e "tests/" ] && [ -e "tests/shunit2" ] && [ -e "tests/TESTS_RUNNER.sh" ]; then
         filesFound=1
     fi
-    assertNotEquals 1 $filesFound
+    assertNotEquals " tests folder of some files were found" 1 $filesFound
 }
 
 testGlobalFiles() {
@@ -85,7 +82,7 @@ testGlobalFiles() {
     if [ -e ".gitignore" ] && [ -e "CHANGELOG.md" ] && [ -e "README.md" ]; then
         filesFound=1
     fi
-    assertEquals 1 $filesFound
+    assertEquals " gitignore, changelog or readme were not found" 1 $filesFound
 }
 
 testRemovedFiles() {
@@ -93,7 +90,7 @@ testRemovedFiles() {
     if [ -e "LICENSE" ] && [ -e "bin" ] && [ -e "bin/FUNCTION_HELPERS.sh" ]; then
         filesFound=1
     fi
-    assertNotEquals 1 $filesFound
+    assertNotEquals " LICENSE or the bin directory were found" 1 $filesFound
 }
 
 # Load and run shUnit2.
