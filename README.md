@@ -39,18 +39,18 @@ for more information or guidance, follow the [Github guide](https://docs.github.
 3. **Execute** the `SETUP_TEMPLATE.sh` shell script to **customize** the files with your data.
   
     ```bash
-    bash SETUP_TEMPLATE.sh # additional parameters [Username] [Project-Name] [Email]
+    bash SETUP_TEMPLATE.sh # additional parameters [Username] [Project-Name] [Email] [Project type]
     ```
 
     Or you can also do it like this:
 
     ```bash
-    chmod u+x SETUP_TEMPLATE.sh && ./SETUP_TEMPLATE.sh # additional parameters [Username] [Project-Name] [Email]
+    chmod u+x SETUP_TEMPLATE.sh && ./SETUP_TEMPLATE.sh # additional parameters [Username] [Project-Name] [Email] [Project type]
     ```
 
     Additionally, watch *[this video](https://asciinema.org/a/404568)* to see **how to execute the script** or use *`bash SETUP_TEMPLATE.sh --help`* to obtain some extra information.
   
-    If the automatic detection of the username, project name or email is NOT right, please post an issue, and you can **manually correct** them like: `bash SETUP_TEMPLATE.sh RightUsername RightProjectName RightEmail` being `$1` the new username, `$2` the new project name and `$3` the new email.
+    If the automatic detection of the username, project name or email is NOT right, please post an issue, and you can **manually correct** them like: `bash SETUP_TEMPLATE.sh RightUsername RightProjectName RightEmail` being `$1` the new username, `$2` the new project name, `$3` the new email and `$4` the project type.
 
 4. **Review** every single file and **customize** it as you like.
 5. Build your project. 🚀
@@ -217,6 +217,8 @@ To do so:
 ```bash
 bash tests/TESTS_RUNNER.sh
 ```
+
+*You may need to give execution permission to all the `tests/` files*
 
 ---
 

@@ -7,6 +7,23 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/) 
 
 ---
 
+## [**1.8.0**] - 2021-07-09
+
+### Added
+
+* Multiple bash unit tests.
+* The SETUP_TEMPLATE.sh now takes a 4th argument which is the type of the project.
+* Updated the README to add the new tests documentation
+
+### Fixed
+
+* Modified a couple of files where the project name was not changed.
+
+### Changed
+
+* Modified the SETUP_TEMPLATE.sh to make it available for the tests.
+* Improved the .github/SECURITY.md file
+
 ## [**1.7.2**] - 2021-07-08
 
 ### Added
