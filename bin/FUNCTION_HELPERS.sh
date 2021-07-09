@@ -61,8 +61,8 @@ helpCommand() {
 
 displayHelpTexts() {
   center "User help"
-  echo -e "Script usage: ${BBLUE}$0 [Username] [Project-Name] [Email]${NC} (The project name should not contain spaces)${NC}\n"
-  echo "Arguments of username, project-name and email are automatically gathered from your git repository and git config, so they are optional in case they are not detected correctly."
+  echo -e "Script usage: ${BBLUE}$0 [Username] [Project-Name] [Email] [Project-type]${NC} (The project name and type should not contain spaces)${NC}\n"
+  echo "Arguments of username, project-name and email are automatically gathered from your git repository and git config, so they are *optional* in case they are not detected correctly."
   echo -e "Make sure you have ${BBLUE}read the documentation before executing${NC} this script: ${UPurple}https://github.com/Josee9988/project-template${NC}"
   echo -e "If you have any questions or if any issue is found, please make sure to report it at: ${UPurple}https://github.com/Josee9988/project-template/issues${NC}"
 }
