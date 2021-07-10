@@ -1,5 +1,19 @@
 #! /bin/bash
-# file: examples/custom_data_test.sh
+
+#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#
+# PURPOSE:       Test suite for testing the modified custom data, after executing the SETUP_TEMPLATE script.º
+# TITLE:         Custom Data tests
+# AUTHOR:        Jose Gracia
+# VERSION:       See in CHANGELOG.md
+# NOTES:         This script is called by the TESTS_RUNNER.sh script. And it unit tests all the custom data modified
+#                by the SETUP_TEMPLATE script.
+# BASH_VERSION:  5.1.4(1)-release (x86_64-pc-linux-gnu)
+# LICENSE:       see in ../LICENSE (project root) or https://github.com/Josee9988/project-template/blob/master/LICENSE
+# GITHUB:        https://github.com/Josee9988/
+# REPOSITORY:    https://github.com/Josee9988/project-template
+# ISSUES:        https://github.com/Josee9988/project-template/issues
+# MAIL:          jgracia9988@gmail.com
+#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#
 
 TESTS_TRASH_DIR="tests/.ignore.tests_trash"
 USERNAME="FAKE_USERNAME_TESTS"
