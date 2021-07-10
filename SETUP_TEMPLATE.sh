@@ -14,7 +14,7 @@
 # VERSION:       See in CHANGELOG.md
 # NOTES:         This script will auto remove itself, and in case of wanting to run it again, the user must download
 #                it again or do a 'git stash' and revert the changes.
-# BASH_VERSION:  5.0.17(1)-release
+# BASH_VERSION:  5.1.4(1)-release (x86_64-pc-linux-gnu)
 # LICENSE:       see in LICENSE (project root) or https://github.com/Josee9988/project-template/blob/master/LICENSE
 # GITHUB:        https://github.com/Josee9988/
 # REPOSITORY:    https://github.com/Josee9988/project-template

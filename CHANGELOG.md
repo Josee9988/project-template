@@ -7,13 +7,29 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/) 
 
 ---
 
+## [**1.8.1**] - 2021-07-10
+
+### Added
+
+* Basic file documentation for all the tests.
+* Improved the TESTS_RUNNER script.
+
+### Fixed
+
+* Some minor typos.
+* The README's project tree
+
+### Changed
+
+* The comment 'BASH_VERSION' in all the scripts to the actual one.
+
 ## [**1.8.0**] - 2021-07-09
 
 ### Added
 
 * Multiple bash unit tests.
 * The SETUP_TEMPLATE.sh now takes a 4th argument which is the type of the project.
-* Updated the README to add the new tests documentation
+* Updated the README to add the documentation of the new test
 
 ### Fixed
 
@@ -32,15 +48,15 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/) 
 
 ### Fixed
 
-* Minnor typo in the generated README.md
+* Minor typo in the generated README.md
 
 ## [**1.7.1**] - 2021-07-01
 
 ### Added
 
 * `.env` file will be ignored in the `.gitignore`.
-* Disabled some markdownlint rules in the generated README.md
-* Fixed some minnor errors in the README.md file
+* Disabled some markdown link rules in the generated README.md
+* Fixed some minor errors in the README.md file
 
 ## [**1.7.0**] - 2021-06-01
 
@@ -48,13 +64,13 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/) 
 
 * Type: Test issue label.
 * Failing test issue template adds the new Type Test issue label.
-* Updated README.md with the new label.
+* Update README.md with the new label.
 
 ## [**1.6.0**] - 2021-05-21
 
 ### Added
 
-* Divided the feature request into feature and enhancement request, each one with its respective labels.
+* Divided the feature request into feature and enhancement requests, each one with its respective labels.
 
 ### Changed
 
@@ -130,7 +146,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/) 
 
 ### Fixed
 
-* Some README.md markdownlint bugs.
+* Some README.md markdown link bugs.
 
 ## [**1.2.0**] - 2021-04-07
 

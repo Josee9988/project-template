@@ -95,14 +95,14 @@ Files that will get removed after the execution of `SETUP_TEMPLATE.sh` are not s
 .
 ├── CHANGELOG.md
 ├── .github
-│   ├── CODE_OF_CONDUCT.md
-│   ├── CODEOWNERS
-│   ├── CONTRIBUTING.md
-│   ├── FUNDING.yml
-│   ├── issue_label_bot.yaml
-│   ├── config.yml
-│   ├── ISSUE_TEMPLATE
-│   │   ├── 1-bug-report.md
+│   ├── CODE_OF_CONDUCT.md
+│   ├── CODEOWNERS
+│   ├── config.yml
+│   ├── CONTRIBUTING.md
+│   ├── FUNDING.yml
+│   ├── issue_label_bot.yaml
+│   ├── ISSUE_TEMPLATE
+│   │   ├── 1-bug-report.md
 │   │   ├── 2-failing-test.md
 │   │   ├── 3-docs-bug.md
 │   │   ├── 4-feature-request.md
@@ -110,15 +110,15 @@ Files that will get removed after the execution of `SETUP_TEMPLATE.sh` are not s
 │   │   ├── 6-security-report.md
 │   │   ├── 7-question-support.md
 │   │   └── config.yml
-│   ├── ISSUE_TEMPLATE.md
-│   ├── pull_request_template.md
-│   ├── SECURITY.md
-│   ├── settings.yml
-│   └── SUPPORT.md
+│   ├── ISSUE_TEMPLATE.md
+│   ├── pull_request_template.md
+│   ├── SECURITY.md
+│   ├── settings.yml
+│   └── SUPPORT.md
 ├── .gitignore
 └── README.md
 
-2 directories, 21 files
+2 directories, 22 files
 ```
 
 ---
@@ -173,7 +173,7 @@ Badges and texts will be replaced with your project details!
 
 ### 🔖 The labels for your issues
 
-If the bot [probot-settings](https://probot.github.io/apps/settings/) is not installed you will not have these beautiful labels! (there are actually 1 more issue label than in the screenshot!)
+If the bot [probot-settings](https://probot.github.io/apps/settings/) is not installed you will not have these beautiful labels! (there are actually more issue labels than in the image!)
 
 <p align="center">
   <img width="70%" height="70%" src="https://i.imgur.com/dS91k6R.png" alt="LABELS">
