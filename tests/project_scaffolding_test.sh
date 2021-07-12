@@ -30,7 +30,7 @@ oneTimeSetUp() {
     rm -r $TESTS_TRASH_DIR/tests/ 2>/dev/null || :
     rm -r $TESTS_TRASH_DIR/.git/ 2>/dev/null || :
     cd $TESTS_TRASH_DIR || exit
-    bash SETUP_TEMPLATE.sh $USERNAME $NAME $MAIL $TYPE $OMIT_STR >/dev/null # run the setup script
+    bash SETUP_TEMPLATE.sh --username=$USERNAME --projectName=$NAME --email=$MAIL --projectType=$TYPE $OMIT_STR >/dev/null # run the setup script
 }
 
 oneTimeTearDown() {
