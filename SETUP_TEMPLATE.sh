@@ -48,7 +48,7 @@ fi
 # PARSE THE ARGUMENTS
 for i in "$@"; do
   case $i in
-  -u=* | --username=* | --name=*)
+  -u=* | --user=* | --username=* | --name=*)
     NEW_USERNAME="${i#*=}"
     shift # past argument=value
     ;;
@@ -69,7 +69,7 @@ for i in "$@"; do
     exit 0
     shift # past argument=value
     ;;
-  "$OMIT_STR")
+  -o | --omit | "$OMIT_STR")
     will_omit_commit_and_confirmation=true
     choice="y"
     shift # past argument with no value

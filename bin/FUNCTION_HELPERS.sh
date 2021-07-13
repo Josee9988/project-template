@@ -59,12 +59,12 @@ displayHelpTexts() { # (it will manually detect your git data and prompt for the
   echo -e "Script usage: ${UGREEN}bash $0${NC} or ${UGREEN}./$0${NC}\n"
 
   echo -e "${BOLD}Optional arguments and options:${NC}"
-  echo -e "  -u, --username, --name\t\tManually specify the GitHub username instead of the autodetected username"
-  echo -e "  -e, --email, --mail\t\t\tManually specify the GitHub email instead of the autodetected mail"
-  echo -e "  -t, --projectType, --type\t\tManually specify the type of project (what it is, eg: npm package or website or whatever) instead of being prompted inside the script."
-  echo -e "  -h, --help, --info${NC}\t\t\tDisplays this help text (this argument does not require a value, it is just called without any equal signs)"
-  echo -e "  --omit-commit-and-confirmation\tWill avoid the git commit and will not prompt if you are sure. (this argument does not require a value, it is just called without any equal signs)"
-  echo -e "${BBLUE}All arguments but the '--omit-commit-and-confirmation' and the '--help' arguments require a value after an equal sign (--argument=value) eg: --email=etc@abc.com${NC}"
+  echo -e "  -u, --username, --name\t\t\tManually specify the GitHub username instead of the autodetected username."
+  echo -e "  -e, --email, --mail\t\t\t\tManually specify the GitHub email instead of the autodetected mail."
+  echo -e "  -t, --projectType, --type\t\t\tManually specify the type of project (what it is, eg: npm package or website or whatever) instead of being prompted inside the script."
+  echo -e "  -h, --help, --info${NC}\t\t\t\tDisplays this help text (this argument does not require a value, it is just called without any equal signs)."
+  echo -e "  -o, --omit, --omit-commit-and-confirmation\tWill avoid the git commit and will not prompt if you are sure. (this argument does not require a value, it is just called without any equal signs)."
+  echo -e "${BBLUE}All arguments but the '--omit-commit-and-confirmation' and the '--help' arguments require a value after an equal sign (--argument=value) eg: --email=etc@abc.com${NC}."
 
   echo -e "\n${BOLD}Examples of use:${NC}"
   echo -e "  bash $0"
@@ -74,7 +74,7 @@ displayHelpTexts() { # (it will manually detect your git data and prompt for the
   echo -e "  bash $0 --username=whatever --projectName=whatever --email=whatever --projectType=whatever${NC}"
   echo -e "  bash $0 -u=Josee9988 --projectType=Github-template --omit-commit-and-confirmation${NC}\n"
 
-  echo -e "The username, project-name and email are automatically gathered from your git repository and git config"
+  echo -e "The username, project-name and email are automatically gathered from your git repository and git config."
   echo -e "Make sure you have ${BBLUE}read the documentation before executing${NC} this script: ${UPurple}https://github.com/Josee9988/project-template${NC}"
   echo -e "If you have any questions or if any issue is found, please make sure to report it at: ${UPurple}https://github.com/Josee9988/project-template/issues${NC}"
 }
