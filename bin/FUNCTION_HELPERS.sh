@@ -19,8 +19,10 @@
 # SCRIPT WITH EXPORTED FUNCTIONS AND VARIABLES USED IN THE MAIN SETUP_TEMPLATE
 RED='\033[1;31m'
 NC='\033[0m' # No Color
+BOLD='\033[1m'
 UPurple='\033[4;35m'
 BBLUE='\033[1;34m'
+UGREEN='\033[4;92m'
 
 # Function that centers a text in the terminal
 center() {
@@ -52,17 +54,27 @@ displayErrorInstructions() {
   echo -e "If you think this may be an issue please post it at: ${UPurple}https://github.com/Josee9988/project-template/issues${NC}"
 }
 
-helpCommand() {
-  if [[ "$1" == *"--help" ]] || [[ "$1" == *"-h" ]]; then # if the user specified help command
-    displayHelpTexts
-    exit 0
-  fi
-}
-
-displayHelpTexts() {
+displayHelpTexts() { # (it will manually detect your git data and prompt for the proejct type)
   center "User help"
-  echo -e "Script usage: ${BBLUE}$0 [Username] [Project-Name] [Email] [Project-type]${NC} (The project name and type should not contain spaces)${NC}\n"
-  echo "Arguments of username, project-name and email are automatically gathered from your git repository and git config, so they are *optional* in case they are not detected correctly."
+  echo -e "Script usage: ${UGREEN}bash $0${NC} or ${UGREEN}./$0${NC}\n"
+
+  echo -e "${BOLD}Optional arguments and options:${NC}"
+  echo -e "  -u, --username, --name\t\tManually specify the GitHub username instead of the autodetected username"
+  echo -e "  -e, --email, --mail\t\t\tManually specify the GitHub email instead of the autodetected mail"
+  echo -e "  -t, --projectType, --type\t\tManually specify the type of project (what it is, eg: npm package or website or whatever) instead of being prompted inside the script."
+  echo -e "  -h, --help, --info${NC}\t\t\tDisplays this help text (this argument does not require a value, it is just called without any equal signs)"
+  echo -e "  --omit-commit-and-confirmation\tWill avoid the git commit and will not prompt if you are sure. (this argument does not require a value, it is just called without any equal signs)"
+  echo -e "${BBLUE}All arguments but the '--omit-commit-and-confirmation' and the '--help' arguments require a value after an equal sign (--argument=value) eg: --email=etc@abc.com${NC}"
+
+  echo -e "\n${BOLD}Examples of use:${NC}"
+  echo -e "  bash $0"
+  echo -e "  bash $0 -h"
+  echo -e "  bash $0 --projectType=Angular-Website --omit-commit-and-confirmation"
+  echo -e "  bash $0 --email=jgracia9988@gmail.com"
+  echo -e "  bash $0 --username=whatever --projectName=whatever --email=whatever --projectType=whatever${NC}"
+  echo -e "  bash $0 -u=Josee9988 --projectType=Github-template --omit-commit-and-confirmation${NC}\n"
+
+  echo -e "The username, project-name and email are automatically gathered from your git repository and git config"
   echo -e "Make sure you have ${BBLUE}read the documentation before executing${NC} this script: ${UPurple}https://github.com/Josee9988/project-template${NC}"
   echo -e "If you have any questions or if any issue is found, please make sure to report it at: ${UPurple}https://github.com/Josee9988/project-template/issues${NC}"
 }
