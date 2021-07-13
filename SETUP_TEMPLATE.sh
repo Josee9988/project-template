@@ -125,7 +125,7 @@ y | Y)
   rm -- "$0"
   ;;
 n | N)
-  echo -e "\nIf your username, project name or email were NOT right (the auto selection wasn't successful), execute the script and give as a first argument your username, as a second argument your project name and as a third you email.\n"
+  echo -e "\nIf your username, project name or email were NOT right, you can manually change them. Read how to do it with the script's help: ${UPurple}bash SETUP_TEMPLATE.sh --help${NC}\n"
   displayHelpTexts
   ;;
 *) echo -e "${RED}Invalid option${NC}" ;;

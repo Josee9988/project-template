@@ -7,6 +7,20 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/) 
 
 ---
 
+## [**1.9.0**] - 2021-07-13
+
+### Added
+
+* The script will parse arguments like --argument=value.
+* Added one "help" argument test.
+* Updated the tests to be in sync with the new argument parse feature.
+* The tests_runner will chmod the test folder before executing the tests.
+* Aliases for the --omit-commit argument
+
+### Fixed
+
+* Some typos
+
 ## [**1.8.2**] - 2021-07-11
 
 ### Added

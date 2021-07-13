@@ -39,18 +39,18 @@ for more information or guidance, follow the [Github guide](https://docs.github.
 3. **Execute** the `SETUP_TEMPLATE.sh` shell script to **customize** the files with your data.
   
     ```bash
-    bash SETUP_TEMPLATE.sh # additional parameters [Username] [Project-Name] [Email] [Project type]
+    bash SETUP_TEMPLATE.sh
     ```
 
     Or you can also do it like this:
 
     ```bash
-    chmod u+x SETUP_TEMPLATE.sh && ./SETUP_TEMPLATE.sh # additional parameters [Username] [Project-Name] [Email] [Project type]
+    chmod u+x SETUP_TEMPLATE.sh && ./SETUP_TEMPLATE.sh
     ```
 
-    Additionally, watch *[this video](https://asciinema.org/a/424847)* to see **how to execute the script** or use *`bash SETUP_TEMPLATE.sh --help`* to obtain some extra information.
+    <!--Additionally, watch *[this video](https://asciinema.org/a/424847)* to see **how to execute the script** or use *`bash SETUP_TEMPLATE.sh --help`* to obtain some extra information. -->
   
-    If the automatic detection of the username, project name or email is NOT right, please post an issue, and you can **manually correct** them like: `bash SETUP_TEMPLATE.sh RightUsername RightProjectName RightEmail` being `$1` the new username, `$2` the new project name, `$3` the new email and `$4` the project type.
+    If the automatic detection of the username, project name or email is NOT right, please post an issue, and you can **manually correct** them using the optional arguments like: *`bash SETUP_TEMPLATE.sh --username=whatever --projectName=whatever --email=whatever --projectType=whatever`*
 
 4. **Review** every single file and **customize** it as you like.
 5. Build your project. 🚀

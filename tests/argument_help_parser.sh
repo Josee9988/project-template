@@ -1,7 +1,7 @@
 #! /bin/bash
 
 #~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#
-# PURPOSE:       Test suite for testing the proejct scaffolding after executing the SETUP_TEMPLATE script.
+# PURPOSE:       Test suite for testing the project scaffolding after executing the SETUP_TEMPLATE script.
 # TITLE:         Project Scaffolding tests
 # AUTHOR:        Jose Gracia
 # VERSION:       See in CHANGELOG.md
@@ -16,11 +16,7 @@
 #~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#
 
 TESTS_TRASH_DIR="tests/.ignore.tests_trash"
-USERNAME="FAKE_USERNAME_TESTS"
-NAME="FAKE_NAME_TESTS"
 MAIL="FAKE_EMAIL_TESTS"
-TYPE="FAKE_TYPE_TESTS"
-OMIT_STR="--omit-commit-and-confirmation"
 SCRIPT_OUTPUT="script_output.txt"
 
 setUp() {

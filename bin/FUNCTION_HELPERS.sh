@@ -48,7 +48,7 @@ checkFiles() {
 }
 
 displayErrorInstructions() {
-  echo -e "${RED}There are files missing! Have you modified the repository before executing this command?${NC}"
+  echo -e "${RED}Files are missing! Have you modified the repository before executing this command?${NC}"
   echo -e "\nYou should try to 'git stash' your changes and execute this script from the project root again, or clone again the repository (the template) without any changes.\n"
   echo -e "For more information visit: ${UPurple}https://github.com/Josee9988/project-template${NC}"
   echo -e "If you think this may be an issue please post it at: ${UPurple}https://github.com/Josee9988/project-template/issues${NC}"
