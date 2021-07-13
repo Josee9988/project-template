@@ -1,7 +1,7 @@
 #! /bin/bash
 
 #~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#
-# PURPOSE:       Test suite for testing the proejct scaffolding after executing the SETUP_TEMPLATE script.
+# PURPOSE:       Test suite for testing the project scaffolding after executing the SETUP_TEMPLATE script.
 # TITLE:         Project Scaffolding tests
 # AUTHOR:        Jose Gracia
 # VERSION:       See in CHANGELOG.md

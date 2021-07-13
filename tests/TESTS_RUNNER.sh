@@ -17,7 +17,8 @@
 LGREEN='\033[0;32m'
 NC='\033[0m' # No Color
 TESTS_TRASH_DIR="tests/.ignore.tests_trash/"
-declare -a test_files=("tests/project_scaffolding_test.sh" "tests/custom_data_test.sh") # all the tests
+chmod u+x tests/*
+declare -a test_files=("tests/project_scaffolding_test.sh" "tests/custom_data_test.sh" "tests/argument_help_parser.sh") # all the tests
 
 center() {
     term_width="$(tput cols)"
