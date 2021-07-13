@@ -28,6 +28,13 @@ UPurple='\033[4;35m'
 BBLUE='\033[1;34m'
 GREEN='\033[1;32m'
 OMIT_STR="--omit-commit-and-confirmation"
+will_omit_commit_and_confirmation=false
+NAME_AND_PROJECT_UNPARSED=$(git ls-remote --get-url) # READ GITHUB USERNAME AND GITHUB PROJECT NAME
+NEW_USERNAME=$(echo "$NAME_AND_PROJECT_UNPARSED" | cut -d':' -f 2 | cut -d'/' -f 1)
+PROJECT_NAME=$(echo "$NAME_AND_PROJECT_UNPARSED" | cut -d'/' -f 2 | cut -d'.' -f 1)
+NEW_EMAIL=$(git config user.email)
+PROJECT_TYPE="repository"
+
 FILE_FUNCTION_HELPERS=bin/FUNCTION_HELPERS.sh
 
 if [ ! -f "$FILE_FUNCTION_HELPERS" ]; then # check if the function helpers file is not found
@@ -38,42 +45,51 @@ else
   source $FILE_FUNCTION_HELPERS || exit # obtain some global functions and variables, if the file isn't found exit
 fi
 
-helpCommand "$1" # check if the help argument has been specified; if so it will exit
-checkFiles       # check if the main files exist before starting the project
+# PARSE THE ARGUMENTS
+for i in "$@"; do
+  case $i in
+  -u=* | --user=* | --username=* | --name=*)
+    NEW_USERNAME="${i#*=}"
+    shift # past argument=value
+    ;;
+  -p=* | --project=* | --project-name=* | --project_name=* | --projectName=*)
+    PROJECT_NAME="${i#*=}"
+    shift # past argument=value
+    ;;
+  -e=* | --email=* | --mail=*)
+    NEW_EMAIL="${i#*=}"
+    shift # past argument=value
+    ;;
+  -t=* | --type=* | --project_type=* | --projectType=*)
+    PROJECT_TYPE="${i#*=}"
+    shift # past argument=value
+    ;;
+  -h | --help | --info | --information)
+    displayHelpTexts
+    exit 0
+    shift # past argument=value
+    ;;
+  -o | --omit | "$OMIT_STR")
+    will_omit_commit_and_confirmation=true
+    choice="y"
+    shift # past argument with no value
+    ;;
+  *)
+    # unknown option
+    ;;
+  esac
+done
 
-# READ GITHUB USERNAME AND GITHUB PROJECT NAME
-NAME_AND_PROJECT_UNPARSED=$(git ls-remote --get-url)
-
-if [ -z "$1" ]; then # if the username has been manually specified
-  NEW_USERNAME=$(echo "$NAME_AND_PROJECT_UNPARSED" | cut -d':' -f 2 | cut -d'/' -f 1)
-else
-  NEW_USERNAME=$1
-fi
-
-if [ -z "$2" ]; then # if the project name has been manually specified
-  PROJECT_NAME=$(echo "$NAME_AND_PROJECT_UNPARSED" | cut -d'/' -f 2 | cut -d'.' -f 1)
-else
-  PROJECT_NAME=$2
-fi
-
-if [ -z "$3" ]; then # if the user mail has been manually specified
-  NEW_EMAIL=$(git config user.email)
-else
-  NEW_EMAIL=$3
-fi
+checkFiles # check if the main files exist before starting the project
 
 echo -e "Thanks for using ${GREEN}Josee9988/project-template${NC}"
 echo -e "Read carefully all the documentation before you continue executing this script: ${UPurple}https://github.com/Josee9988/project-template${NC}\n"
 
-if [ -n "$4" ]; then # if the project's type has been manually specified
-  PROJECT_TYPE=$4
-else
+if [ "$PROJECT_TYPE" = "repository" ]; then # if the project's type has not been manually specified
   read -p "Enter $(echo -e "$BBLUE""what your project is""$NC") (program/extension/API/web/CLI tool/backend/frontend/scrapper/automation tool/etc): " PROJECT_TYPE
 fi
 
-if [ "$5" = "$OMIT_STR" ]; then # if the ignore flag has been manually specified
-  choice="y"
-else
+if [ $will_omit_commit_and_confirmation = false ]; then # if the ignore flag has not been manually specified
   read -p "Is this data correct: username \"$(echo -e "$GREEN""$NEW_USERNAME""$NC")\", email: \"$(echo -e "$GREEN""$NEW_EMAIL""$NC")\", project name: \"$(echo -e "$GREEN""$PROJECT_NAME""$NC")\", of type: \"$(echo -e "$GREEN""$PROJECT_TYPE""$NC")\" (y/n)? " choice
 fi
 
@@ -97,9 +113,9 @@ y | Y)
   writeCHANGELOG                                              # write the basic structure of the CHANGELOG.md
   echo -e "# add your own funding links" >.github/FUNDING.yml # remove author's custom funding links
 
-  if [ ! "$5" = "$OMIT_STR" ]; then                                                 # if the ignore option for tests has been specified
-    git add CHANGELOG.md README.md .gitignore .github SETUP_TEMPLATE.sh LICENSE bin # commit the new files
-    git -c color.status=always status | less -REX                                   # show git status with colours
+  if [ $will_omit_commit_and_confirmation = false ]; then                                 # if the ignore option for tests has been specified
+    git add CHANGELOG.md README.md .gitignore .github SETUP_TEMPLATE.sh LICENSE bin tests # commit the new files
+    git -c color.status=always status | less -REX                                         # show git status with colours
     echo -e "Committing the changes for you :)\n"
     git commit -m "Set up '@Josee9988/project-template' template: Personalized files by executing the SETUP_TEMPLATE.sh script.🚀"
     echo -e "\nRemember to review every file and customize it as you like.\nYou are ready to start your brand new awesome project🚀🚀." else
@@ -109,7 +125,7 @@ y | Y)
   rm -- "$0"
   ;;
 n | N)
-  echo -e "\nIf your username, project name or email were NOT right (the auto selection wasn't successful), execute the script and give as a first argument your username, as a second argument your project name and as a third you email.\n"
+  echo -e "\nIf your username, project name or email were NOT right, you can manually change them. Read how to do it with the script's help: ${UPurple}bash SETUP_TEMPLATE.sh --help${NC}\n"
   displayHelpTexts
   ;;
 *) echo -e "${RED}Invalid option${NC}" ;;
