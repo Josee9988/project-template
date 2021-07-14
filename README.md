@@ -62,7 +62,7 @@ for more information or guidance, follow the [Github guide](https://docs.github.
 ## 📚 **What does it include?**
 
 1. A **`SETUP_TEMPLATE.sh`** script that **MUST be executed right when you clone your repository**.
-The script will replace Jose's username and email (the author) with yours from all the.
+The script will customize all the data with yours in all the files.
 
    1. A README template file with a default template to start documenting your project. (it includes personalized badges and text with your project details)
    1. A CHANGELOG template file based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
@@ -82,8 +82,9 @@ The script will replace Jose's username and email (the author) with yours from a
         1. A [Failing test issue template](/.github/ISSUE_TEMPLATE/2-failing-test.md).
         1. A [Documentation issue template](/.github/ISSUE_TEMPLATE/3-docs-bug.md).
         1. A [Feature request issue template](/.github/ISSUE_TEMPLATE/4-feature-request.md).
-        1. A [Security report issue template](/.github/ISSUE_TEMPLATE/5-security-report.md).
-        1. A [Question or support issue template](/.github/ISSUE_TEMPLATE/6-question-support.md).
+        1. A [An Enhancement request issue template](/.github/ISSUE_TEMPLATE/5-enhancement-request.md).
+        1. A [Security report issue template](/.github/ISSUE_TEMPLATE/6-security-report.md).
+        1. A [Question or support issue template](/.github/ISSUE_TEMPLATE/7-question-support.md).
 
 ---
 

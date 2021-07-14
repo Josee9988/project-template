@@ -7,6 +7,26 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/) 
 
 ---
 
+## [**1.9.2**] - 2021-07-14
+
+### Added
+
+* More tests for the help parser script
+* A version argument that will display the current script version
+
+### Fixed
+
+* Some typos
+* The readme's link to the issues
+
+### Changed
+
+* The SETUP_TEMPLATE usage comments
+
+### Removed
+
+* When the user selects "n" in the choice, it will not show the help texts. Only if the --help argument is provided.
+
 ## [**1.9.1**] - 2021-07-13
 
 ### Changed
