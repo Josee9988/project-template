@@ -1,7 +1,7 @@
 #! /bin/bash
 
 #~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#
-# PURPOSE:       Test suite for testing the project scaffolding after executing the SETUP_TEMPLATE script.
+# PURPOSE:       Test suite for testing the help argument.
 # TITLE:         Project Scaffolding tests
 # AUTHOR:        Jose Gracia
 # VERSION:       See in CHANGELOG.md
@@ -38,6 +38,7 @@ tearDown() {
 suite() {
     suite_addTest testHelp
     suite_addTest testHelpWithOtherArguments
+    suite_addTest testFilesAreNotChanged
 }
 
 testHelp() {
@@ -54,10 +55,20 @@ testHelpWithOtherArguments() {
     expected_output="Script usage:"
     expected_output2="read the documentation before executing"
     expected_output3="User help"
-    bash SETUP_TEMPLATE.sh --help --will_omit_commit_and_confirmation --project=aaa --type=bbb >script_output.txt # run the setup script
+    bash SETUP_TEMPLATE.sh --will_omit_commit_and_confirmation --project=aaa --help --type=bbb >$SCRIPT_OUTPUT # run the setup script
     assertTrue " help output was not found" "grep -q \"$expected_output\" \"$SCRIPT_OUTPUT\""
     assertTrue " help output was not found" "grep -q \"$expected_output2\" \"$SCRIPT_OUTPUT\""
     assertTrue " help output was not found" "grep -q \"$expected_output3\" \"$SCRIPT_OUTPUT\""
+}
+
+testFilesAreNotChanged() {
+    bash SETUP_TEMPLATE.sh --help --will_omit_commit_and_confirmation --project=aaa --type=bbb >$SCRIPT_OUTPUT # run the setup script
+
+    if [ ! -f "SETUP_TEMPLATE.sh" ] || [ ! -d "bin/" ] || [ ! -f "LICENSE" ]; then
+        assertTrue " files were removed and the help command should not modify the files" false
+    else
+        assertTrue " files were not removed (all ok)" true
+    fi
 }
 
 # Load and run shUnit2.
