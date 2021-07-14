@@ -3,14 +3,14 @@
 #~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#
 # SCRIPT:        SETUP_TEMPLATE.sh
 # USAGE:         bash SETUP_TEMPLATE.sh | ./SETUP_TEMPLATE.sh
-# PURPOSE:       Shell script that prompts the user for their GitHub username, email name of their project and
-#                the type of project that it is. Then it will replace the author's (josee9988) username and email
-#                with the new ones (the user that is using this template). It will fully remove the LICENSE file,
-#                delete all of the content of the README.md file, and add a simple header,
-#                delete all of the content of the CHANGELOG.md and add a basic CHANGELOG versioning and 1st version,
-#                then this script will auto remove itself, to leave the new project without this file (SETUP_TEMPLATE.sh).
+# PURPOSE:       Shell script that setups the @Josee9988/project-template github project template.
+#                It detects the user's GitHub username, email and project name
+#                then it prompts for the type of project that it is. All the data can be manually modified using the
+#                script optional arguments. For more information please execute the script with the '--help' flag.
+#                After it will customize all the files with the user's data, and remove some files and folders,
+#                even this own script.
 # TITLE:         SETUP_TEMPLATE
-# AUTHOR:        Jose Gracia
+# AUTHOR:        @Josee9988
 # VERSION:       See in CHANGELOG.md
 # NOTES:         This script will auto remove itself, and in case of wanting to run it again, the user must download
 #                it again or do a 'git stash' and revert the changes.
@@ -34,6 +34,7 @@ NEW_USERNAME=$(echo "$NAME_AND_PROJECT_UNPARSED" | cut -d':' -f 2 | cut -d'/' -f
 PROJECT_NAME=$(echo "$NAME_AND_PROJECT_UNPARSED" | cut -d'/' -f 2 | cut -d'.' -f 1)
 NEW_EMAIL=$(git config user.email)
 PROJECT_TYPE="repository"
+SCRIPT_VERSION="1.9.2"
 
 FILE_FUNCTION_HELPERS=bin/FUNCTION_HELPERS.sh
 
@@ -69,6 +70,11 @@ for i in "$@"; do
     exit 0
     shift # past argument=value
     ;;
+  -v | --version)
+    echo -e "${GREEN}$SCRIPT_VERSION${NC}"
+    exit 0
+    shift # past argument=value
+    ;;
   -o | --omit | "$OMIT_STR")
     will_omit_commit_and_confirmation=true
     choice="y"
@@ -92,8 +98,6 @@ fi
 if [ $will_omit_commit_and_confirmation = false ]; then # if the ignore flag has not been manually specified
   read -p "Is this data correct: username \"$(echo -e "$GREEN""$NEW_USERNAME""$NC")\", email: \"$(echo -e "$GREEN""$NEW_EMAIL""$NC")\", project name: \"$(echo -e "$GREEN""$PROJECT_NAME""$NC")\", of type: \"$(echo -e "$GREEN""$PROJECT_TYPE""$NC")\" (y/n)? " choice
 fi
-
-###### START OF THE SCRIPT ######
 
 # confirm that the data is correct
 case "$choice" in
@@ -126,7 +130,6 @@ y | Y)
   ;;
 n | N)
   echo -e "\nIf your username, project name or email were NOT right, you can manually change them. Read how to do it with the script's help: ${UPurple}bash SETUP_TEMPLATE.sh --help${NC}\n"
-  displayHelpTexts
   ;;
 *) echo -e "${RED}Invalid option${NC}" ;;
 esac

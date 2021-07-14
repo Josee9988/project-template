@@ -23,12 +23,14 @@ BOLD='\033[1m'
 UPurple='\033[4;35m'
 BBLUE='\033[1;34m'
 UGREEN='\033[4;92m'
+CYAN='\e[36m'
+DGRAY='\e[90m'
 
 # Function that centers a text in the terminal
 center() {
   term_width="$(tput cols)"
   padding="$(printf '%0.1s' ={1..500})"
-  echo -e "\n\n${BBLUE}$(printf '%*.*s %s %*.*s\n' 0 "$(((term_width - 2 - ${#1}) / 2))" "$padding" "$1" 0 "$(((term_width - 1 - ${#1}) / 2))" "$padding")${NC}\n"
+  echo -e "\n${BBLUE}$(printf '%*.*s %s %*.*s\n' 0 "$(((term_width - 2 - ${#1}) / 2))" "$padding" "$1" 0 "$(((term_width - 1 - ${#1}) / 2))" "$padding")${NC}\n"
 }
 
 checkFiles() {
@@ -55,15 +57,16 @@ displayErrorInstructions() {
 }
 
 displayHelpTexts() { # (it will manually detect your git data and prompt for the proejct type)
-  center "User help"
+  center "User help ${DGRAY}$SCRIPT_VERSION${BBLUE}"
   echo -e "Script usage: ${UGREEN}bash $0${NC} or ${UGREEN}./$0${NC}\n"
 
   echo -e "${BOLD}Optional arguments and options:${NC}"
-  echo -e "  -u, --username, --name\t\t\tManually specify the GitHub username instead of the autodetected username."
-  echo -e "  -e, --email, --mail\t\t\t\tManually specify the GitHub email instead of the autodetected mail."
-  echo -e "  -t, --projectType, --type\t\t\tManually specify the type of project (what it is, eg: npm package or website or whatever) instead of being prompted inside the script."
-  echo -e "  -h, --help, --info${NC}\t\t\t\tDisplays this help text (this argument does not require a value, it is just called without any equal signs)."
-  echo -e "  -o, --omit, --omit-commit-and-confirmation\tWill avoid the git commit and will not prompt if you are sure. (this argument does not require a value, it is just called without any equal signs)."
+  echo -e "  ${CYAN}-u, --username, --name${NC}\t\t\tManually specify the GitHub username instead of the autodetected username."
+  echo -e "  ${CYAN}-e, --email, --mail${NC}\t\t\t\tManually specify the GitHub email instead of the autodetected mail."
+  echo -e "  ${CYAN}-t, --projectType, --type${NC}\t\t\tManually specify the type of project (what it is, eg: npm package or website or whatever) instead of being prompted inside the script."
+  echo -e "  ${CYAN}-h, --help, --info${NC}\t\t\t\tDisplays this help text (FLAG) (this argument does not require a value, it is just called without any equal signs)."
+  echo -e "  ${CYAN}-v, --version${NC}\t\t\t\t\tDisplays the current script version (FLAG) (this argument does not require a value, it is just called without any equal signs)."
+  echo -e "  ${CYAN}-o, --omit, --omit-commit-and-confirmation${NC}\tWill avoid the git commit and will not prompt if you are sure. (FLAG) (this argument does not require a value, it is just called without any equal signs)."
   echo -e "${BBLUE}All arguments but the '--omit-commit-and-confirmation' and the '--help' arguments require a value after an equal sign (--argument=value) eg: --email=etc@abc.com${NC}."
 
   echo -e "\n${BOLD}Examples of use:${NC}"
