@@ -31,7 +31,7 @@ NEW_EMAIL=$(git config user.email)
 PROJECT_TYPE="repository"
 SCRIPT_VERSION="1.10.0"
 WILL_OMIT_TEST=false
-TEMP_TEST_OUTPUT="tests/.ignore.test_output.txt"
+TEMP_TEST_OUTPUT=".ignore.test_output.txt"
 
 FILE_FUNCTION_HELPERS=bin/FUNCTION_HELPERS.sh
 
