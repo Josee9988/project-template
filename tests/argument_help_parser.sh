@@ -45,7 +45,7 @@ testHelp() {
     expected_output="Script usage:"
     expected_output2="read the documentation before executing"
     expected_output3="User help"
-    bash SETUP_TEMPLATE.sh -h >script_output.txt # run the setup script
+    bash SETUP_TEMPLATE.sh -h --omit-test-check --omit-test-check >script_output.txt # run the setup script
     assertTrue " help output was not found" "grep -q \"$expected_output\" \"$SCRIPT_OUTPUT\""
     assertTrue " help output was not found" "grep -q \"$expected_output2\" \"$SCRIPT_OUTPUT\""
     assertTrue " help output was not found" "grep -q \"$expected_output3\" \"$SCRIPT_OUTPUT\""
@@ -55,14 +55,14 @@ testHelpWithOtherArguments() {
     expected_output="Script usage:"
     expected_output2="read the documentation before executing"
     expected_output3="User help"
-    bash SETUP_TEMPLATE.sh --will_omit_commit_and_confirmation --project=aaa --help --type=bbb >$SCRIPT_OUTPUT # run the setup script
+    bash SETUP_TEMPLATE.sh --will_omit_commit_and_confirmation --project=aaa --help --type=bbb --omit-test-check >$SCRIPT_OUTPUT # run the setup script
     assertTrue " help output was not found" "grep -q \"$expected_output\" \"$SCRIPT_OUTPUT\""
     assertTrue " help output was not found" "grep -q \"$expected_output2\" \"$SCRIPT_OUTPUT\""
     assertTrue " help output was not found" "grep -q \"$expected_output3\" \"$SCRIPT_OUTPUT\""
 }
 
 testFilesAreNotChanged() {
-    bash SETUP_TEMPLATE.sh --help --will_omit_commit_and_confirmation --project=aaa --type=bbb >$SCRIPT_OUTPUT # run the setup script
+    bash SETUP_TEMPLATE.sh --help --will_omit_commit_and_confirmation --project=aaa --type=bbb --omit-test-check >$SCRIPT_OUTPUT # run the setup script
 
     if [ ! -f "SETUP_TEMPLATE.sh" ] || [ ! -d "bin/" ] || [ ! -f "LICENSE" ]; then
         assertTrue " files were removed and the help command should not modify the files" false
