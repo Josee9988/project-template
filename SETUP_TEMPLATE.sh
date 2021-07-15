@@ -23,18 +23,15 @@
 #~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#
 
 RED='\033[1;31m'
-NC='\033[0m' # No Color
-UPurple='\033[4;35m'
-BBLUE='\033[1;34m'
-GREEN='\033[1;32m'
-OMIT_STR="--omit-commit-and-confirmation"
 will_omit_commit_and_confirmation=false
 NAME_AND_PROJECT_UNPARSED=$(git ls-remote --get-url) # READ GITHUB USERNAME AND GITHUB PROJECT NAME
 NEW_USERNAME=$(echo "$NAME_AND_PROJECT_UNPARSED" | cut -d':' -f 2 | cut -d'/' -f 1)
 PROJECT_NAME=$(echo "$NAME_AND_PROJECT_UNPARSED" | cut -d'/' -f 2 | cut -d'.' -f 1)
 NEW_EMAIL=$(git config user.email)
 PROJECT_TYPE="repository"
-SCRIPT_VERSION="1.9.2"
+SCRIPT_VERSION="1.10.0"
+WILL_OMIT_TEST=false
+TEMP_TEST_OUTPUT="tests/.ignore.test_output.txt"
 
 FILE_FUNCTION_HELPERS=bin/FUNCTION_HELPERS.sh
 
@@ -75,9 +72,13 @@ for i in "$@"; do
     exit 0
     shift # past argument=value
     ;;
-  -o | --omit | "$OMIT_STR")
+  -o | --omit | --omit-commit-and-confirmation)
     will_omit_commit_and_confirmation=true
     choice="y"
+    shift # past argument with no value
+    ;;
+  --omit-test-check | --omit-tests-check | --omit-tests)
+    WILL_OMIT_TEST=true
     shift # past argument with no value
     ;;
   *)
@@ -86,10 +87,24 @@ for i in "$@"; do
   esac
 done
 
+echo -e "Thanks for using ${GREEN}@Josee9988/project-template${NC}"
+echo -e "Read carefully all the documentation before you continue executing this script: ${UPURPLE}https://github.com/Josee9988/project-template${NC}\n"
+
 checkFiles # check if the main files exist before starting the project
 
-echo -e "Thanks for using ${GREEN}Josee9988/project-template${NC}"
-echo -e "Read carefully all the documentation before you continue executing this script: ${UPurple}https://github.com/Josee9988/project-template${NC}\n"
+# PERFORM the TESTS and save them in a file
+bash tests/TESTS_RUNNER.sh >"$TEMP_TEST_OUTPUT" 2>/dev/null || :
+
+if grep -q "FAILED" "$TEMP_TEST_OUTPUT" && [ $WILL_OMIT_TEST = false ]; then # if when running the tests any error was found
+  rm "$TEMP_TEST_OUTPUT" 2>/dev/null || :
+  echo -e "${RED}ERROR: The tests failed!${NC}. Please, make sure that you are running this script with its original scaffolding (folder/file) structure without any modification, to make sure it works as expected.${NC}"
+  echo -e "The program will now exit for you to check if this script is executed right when creating your new repository."
+  echo -e "To omit this error and proceed please execute this script again with the flag '${GREEN}--omit-test-check${NC}'"
+  echo -e "For more information about the script, use the '${BBLUE}--help${NC}' flag."
+  exit 1
+fi
+
+rm "$TEMP_TEST_OUTPUT" 2>/dev/null || :
 
 if [ "$PROJECT_TYPE" = "repository" ]; then # if the project's type has not been manually specified
   read -p "Enter $(echo -e "$BBLUE""what your project is""$NC") (program/extension/API/web/CLI tool/backend/frontend/scrapper/automation tool/etc): " PROJECT_TYPE
@@ -129,7 +144,7 @@ y | Y)
   rm -- "$0"
   ;;
 n | N)
-  echo -e "\nIf your username, project name or email were NOT right, you can manually change them. Read how to do it with the script's help: ${UPurple}bash SETUP_TEMPLATE.sh --help${NC}\n"
+  echo -e "\nIf your username, project name or email were NOT right, you can manually change them. Read how to do it with the script's help: ${UPURPLE}bash SETUP_TEMPLATE.sh --help${NC}\n"
   ;;
 *) echo -e "${RED}Invalid option${NC}" ;;
 esac

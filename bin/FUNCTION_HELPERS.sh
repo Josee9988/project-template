@@ -18,13 +18,14 @@
 
 # SCRIPT WITH EXPORTED FUNCTIONS AND VARIABLES USED IN THE MAIN SETUP_TEMPLATE
 RED='\033[1;31m'
-NC='\033[0m' # No Color
-BOLD='\033[1m'
-UPurple='\033[4;35m'
-BBLUE='\033[1;34m'
-UGREEN='\033[4;92m'
-CYAN='\e[36m'
-DGRAY='\e[90m'
+export NC='\033[0m' # No Color
+export BOLD='\033[1m'
+export UPURPLE='\033[4;35m'
+export BBLUE='\033[1;34m'
+export UGREEN='\033[4;92m'
+export GREEN='\033[1;32m'
+export CYAN='\e[36m'
+export DGRAY='\e[90m'
 
 # Function that centers a text in the terminal
 center() {
@@ -50,24 +51,25 @@ checkFiles() {
 }
 
 displayErrorInstructions() {
-  echo -e "${RED}Files are missing! Have you modified the repository before executing this command?${NC}"
+  echo -e "${RED}Some files are missing! Have you modified the repository before executing this command?${NC}"
   echo -e "\nYou should try to 'git stash' your changes and execute this script from the project root again, or clone again the repository (the template) without any changes.\n"
-  echo -e "For more information visit: ${UPurple}https://github.com/Josee9988/project-template${NC}"
-  echo -e "If you think this may be an issue please post it at: ${UPurple}https://github.com/Josee9988/project-template/issues${NC}"
+  echo -e "For more information visit: ${UPURPLE}https://github.com/Josee9988/project-template${NC}"
+  echo -e "If you think this may be an issue please post it at: ${UPURPLE}https://github.com/Josee9988/project-template/issues${NC}"
 }
 
 displayHelpTexts() { # (it will manually detect your git data and prompt for the proejct type)
   center "User help ${DGRAY}$SCRIPT_VERSION${BBLUE}"
   echo -e "Script usage: ${UGREEN}bash $0${NC} or ${UGREEN}./$0${NC}\n"
 
-  echo -e "${BOLD}Optional arguments and options:${NC}"
+  echo -e "${BOLD}Optional arguments and flags:${NC}"
   echo -e "  ${CYAN}-u, --username, --name${NC}\t\t\tManually specify the GitHub username instead of the autodetected username."
   echo -e "  ${CYAN}-e, --email, --mail${NC}\t\t\t\tManually specify the GitHub email instead of the autodetected mail."
   echo -e "  ${CYAN}-t, --projectType, --type${NC}\t\t\tManually specify the type of project (what it is, eg: npm package or website or whatever) instead of being prompted inside the script."
-  echo -e "  ${CYAN}-h, --help, --info${NC}\t\t\t\tDisplays this help text (FLAG) (this argument does not require a value, it is just called without any equal signs)."
-  echo -e "  ${CYAN}-v, --version${NC}\t\t\t\t\tDisplays the current script version (FLAG) (this argument does not require a value, it is just called without any equal signs)."
-  echo -e "  ${CYAN}-o, --omit, --omit-commit-and-confirmation${NC}\tWill avoid the git commit and will not prompt if you are sure. (FLAG) (this argument does not require a value, it is just called without any equal signs)."
-  echo -e "${BBLUE}All arguments but the '--omit-commit-and-confirmation' and the '--help' arguments require a value after an equal sign (--argument=value) eg: --email=etc@abc.com${NC}."
+  echo -e "  ${CYAN}-h, --help, --info${NC}\t\t\t\tDisplays this help text (${BOLD}${DGRAY}FLAG${NC})."
+  echo -e "  ${CYAN}-v, --version${NC}\t\t\t\t\tDisplays the current script version (${BOLD}${DGRAY}FLAG${NC})."
+  echo -e "  ${CYAN}-o, --omit, --omit-commit-and-confirmation${NC}\tWill avoid the git commit and will not prompt if you are sure (${BOLD}${DGRAY}FLAG${NC})."
+  echo -e "  ${CYAN}--omit-tests, --omit-test-check${NC}\t\tWill not perform the script's tests. (${BOLD}${DGRAY}FLAG${NC})."
+  echo -e "${BBLUE}All arguments but the ones marked with ${NC}'${BOLD}${DGRAY}FLAG${NC}'${BBLUE}, require a value after an equal sign (--argument=value) eg: --email=etc@abc.com, the flags are just called without any equal signs.${NC}"
 
   echo -e "\n${BOLD}Examples of use:${NC}"
   echo -e "  bash $0"
@@ -78,8 +80,8 @@ displayHelpTexts() { # (it will manually detect your git data and prompt for the
   echo -e "  bash $0 -u=Josee9988 --projectType=Github-template --omit-commit-and-confirmation${NC}\n"
 
   echo -e "The username, project-name and email are automatically gathered from your git repository and git config."
-  echo -e "Make sure you have ${BBLUE}read the documentation before executing${NC} this script: ${UPurple}https://github.com/Josee9988/project-template${NC}"
-  echo -e "If you have any questions or if any issue is found, please make sure to report it at: ${UPurple}https://github.com/Josee9988/project-template/issues${NC}"
+  echo -e "Make sure you have ${BBLUE}read the documentation before executing${NC} this script: ${UPURPLE}https://github.com/Josee9988/project-template${NC}"
+  echo -e "If you have any questions or if any issue is found, please make sure to report it at: ${UPURPLE}https://github.com/Josee9988/project-template/issues${NC}"
 }
 
 writeREADME() {
