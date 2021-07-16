@@ -16,6 +16,7 @@
 
 LGREEN='\033[0;32m'
 RED='\033[1;31m'
+GREEN='\033[1;32m'
 NC='\033[0m' # No Color
 TESTS_TRASH_DIR="tests/.ignore.tests_trash/"
 TEMP_TEST_OUTPUT=".ignore.test_runner_output.txt"
@@ -45,4 +46,5 @@ if grep -q "FAILED" "$TEMP_TEST_OUTPUT"; then # if when running the tests any er
 fi
 
 rm "$TEMP_TEST_OUTPUT" 2>/dev/null || :
+echo -e "${GREEN}All tests ran successfully${NC}"
 exit 0
