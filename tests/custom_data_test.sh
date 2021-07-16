@@ -51,7 +51,7 @@ suite() {
 testDotGithubISSUE_TEMPLATEAsignees() {
     assigneesWithName="assignees: $USERNAME"
     declare -a files=(
-        ".github/ISSUE_TEMPLATE/1-bug-dreport.md" ".github/ISSUE_TEMPLATE/2-failing-test.md"
+        ".github/ISSUE_TEMPLATE/1-bug-report.md" ".github/ISSUE_TEMPLATE/2-failing-test.md"
         ".github/ISSUE_TEMPLATE/3-docs-bug.md" ".github/ISSUE_TEMPLATE/4-feature-request.md"
         ".github/ISSUE_TEMPLATE/5-enhancement-request.md" ".github/ISSUE_TEMPLATE/6-security-report.md"
         ".github/ISSUE_TEMPLATE/7-question-support.md")
