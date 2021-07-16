@@ -19,4 +19,4 @@ jobs:
         steps:
             - uses: actions/checkout@v2
             - name: Run the TEST_RUNNER.sh script
-              run: sh ./tests/TESTS_RUNNER.sh
+              run: ./tests/TESTS_RUNNER.sh

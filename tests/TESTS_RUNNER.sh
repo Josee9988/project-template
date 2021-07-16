@@ -46,5 +46,5 @@ if grep -q "FAILED" "$TEMP_TEST_OUTPUT"; then # if when running the tests any er
 fi
 
 rm "$TEMP_TEST_OUTPUT" 2>/dev/null || :
-echo -e "${GREEN}All tests ran successfully${NC}"
+echo -e "\n${GREEN}All tests ran successfully${NC}"
 exit 0
