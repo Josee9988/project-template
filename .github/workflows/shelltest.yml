@@ -17,6 +17,6 @@ jobs:
                 os: [macos-latest, windows-latest, ubuntu-18.04]
 
         steps:
-            - uses: actions/checkout@v2
             - name: Run the TEST_RUNNER.sh script
+            - uses: actions/checkout@v2
             - run: sh ./tests/TESTS_RUNNER.sh
