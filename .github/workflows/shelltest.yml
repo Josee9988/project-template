@@ -14,9 +14,9 @@ jobs:
         runs-on: ${{ matrix.os }}
         strategy:
             matrix:
-                os: [macos-latest, windows-latest, ubuntu-18.04]
+                os: [macos-latest, windows-latest, ubuntu-latest]
 
         steps:
             - name: Run the TEST_RUNNER.sh script
             - uses: actions/checkout@v2
-            - run: sh ./tests/TESTS_RUNNER.sh
+              run: sh ./tests/TESTS_RUNNER.sh
