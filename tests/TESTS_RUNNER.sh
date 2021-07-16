@@ -15,8 +15,10 @@
 #~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#
 
 LGREEN='\033[0;32m'
+RED='\033[1;31m'
 NC='\033[0m' # No Color
 TESTS_TRASH_DIR="tests/.ignore.tests_trash/"
+TEMP_TEST_OUTPUT=".ignore.test_runner_output.txt"
 chmod u+x tests/*
 declare -a test_files=("tests/project_scaffolding_test.sh" "tests/custom_data_test.sh" "tests/argument_help_parser.sh") # all the tests
 
@@ -32,6 +34,15 @@ rm -r $TESTS_TRASH_DIR 2>/dev/null || : # remove any possible old test run trash
 for file in "${test_files[@]}"; do
     mkdir -p tests/.ignore.tests_trash # create the files where the tests will attack upon
     center "TEST: running test ./$file"
-    ./"$file"              # run the test
-    rm -r $TESTS_TRASH_DIR # remove the previously created files
+    ./"$file" | tee -a $TEMP_TEST_OUTPUT # run the test
+    rm -r $TESTS_TRASH_DIR               # remove the previously created files
 done
+
+if grep -q "FAILED" "$TEMP_TEST_OUTPUT"; then # if when running the tests any error was found
+    echo -e "\n${RED}TESTS FAILED: One or more tests have failed!\nPlease check the output above${NC}"
+    rm "$TEMP_TEST_OUTPUT" 2>/dev/null || :
+    exit 1
+fi
+
+rm "$TEMP_TEST_OUTPUT" 2>/dev/null || :
+exit 0

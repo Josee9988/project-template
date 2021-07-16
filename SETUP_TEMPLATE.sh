@@ -29,7 +29,7 @@ NEW_USERNAME=$(echo "$NAME_AND_PROJECT_UNPARSED" | cut -d':' -f 2 | cut -d'/' -f
 PROJECT_NAME=$(echo "$NAME_AND_PROJECT_UNPARSED" | cut -d'/' -f 2 | cut -d'.' -f 1)
 NEW_EMAIL=$(git config user.email)
 PROJECT_TYPE="repository"
-SCRIPT_VERSION="1.10.0"
+SCRIPT_VERSION="1.10.1"
 WILL_OMIT_TEST=false
 TEMP_TEST_OUTPUT=".ignore.test_output.txt"
 
@@ -92,10 +92,9 @@ echo -e "Read carefully all the documentation before you continue executing this
 
 checkFiles # check if the main files exist before starting the project
 
-# PERFORM the TESTS and save them in a file
-bash tests/TESTS_RUNNER.sh >"$TEMP_TEST_OUTPUT" 2>/dev/null || :
+bash tests/TESTS_RUNNER.sh >/dev/null 2>&1 # PERFORM the TESTS
 
-if grep -q "FAILED" "$TEMP_TEST_OUTPUT" && [ $WILL_OMIT_TEST = false ]; then # if when running the tests any error was found
+if [ "$?" -eq 1 ] && [ $WILL_OMIT_TEST = false ]; then # if when running the tests any error was found
   rm "$TEMP_TEST_OUTPUT" 2>/dev/null || :
   echo -e "${RED}ERROR: The tests failed!${NC}. Please, make sure that you are running this script with its original scaffolding (folder/file) structure without any modification, to make sure it works as expected.${NC}"
   echo -e "The program will now exit for you to check if this script is executed right when creating your new repository."
