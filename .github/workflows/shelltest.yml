@@ -17,5 +17,7 @@ jobs:
                 os: [macos-latest, windows-latest, ubuntu-latest]
 
         steps:
+            - name: List repo
+              run: ls -a
             - name: Run the TEST_RUNNER.sh script
               run: sh ./tests/TESTS_RUNNER.sh
