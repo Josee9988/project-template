@@ -17,7 +17,6 @@ jobs:
                 os: [macos-latest, windows-latest, ubuntu-latest]
 
         steps:
-            - name: List repo
-              run: ls -a
+            - uses: actions/checkout@v2
             - name: Run the TEST_RUNNER.sh script
               run: sh ./tests/TESTS_RUNNER.sh
