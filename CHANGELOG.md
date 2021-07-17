@@ -7,6 +7,17 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/) 
 
 ---
 
+## [Unreleased]
+
+### Added
+
+* A Github actions workflow to check the tests.
+* Execute permissions for the SETUP_TEMPLATE.sh script
+
+### Fixed
+
+* Some minor issues with the README.md.
+
 ## [**1.10.1**] - 2021-07-16
 
 ### Added

@@ -25,7 +25,7 @@
 * Manage your issues with **20 issue labels** created just for you!
 * Make your _community healthier_ with all the guides like code of conduct, contributing, support, security...
 * Learn more with the [official Github guide on creating repositories from a template](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/creating-a-repository-from-a-template).
-* To start using it; "**[click use this template](https://github.com/Josee9988/project-template/generate)**", create your new repository,
+* To start using it; "**[click use this template](https://github.com/Josee9988/project-template/generate)**" and create your new repository,
 * All the basic setup is made through an easy script that will auto-detect all your data to make it lightning fast! 🗲🗲 clone your new repository and execute the `SETUP_TEMPLATE.sh` shell script to personalize the files with your private details. Check how to execute it [here](https://asciinema.org/a/425259).
 * All the markdown follows [MarkdownLint rules](https://github.com/DavidAnson/markdownlint).
 
@@ -42,10 +42,10 @@ for more information or guidance, follow the [Github guide](https://docs.github.
     bash SETUP_TEMPLATE.sh
     ```
 
-    Or you can also do it like this:
+    Or
 
     ```bash
-    chmod u+x SETUP_TEMPLATE.sh && ./SETUP_TEMPLATE.sh
+    ./SETUP_TEMPLATE.sh
     ```
 
     Additionally, watch *[this video](https://asciinema.org/a/425259)* to see **how to execute the script** or use *`bash SETUP_TEMPLATE.sh --help`* to obtain some extra information.

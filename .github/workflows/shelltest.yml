@@ -1,0 +1,20 @@
+# this github actions will run the tests/TESTS_RUNNER.sh script and fial if any of the tests fail.
+name: SH Tests runner
+
+on:
+    push:
+        branches: [master]
+    pull_request:
+        branches: [master]
+
+jobs:
+    build:
+        runs-on: ${{ matrix.os }}
+        strategy:
+            matrix:
+                os: [ubuntu-latest]
+
+        steps:
+            - uses: actions/checkout@v2 #checkout into the repository
+            - name: Run the TEST_RUNNER.sh script
+              run: ./tests/TESTS_RUNNER.sh # run the TESTS_RUNNER.sh script
