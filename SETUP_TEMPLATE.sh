@@ -127,6 +127,7 @@ y | Y)
   rm LICENSE                                                  # remove the license
   rm -r bin/                                                  # remove the bin folder
   rm -r tests/ 2>/dev/null || :                               # remove the tests folder
+  rm -r .github/workflows/ 2>/dev/null || :                   # remove the workflow folder
   writeREADME                                                 # write the new README.md
   writeCHANGELOG                                              # write the basic structure of the CHANGELOG.md
   echo -e "# add your own funding links" >.github/FUNDING.yml # remove author's custom funding links
