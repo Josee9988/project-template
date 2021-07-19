@@ -24,8 +24,13 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/) 
 ### Added
 
 * A new logo in the readme.md
+* The brand logo in the sponsors part.
 * Alt attribute for all the README's images
 * More guidance for the used github bots
+
+### Fixed
+
+* Some README's alt attribute.
 
 ## [**1.10.2**] - 2021-07-17
 

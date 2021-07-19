@@ -2,15 +2,15 @@
 # 🔥 **Josee9988's Github Project Template**
 
 <p align="center">
-  <a href="https://github.com/Josee9988/project-template/generate" alt="@Josee9988/project-template's">
-    <img width="85%" src="https://i.imgur.com/SVvgxJF.png">
+  <a href="https://github.com/Josee9988/project-template/generate">
+    <img width="100%" src="https://i.imgur.com/SVvgxJF.png" alt="@Josee9988/project-template's">
   </a>
   <br>
   <a href="https://github.com/Josee9988/project-template/issues">
-    <img alt="Issues" src="https://img.shields.io/github/issues/Josee9988/project-template?color=0088ff&style=for-the-badge&logo=github" alt="@Josee9988/project-template's issues"/>
+    <img src="https://img.shields.io/github/issues/Josee9988/project-template?color=0088ff&style=for-the-badge&logo=github" alt="@Josee9988/project-template's issues"/>
   </a>
   <a href="https://github.com/josee9988/project-template/pulls">
-    <img alt="GitHub pull requests" src="https://img.shields.io/github/issues-pr/Josee9988/project-template?color=0088ff&style=for-the-badge&logo=github" alt="@Josee9988/project-template's pull requests"/>
+    <img src="https://img.shields.io/github/issues-pr/Josee9988/project-template?color=0088ff&style=for-the-badge&logo=github" alt="@Josee9988/project-template's pull requests"/>
   </a>
   <a href="https://github.com/Josee9988/project-template/generate">
     <img src="https://img.shields.io/badge/use%20this-template-blue?logo=github-sponsors&style=for-the-badge&color=green" alt="@Josee9988/project-template link to create a new repository from the template">
@@ -230,6 +230,10 @@ bash tests/TESTS_RUNNER.sh
 ---
 
 ## 🍰 **Supporters and donators**
+
+<a href="https://github.com/Josee9988/project-template/generate">
+  <img alt="@Josee9988/project-template's brand logo without text" align="right" src="https://i.imgur.com/3qK1sie.png" width="18%" />
+</a>
 
 We are currently looking for new donators to help and maintain this project! ❤️
 
