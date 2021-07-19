@@ -2,16 +2,21 @@
 # 🔥 **Josee9988's Github Project Template**
 
 <p align="center">
-  <img width="100" height="100" src="https://i.imgur.com/Njl3HJc.png" alt="Logo">
+  <a href="https://github.com/Josee9988/project-template/generate" alt="@Josee9988/project-template's">
+    <img width="85%" src="https://i.imgur.com/SVvgxJF.png">
+  </a>
   <br>
   <a href="https://github.com/Josee9988/project-template/issues">
-    <img alt="Issues" src="https://img.shields.io/github/issues/Josee9988/project-template?color=0088ff&style=for-the-badge&logo=github" />
+    <img alt="Issues" src="https://img.shields.io/github/issues/Josee9988/project-template?color=0088ff&style=for-the-badge&logo=github" alt="@Josee9988/project-template's issues"/>
   </a>
   <a href="https://github.com/josee9988/project-template/pulls">
-    <img alt="GitHub pull requests" src="https://img.shields.io/github/issues-pr/Josee9988/project-template?color=0088ff&style=for-the-badge&logo=github" />
+    <img alt="GitHub pull requests" src="https://img.shields.io/github/issues-pr/Josee9988/project-template?color=0088ff&style=for-the-badge&logo=github" alt="@Josee9988/project-template's pull requests"/>
   </a>
   <a href="https://github.com/Josee9988/project-template/generate">
-    <img src="https://img.shields.io/badge/use%20this-template-blue?logo=github-sponsors&style=for-the-badge&color=green">
+    <img src="https://img.shields.io/badge/use%20this-template-blue?logo=github-sponsors&style=for-the-badge&color=green" alt="@Josee9988/project-template link to create a new repository from the template">
+  </a>
+  <a href="ttps://github.com/Josee9988/project-template/actions/workflows/shelltest.yml">
+    <img src="https://github.com/Josee9988/project-template/actions/workflows/shelltest.yml/badge.svg" alt="@Josee9988/project-template's tests">
   </a>
 </p>
 
@@ -35,9 +40,10 @@
 
 1. To create a new repository from this template **[generate your new repository from this template](https://github.com/Josee9988/project-template/generate)**
 for more information or guidance, follow the [Github guide](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/creating-a-repository-from-a-template).
-2. Clone your new repository **[generated from this template](https://github.com/Josee9988/project-template/generate)** and `cd` into it.
-3. **Execute** the `SETUP_TEMPLATE.sh` shell script to **customize** the files with your data.
-  
+2. Install the [🤖 used Github bots](https://github.com/Josee9988/project-template#-used-github-bots) (recommended)
+3. Clone your new repository **[generated from this template](https://github.com/Josee9988/project-template/generate)** and `cd` into it.
+4. **Execute** the `SETUP_TEMPLATE.sh` shell script to **customize** the files with your data.
+
     ```bash
     bash SETUP_TEMPLATE.sh
     ```
@@ -49,11 +55,11 @@ for more information or guidance, follow the [Github guide](https://docs.github.
     ```
 
     Additionally, watch *[this video](https://asciinema.org/a/425259)* to see **how to execute the script** or use *`bash SETUP_TEMPLATE.sh --help`* to obtain some extra information.
-  
+
     If the automatic detection of the username, project name or email is NOT right, please post an issue, and you can **manually correct** them using the optional arguments like: *`bash SETUP_TEMPLATE.sh --username=whatever --projectName=whatever --email=whatever --projectType=whatever`*
 
-4. **Review** every single file and **customize** it as you like.
-5. Build your project. 🚀
+5. **Review** every single file and **customize** it as you like.
+6. Build your project. 🚀
 
 ⚠️ _Customize every file to fit your requirements_ ⚠️
 
@@ -140,9 +146,9 @@ Files that will get removed after the execution of `SETUP_TEMPLATE.sh` are not s
 These are recommended bots that are prepared and configured for this template. If you install them your coding experience will probably be much better.
 We deeply recommend at least installing the [issue label bot](https://github.com/marketplace/issue-label-bot) as this bot is the one that adds all the labels used in the issue templates.
 
-1. The `issue_label_bot.yaml` file depends on the **[issue label bot](https://github.com/marketplace/issue-label-bot)**.
-2. The `settings.yml` file depends on the **[settings label bot](https://probot.github.io/apps/settings/)**.
-3. The `config.yml` file depends on the bot **[welcome bot](https://probot.github.io/apps/welcome/)** and **[todo bot](https://probot.github.io/apps/todo/)**
+1. The `issue_label_bot.yaml` file depends on the **[issue label bot](https://github.com/marketplace/issue-label-bot)** (✓ highly recommended).
+2. The `settings.yml` file depends on the **[settings label bot](https://probot.github.io/apps/settings/)** (optional).
+3. The `config.yml` file depends on the bot **[welcome bot](https://probot.github.io/apps/welcome/)** and **[todo bot](https://probot.github.io/apps/todo/)** (optional).
 
 ---
 
@@ -168,7 +174,7 @@ Badges and texts will be replaced with your project details!
 
 <p align="center">
   <img width="70%" height="70%" src="https://i.imgur.com/dKKh53K.png" alt="README.md template.">
-  
+
   Or watch [this video](https://gifs.com/gif/josee9988-s-readme-md-MwO5E3) to see the whole README template.
 </p>
 

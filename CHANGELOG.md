@@ -7,6 +7,26 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/) 
 
 ---
 
+## [Unreleased]
+
+### Added
+
+* More error information when the tests fail..
+
+### Removed
+
+* Two useless FUNCTION_HELPERS's functions displaying errors.
+* Useless chmod declaration in the TESTS_RUNNER script
+* The exit conditions of the TESTS_RUNNER script in the same if statement.
+
+## [**1.10.3**] - 2021-07-19
+
+### Added
+
+* A new logo in the readme.md
+* Alt attribute for all the README's images
+* More guidance for the used github bots
+
 ## [**1.10.2**] - 2021-07-17
 
 ### Added
