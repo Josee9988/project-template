@@ -31,6 +31,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/) 
 ### Fixed
 
 * Some README's alt attribute.
+* Some README's broken links
 
 ## [**1.10.2**] - 2021-07-17
 
