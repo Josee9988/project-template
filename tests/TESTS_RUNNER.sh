@@ -20,7 +20,6 @@ GREEN='\033[1;32m'
 NC='\033[0m' # No Color
 TESTS_TRASH_DIR="tests/.ignore.tests_trash/"
 TEMP_TEST_OUTPUT=".ignore.test_runner_output.txt"
-chmod u+x tests/*
 declare -a test_files=("tests/project_scaffolding_test.sh" "tests/custom_data_test.sh" "tests/argument_help_parser.sh") # all the tests
 
 center() {
@@ -40,11 +39,11 @@ for file in "${test_files[@]}"; do
 done
 
 if grep -q "FAILED" "$TEMP_TEST_OUTPUT"; then # if when running the tests any error was found
-    echo -e "\n${RED}TESTS FAILED: One or more tests have failed!\nPlease check the output above${NC}"
+    echo -e "\n${RED}X TESTS FAILED: One or more tests have failed!\nPlease check the output above${NC}"
     rm "$TEMP_TEST_OUTPUT" 2>/dev/null || :
-    exit 1
+    exit 1 # exit unsuccesfully
+else       # tests ran OK
+    rm "$TEMP_TEST_OUTPUT" 2>/dev/null || :
+    echo -e "\n${GREEN}✓ All tests ran successfully${NC}"
+    exit 0 # exit succesfully
 fi
-
-rm "$TEMP_TEST_OUTPUT" 2>/dev/null || :
-echo -e "\n${GREEN}All tests ran successfully${NC}"
-exit 0
