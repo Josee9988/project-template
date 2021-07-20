@@ -7,11 +7,14 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/) 
 
 ---
 
-## [Unreleased]
+## [**1.10.4**] - 2021-07-20
 
 ### Added
 
-* More error information when the tests fail..
+* More error information when the tests fail.
+* The new logos in the generated readme for the user to change them with their own one.
+* More documentation in the project's readme.md
+* Informational error in the script when an unknown argument is encountered.
 
 ### Removed
 

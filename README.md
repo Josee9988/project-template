@@ -252,8 +252,8 @@ By donating, you will help the development of this project, and *you will be fea
 
 Enjoy! 😃
 
-> ⚠️Remember that this template should be reviewed and modified to fit your requirements.
-> The script **SETUP_TEMPLATE.sh** should be executed right when you clone your new repository.
-> There will be files that will need *manual revision*⚠️
+> ⚠️ Remember that this template should be reviewed and modified to fit your requirements.
+> The script **SETUP_TEMPLATE.sh** should be executed right when you clone your new repository generated from [here](https://github.com/Josee9988/project-template/generate).
+> There will be files that will need *manual revision* ⚠️
 
 _Made with a lot of ❤️❤️ by **[@Josee9988](https://github.com/Josee9988)**_
