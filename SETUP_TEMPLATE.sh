@@ -22,25 +22,25 @@
 # MAIL:          jgracia9988@gmail.com
 #~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#
 
-RED='\033[1;31m'
-will_omit_commit_and_confirmation=false
+RED='\033[1;31m'                                     # color red
 NAME_AND_PROJECT_UNPARSED=$(git ls-remote --get-url) # READ GITHUB USERNAME AND GITHUB PROJECT NAME
 NEW_USERNAME=$(echo "$NAME_AND_PROJECT_UNPARSED" | cut -d':' -f 2 | cut -d'/' -f 1)
 PROJECT_NAME=$(echo "$NAME_AND_PROJECT_UNPARSED" | cut -d'/' -f 2 | cut -d'.' -f 1)
 NEW_EMAIL=$(git config user.email)
-PROJECT_TYPE="repository"
-SCRIPT_VERSION="1.10.1"
-WILL_OMIT_TEST=false
 TEMP_TEST_OUTPUT=".ignore.test_output.txt"
+PROJECT_TYPE="repository" # default value if not specified
+will_omit_commit_and_confirmation=false
+will_omit_test=false
+SCRIPT_VERSION="1.10.4"
 
 FILE_FUNCTION_HELPERS=bin/FUNCTION_HELPERS.sh
 
 if [ ! -f "$FILE_FUNCTION_HELPERS" ]; then # check if the function helpers file is not found
-  echo -e "${RED}Can not find ${FILE_FUNCTION_HELPERS}"
+  echo -e "${RED}X Can not find ${FILE_FUNCTION_HELPERS}"
   exit 1 # it will exit if the function helpers file is not found
 else
   # shellcheck source=bin/FUNCTION_HELPERS.sh disable=SC1091
-  source $FILE_FUNCTION_HELPERS || exit # obtain some global functions and variables, if the file isn't found exit
+  source $FILE_FUNCTION_HELPERS || exit 1 # obtain some global functions and variables, if the file isn't found exit
 fi
 
 # PARSE THE ARGUMENTS
@@ -78,11 +78,11 @@ for i in "$@"; do
     shift # past argument with no value
     ;;
   --omit-test-check | --omit-tests-check | --omit-tests)
-    WILL_OMIT_TEST=true
+    will_omit_test=true
     shift # past argument with no value
     ;;
-  *)
-    # unknown option
+  *) # unknown option
+    echo -e "${RED}X Unknown option:${NC} '${i}', type the flag '${BBLUE}--help${NC}' to view all the options and flags."
     ;;
   esac
 done
@@ -90,16 +90,11 @@ done
 echo -e "Thanks for using ${GREEN}@Josee9988/project-template${NC}"
 echo -e "Read carefully all the documentation before you continue executing this script: ${UPURPLE}https://github.com/Josee9988/project-template${NC}\n"
 
-checkFiles # check if the main files exist before starting the project
-
 bash tests/TESTS_RUNNER.sh >/dev/null 2>&1 # PERFORM the TESTS
 
-if [ "$?" -eq 1 ] && [ $WILL_OMIT_TEST = false ]; then # if when running the tests any error was found
+if [ "$?" -eq 1 ] && [ $will_omit_test = false ]; then # if when running the tests any error was found
   rm "$TEMP_TEST_OUTPUT" 2>/dev/null || :
-  echo -e "${RED}ERROR: The tests failed!${NC}. Please, make sure that you are running this script with its original scaffolding (folder/file) structure without any modification, to make sure it works as expected.${NC}"
-  echo -e "The program will now exit for you to check if this script is executed right when creating your new repository."
-  echo -e "To omit this error and proceed please execute this script again with the flag '${GREEN}--omit-test-check${NC}'"
-  echo -e "For more information about the script, use the '${BBLUE}--help${NC}' flag."
+  displayTestErrorTexts
   exit 1
 fi
 
@@ -146,7 +141,7 @@ y | Y)
 n | N)
   echo -e "\nIf your username, project name or email were NOT right, you can manually change them. Read how to do it with the script's help: ${UPURPLE}bash SETUP_TEMPLATE.sh --help${NC}\n"
   ;;
-*) echo -e "${RED}Invalid option${NC}" ;;
+*) echo -e "${RED}X Invalid option${NC}" ;;
 esac
 
 exit 0

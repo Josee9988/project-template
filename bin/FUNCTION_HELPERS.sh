@@ -34,27 +34,13 @@ center() {
   echo -e "\n${BBLUE}$(printf '%*.*s %s %*.*s\n' 0 "$(((term_width - 2 - ${#1}) / 2))" "$padding" "$1" 0 "$(((term_width - 1 - ${#1}) / 2))" "$padding")${NC}\n"
 }
 
-checkFiles() {
-  ### Check if the .github directory does exist ###
-  if [ ! -d ".github/" ] && [ ! -d ".github/ISSUE_TEMPLATE" ]; then
-    echo -e "${RED}Directory .github/ DOES NOT EXIST WITH ALL THE FILES NEEDED.${NC}"
-    displayErrorInstructions
-    exit 1 # exit with error code 1
-  fi
-
-  ### Checks if the root files exist and some extra important files ###
-  if [ ! -f "CHANGELOG.md" ] && [ ! -f "README.md" ] && [ ! -f ".gitignore" ] && [ ! -f "LICENSE" ] && [ ! -f ".github/settings.yml" ] && [ ! -f ".github/pull_request_template.md" ] && [ ! -f ".github/ISSUE_TEMPLATE/1-bug-report.md" ] && [ ! -f ".github/ISSUE_TEMPLATE/config.yml" ]; then
-    echo -e "${RED}The script couldn't find one or many of the template main files${NC}."
-    displayErrorInstructions
-    exit 1 # exit with error code 1
-  fi
-}
-
-displayErrorInstructions() {
-  echo -e "${RED}Some files are missing! Have you modified the repository before executing this command?${NC}"
-  echo -e "\nYou should try to 'git stash' your changes and execute this script from the project root again, or clone again the repository (the template) without any changes.\n"
-  echo -e "For more information visit: ${UPURPLE}https://github.com/Josee9988/project-template${NC}"
-  echo -e "If you think this may be an issue please post it at: ${UPURPLE}https://github.com/Josee9988/project-template/issues${NC}"
+displayTestErrorTexts() {
+  echo -e "${RED}X ERROR: The tests failed!${NC}. Please, make sure that you are running this script with its original scaffolding (folder/file) structure without any modification.${NC}"
+  echo -e "You should try to 'git stash' your changes and execute this script from the project root again, or clone again the repository (the template) without any changes."
+  echo -e "Remember that your brand new repository should be created from here: ${BOLD}${UPURPLE}https://github.com/Josee9988/project-template/generate${NC}"
+  echo -e "\nThe program will now exit for you to check if this script is executed right when creating your new repository from the link above."
+  echo -e "To omit this error and proceed please execute this script again with the flag '${GREEN}--omit-test-check${NC}'"
+  echo -e "For more information about the script, use the '${BBLUE}--help${NC}' flag."
 }
 
 displayHelpTexts() { # (it will manually detect your git data and prompt for the proejct type)
@@ -92,11 +78,16 @@ writeREADME() {
 # 🔥 **$NEW_USERNAME/$PROJECT_NAME**
 
 <div align=\"center\">
+  <!-- Change your logo -->
+  <a href=\"https://github.com/$NEW_USERNAME/$PROJECT_NAME\">
+    <img width=\"100%\" src=\"https://i.imgur.com/SVvgxJF.png\" alt=\"@$NEW_USERNAME/$PROJECT_NAME's logo\">
+  </a>
+  <br>
   <a href=\"https://github.com/$NEW_USERNAME/$PROJECT_NAME/issues\">
-    <img alt=\"Issues\" src=\"https://img.shields.io/github/issues/$NEW_USERNAME/$PROJECT_NAME?color=0088ff&style=for-the-badge&logo=github\"/>
+    <img src=\"https://img.shields.io/github/issues/$NEW_USERNAME/$PROJECT_NAME?color=0088ff&style=for-the-badge&logo=github\" alt=\"$NEW_USERNAME/$PROJECT_NAME's issues\"/>
   </a>
   <a href=\"https://github.com/$NEW_USERNAME/$PROJECT_NAME/pulls\">
-    <img alt=\"GitHub pull requests\" src=\"https://img.shields.io/github/issues-pr/$NEW_USERNAME/$PROJECT_NAME?color=0088ff&style=for-the-badge&logo=github\"/>
+    <img src=\"https://img.shields.io/github/issues-pr/$NEW_USERNAME/$PROJECT_NAME?color=0088ff&style=for-the-badge&logo=github\"  alt=\"$NEW_USERNAME/$PROJECT_NAME's pull requests\"/>
   </a>
 </div>
 
@@ -139,6 +130,12 @@ writeREADME() {
 ---
 
 ## 🍰 **Supporters and donators**
+
+<!-- Change your small logo -->
+<a href=\"https://github.com/$NEW_USERNAME/$PROJECT_NAME_PARSED\">
+  <img alt=\"@$NEW_USERNAME/$PROJECT_NAME_PARSED's brand logo without text\" align=\"right\" src=\"https://i.imgur.com/3qK1sie.png\" width=\"18%\" />
+</a>
+
 
 We are currently looking for new donators to help and maintain this project! ❤️
 
