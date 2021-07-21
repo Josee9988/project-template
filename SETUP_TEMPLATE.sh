@@ -4,8 +4,8 @@
 # SCRIPT:        SETUP_TEMPLATE.sh
 # USAGE:         bash SETUP_TEMPLATE.sh | ./SETUP_TEMPLATE.sh
 # PURPOSE:       Shell script that setups the @Josee9988/project-template github project template.
-#                It detects the user's GitHub username, email and project name
-#                then it prompts for the type of project that it is. All the data can be manually modified using the
+#                It detects the user's GitHub username, email and project name,
+#                then it prompts for the type of project that it is. All the data can be manually specified using the
 #                script optional arguments. For more information please execute the script with the '--help' flag.
 #                After it will customize all the files with the user's data, and remove some files and folders,
 #                even this own script.

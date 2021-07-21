@@ -1,10 +1,10 @@
 #!/bin/bash
 
 #~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#
-# PURPOSE:       Secondary (helper) script that is called by the main SETUP_TEMPLATE.sh file by
-#                obtaining some functions to better modularize the code.
+# PURPOSE:       Secondary (helper) script that is called by the main SETUP_TEMPLATE.sh file to call
+#                some functions and obtain some exported variables to better modularize the code.
 # TITLE:         FUNCTION_HELPERS
-# AUTHOR:        Jose Gracia
+# AUTHOR:        @Josee9988 | Jose Gracia
 # VERSION:       See in CHANGELOG.md
 # NOTES:         This script will auto remove itself, and in case of wanting to run it again, the user must download
 #                it again or do a 'git stash' and revert the changes.

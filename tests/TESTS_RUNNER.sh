@@ -1,10 +1,11 @@
 #!/bin/bash
 
 #~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#
-# PURPOSE:       Main test script that will call all the individual unitary tests.
+# PURPOSE:       Main test script that will call all the individual unitary tests. Exit code 1 means an error in one
+#                or more tests was found, otherwise, the exit code will be 0.
 # TITLE:         TESTS_RUNNER
-# AUTHOR:        Jose Gracia
-# VERSION:       See in CHANGELOG.md
+# AUTHOR:        @Josee9988 | Jose Gracia
+# VERSION:       See in ./../CHANGELOG.md
 # NOTES:         This script does not contain any test, it only calls all the tests one by one.
 # BASH_VERSION:  5.1.4(1)-release (x86_64-pc-linux-gnu)
 # LICENSE:       see in ../LICENSE (project root) or https://github.com/Josee9988/project-template/blob/master/LICENSE

@@ -1,10 +1,10 @@
 #! /bin/bash
 
 #~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#
-# PURPOSE:       Test suite for testing the modified custom data, after executing the SETUP_TEMPLATE script.º
+# PURPOSE:       Test suite for testing the modified custom data, after executing the SETUP_TEMPLATE script.
 # TITLE:         Custom Data tests
-# AUTHOR:        Jose Gracia
-# VERSION:       See in CHANGELOG.md
+# AUTHOR:        @Josee9988 | Jose Gracia
+# VERSION:       See in ./../CHANGELOG.md
 # NOTES:         This script is called by the TESTS_RUNNER.sh script. And it unit tests all the custom data modified
 #                by the SETUP_TEMPLATE script.
 # BASH_VERSION:  5.1.4(1)-release (x86_64-pc-linux-gnu)
