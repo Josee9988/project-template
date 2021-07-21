@@ -31,7 +31,7 @@ TEMP_TEST_OUTPUT=".ignore.test_output.txt"
 PROJECT_TYPE="repository" # default value if not specified
 will_omit_commit_and_confirmation=false
 will_omit_test=false
-SCRIPT_VERSION="1.10.4"
+SCRIPT_VERSION="1.10.5"
 
 FILE_FUNCTION_HELPERS=bin/FUNCTION_HELPERS.sh
 
