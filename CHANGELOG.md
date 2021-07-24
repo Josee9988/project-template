@@ -7,6 +7,12 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/) 
 
 ---
 
+## [**1.11.0**] - 2021-07-24
+
+### Added
+
+* Divided the --omit-commit-and-verification argument into two separate ones '--omit-commit' and '--omit-verification'.
+
 ## [**1.10.5**] - 2021-07-21
 
 ### Added
