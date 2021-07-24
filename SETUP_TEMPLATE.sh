@@ -29,9 +29,10 @@ PROJECT_NAME=$(echo "$NAME_AND_PROJECT_UNPARSED" | cut -d'/' -f 2 | cut -d'.' -f
 NEW_EMAIL=$(git config user.email)
 TEMP_TEST_OUTPUT=".ignore.test_output.txt"
 PROJECT_TYPE="repository" # default value if not specified
-will_omit_commit_and_confirmation=false
+will_omit_verification=false
+will_omit_commit=false
 will_omit_test=false
-SCRIPT_VERSION="1.10.5"
+SCRIPT_VERSION="1.11.0"
 
 FILE_FUNCTION_HELPERS=bin/FUNCTION_HELPERS.sh
 
@@ -73,8 +74,19 @@ for i in "$@"; do
     shift # past argument=value
     ;;
   -o | --omit | --omit-commit-and-confirmation)
-    will_omit_commit_and_confirmation=true
+    echo -e "${BBLUE}X Deprecated:${NC} The arguments '--omit-commit-and-confirmation', '-o' and '--omit' are ${RED}deprecated${NC}. Use '--omit-verification' and/or ' --omit-commit' instead."
+    will_omit_verification=true
+    will_omit_commit=true
     choice="y"
+    shift # past argument with no value
+    ;;
+  --omit-verification)
+    will_omit_verification=true
+    choice="y"
+    shift # past argument with no value
+    ;;
+  --omit-commit)
+    will_omit_commit=true
     shift # past argument with no value
     ;;
   --omit-test-check | --omit-tests-check | --omit-tests)
@@ -104,7 +116,7 @@ if [ "$PROJECT_TYPE" = "repository" ]; then # if the project's type has not been
   read -p "Enter $(echo -e "$BBLUE""what your project is""$NC") (program/extension/API/web/CLI tool/backend/frontend/scrapper/automation tool/etc): " PROJECT_TYPE
 fi
 
-if [ $will_omit_commit_and_confirmation = false ]; then # if the ignore flag has not been manually specified
+if [ $will_omit_verification = false ]; then # if the ignore flag has not been manually specified
   read -p "Is this data correct: username \"$(echo -e "$GREEN""$NEW_USERNAME""$NC")\", email: \"$(echo -e "$GREEN""$NEW_EMAIL""$NC")\", project name: \"$(echo -e "$GREEN""$PROJECT_NAME""$NC")\", of type: \"$(echo -e "$GREEN""$PROJECT_TYPE""$NC")\" (y/n)? " choice
 fi
 
@@ -127,7 +139,7 @@ y | Y)
   writeCHANGELOG                                              # write the basic structure of the CHANGELOG.md
   echo -e "# add your own funding links" >.github/FUNDING.yml # remove author's custom funding links
 
-  if [ $will_omit_commit_and_confirmation = false ]; then                                 # if the ignore option for tests has been specified
+  if [ $will_omit_commit = false ]; then                                                  # if the ignore option for tests has been specified
     git add CHANGELOG.md README.md .gitignore .github SETUP_TEMPLATE.sh LICENSE bin tests # commit the new files
     git -c color.status=always status | less -REX                                         # show git status with colours
     echo -e "Committing the changes for you :)\n"

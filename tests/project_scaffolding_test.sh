@@ -20,7 +20,6 @@ USERNAME="FAKE_USERNAME_TESTS"
 NAME="FAKE_NAME_TESTS"
 MAIL="FAKE_EMAIL_TESTS"
 TYPE="FAKE_TYPE_TESTS"
-OMIT_STR="--omit-commit-and-confirmation"
 
 oneTimeSetUp() {
     cp -r * $TESTS_TRASH_DIR --copy-content 2>/dev/null || :
@@ -30,7 +29,7 @@ oneTimeSetUp() {
     rm -r $TESTS_TRASH_DIR/tests/ 2>/dev/null || :
     rm -r $TESTS_TRASH_DIR/.git/ 2>/dev/null || :
     cd $TESTS_TRASH_DIR || exit
-    bash SETUP_TEMPLATE.sh --username=$USERNAME --projectName=$NAME --email=$MAIL --projectType=$TYPE $OMIT_STR --omit-test-check >/dev/null # run the setup script
+    bash SETUP_TEMPLATE.sh --username=$USERNAME --projectName=$NAME --email=$MAIL --projectType=$TYPE --omit-commit --omit-verification --omit-test-check >/dev/null # run the setup script
 }
 
 oneTimeTearDown() {
