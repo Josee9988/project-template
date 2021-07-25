@@ -34,6 +34,7 @@ center() {
   echo -e "\n${BBLUE}$(printf '%*.*s %s %*.*s\n' 0 "$(((term_width - 2 - ${#1}) / 2))" "$padding" "$1" 0 "$(((term_width - 1 - ${#1}) / 2))" "$padding")${NC}\n"
 }
 
+# Function that displays the error texts in case the project's tests fails.
 displayTestErrorTexts() {
   echo -e "${RED}X ERROR: The tests failed!${NC}. Please, make sure that you are running this script with its original scaffolding (folder/file) structure without any modification.${NC}"
   echo -e "You should try to 'git stash' your changes and execute this script from the project root again, or clone again the repository (the template) without any changes."
@@ -43,6 +44,7 @@ displayTestErrorTexts() {
   echo -e "For more information about the script, use the '${BBLUE}--help${NC}' flag."
 }
 
+# Displays the help texts, normally called by the '--help' flag
 displayHelpTexts() { # (it will manually detect your git data and prompt for the proejct type)
   center "User help ${DGRAY}$SCRIPT_VERSION${BBLUE}"
   echo -e "Script usage: ${UGREEN}bash $0${NC} or ${UGREEN}./$0${NC}\n"
@@ -71,6 +73,7 @@ displayHelpTexts() { # (it will manually detect your git data and prompt for the
   echo -e "If you have any questions or if any issue is found, please make sure to report it at: ${UPURPLE}https://github.com/Josee9988/project-template/issues${NC}"
 }
 
+# Function that writes and parses variables to write the new generated README.md file
 writeREADME() {
   PROJECT_NAME_PARSED=${PROJECT_NAME/-/ }
   bash -c "NEW_USERNAME='NEW_USERNAME' PROJECT_NAME='PROJECT_NAME' PROJECT_TYPE='PROJECT_TYPE'; cat << EOF > README.md
@@ -185,6 +188,7 @@ _Made with a lot of ❤️❤️ by **[@$NEW_USERNAME](https://github.com/$NEW_U
 EOF"
 }
 
+# Function that writes and parses variables to write the new generated CHANGELOG.md file
 writeCHANGELOG() {
   ACTUAL_DATE=$(date '+%Y-%m-%d')
   bash -c "PROJECT_NAME='PROJECT_NAME' PROJECT_TYPE='PROJECT_TYPE' ACTUAL_DATE='ACTUAL_DATE'; cat << EOF > CHANGELOG.md
