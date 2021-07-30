@@ -1,6 +1,14 @@
 ###> Josee9988/project-template ###
 
 # Folders
+build/
+dist/
+node_modules/
+vendor/
+var/
+.tmp/
+
+## IDE's
 .vscode/
 .idea/
 
