@@ -7,6 +7,12 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/) 
 
 ---
 
+## [**1.11.2**] - 2021-07-30
+
+### Added
+
+* Gitignored multiple common folder and files.
+
 ## [**1.11.1**] - 2021-07-25
 
 ### Added
