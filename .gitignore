@@ -1,6 +1,6 @@
 ###> Josee9988/project-template ###
 
-# Folders
+##### Folders #####
 build/
 dist/
 node_modules/
@@ -8,11 +8,12 @@ vendor/
 var/
 .tmp/
 
-## IDE's
+# IDE's
 .vscode/
 .idea/
 
-# Files
+
+##### Files #####
 ignore.*
 *.ignore.*
 
