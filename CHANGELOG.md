@@ -7,6 +7,12 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/) 
 
 ---
 
+## [**1.11.3**] - 2021-08-03
+
+### Added
+
+* Improved gitignore comments
+
 ## [**1.11.2**] - 2021-07-30
 
 ### Added
