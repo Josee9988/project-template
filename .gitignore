@@ -13,8 +13,8 @@ var/
 .idea/
 
 # Files
-ignore.*
-*.ignore.*
+ignore.
+*.ignore.
 
 # Environment variables and secret keys
 .env
