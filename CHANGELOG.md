@@ -7,6 +7,12 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/) 
 
 ---
 
+## [**1.11.5**] - 2021-11-19
+
+### Fixed
+
+* Some typos in multiple files.
+
 ## [**1.11.4**] - 2021-11-01
 
 ### Fixed
@@ -23,7 +29,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/) 
 
 ### Added
 
-* Gitignored multiple common folder and files.
+* Git ignored multiple common folder and files.
 
 ## [**1.11.1**] - 2021-07-25
 
@@ -55,7 +61,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/) 
 ### Removed
 
 * Two useless FUNCTION_HELPERS's functions displaying errors.
-* Useless chmod declaration in the TESTS_RUNNER script
+* Useless 'chmod' declaration in the TESTS_RUNNER script
 * The exit conditions of the TESTS_RUNNER script in the same if statement.
 
 ## [**1.10.3**] - 2021-07-19
@@ -69,7 +75,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/) 
 
 ### Fixed
 
-* Some README's alt attribute.
+* Some README's 'alt' attribute.
 * Some README's broken links
 
 ## [**1.10.2**] - 2021-07-17
@@ -276,13 +282,13 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/) 
 
 * README file with the section with the recommended/used bots that the users should install.
 * Some informational comments in the script referencing the project's documentation.
-* A total of 18 new labels will be created right when you clone your repo using GitHub Probot settings.
+* A total of 18 new labels will be created right when you clone your repo using GitHub 'Probot' settings.
 
 ## [**1.3.0**] - 2021-04-14
 
 ### Added
 
-* CODEOWNERS file inside the .GitHub folder.
+* CODEOWNERS file inside the '.GitHub/' folder.
 
 ### Fixed
 
@@ -312,7 +318,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/) 
 
 * Gitignore file ignores all \*.ignore.\* files.
 * Basic README.md template.
-* bin/FUNCTION_HELPERS script to improve the readability of the SETUP_TEMPLATE.sh file.
+* A bin/FUNCTION_HELPERS script to improve the readability of the SETUP_TEMPLATE.sh file.
 
 ### Changed
 
@@ -384,7 +390,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/) 
 
 ### Added
 
-* MarkdownLint disable the rule in the CHANGELOG.md file".
+* MarkdownLint disable the rule in the "CHANGELOG.md" file.
 
 ## [**1.0.3**] - 2021-02-23
 
@@ -394,7 +400,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/) 
 
 ### Added
 
-* Shell script now checks if the .github directory exists.
+* Shell script now checks if the '.github' directory exists.
 
 ## [**1.0.2**] - 2020-09-08
 
@@ -415,7 +421,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/) 
 
 ### Changed
 
-* The location of the pull request template to the .GitHub/ folder.
+* The location of the pull request template to the '.GitHub/' folder.
 
 ## [**1.0.0**] - 2020-09-08
 
