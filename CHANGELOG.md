@@ -7,6 +7,12 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/) 
 
 ---
 
+## [**1.11.6**] - 2021-12-04
+
+### Added
+
+* Two 'README.md' files at the bin/ and tests/ folder to help describe what the folder purpose is.
+
 ## [**1.11.5**] - 2021-11-19
 
 ### Fixed
