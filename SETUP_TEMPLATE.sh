@@ -32,7 +32,7 @@ PROJECT_TYPE="repository" # default value if not specified
 will_omit_verification=false
 will_omit_commit=false
 will_omit_test=false
-SCRIPT_VERSION="1.11.0"
+SCRIPT_VERSION="1.11.7"
 
 FILE_FUNCTION_HELPERS=bin/FUNCTION_HELPERS.sh
 
@@ -131,8 +131,8 @@ y | Y)
   find .github/ -type f -name "*" -print0 | xargs -0 sed -i "s/project-template/${PROJECT_NAME}/g"
   find .gitignore -type f -name "*" -print0 | xargs -0 sed -i "s/Josee9988\/project-template/${NEW_USERNAME}\/${PROJECT_NAME}/g"
 
-  rm LICENSE                                                  # remove the license
-  rm -r bin/                                                  # remove the bin folder
+  rm LICENSE 2>/dev/null || :                                 # remove the license
+  rm -r bin/ 2>/dev/null || :                                 # remove the bin folder
   rm -r tests/ 2>/dev/null || :                               # remove the tests folder
   rm -r .github/workflows/ 2>/dev/null || :                   # remove the workflow folder
   writeREADME                                                 # write the new README.md
@@ -148,7 +148,7 @@ y | Y)
   fi
 
   # self remove this script
-  rm -- "$0"
+  rm -- "$0" 2>/dev/null || :
   ;;
 n | N)
   echo -e "\nIf your username, project name or email were NOT right, you can manually change them. Read how to do it with the script's help: ${UPURPLE}bash SETUP_TEMPLATE.sh --help${NC}\n"

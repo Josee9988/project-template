@@ -7,6 +7,12 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/) 
 
 ---
 
+## [**1.11.7**] - 2021-12-05
+
+### Added
+
+* In the main script, removing the bin/ folder, the LICENSE file and the script itself will not prompt errors if there are any problems
+
 ## [**1.11.6**] - 2021-12-04
 
 ### Added
