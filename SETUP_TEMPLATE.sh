@@ -143,7 +143,7 @@ y | Y)
     git add CHANGELOG.md README.md .gitignore .github SETUP_TEMPLATE.sh LICENSE bin tests # commit the new files
     git -c color.status=always status | less -REX                                         # show git status with colours
     echo -e "Committing the changes for you :)\n"
-    git commit -m "Set up '@Josee9988/project-template' template: Personalized files by executing the SETUP_TEMPLATE.sh script.🚀"
+    git commit -m "📝 Set up '@Josee9988/project-template' template: Personalized files by executing the SETUP_TEMPLATE.sh script.🚀"
     echo -e "\nRemember to review every file and customize it as you like.\nYou are ready to start your brand new awesome project🚀🚀." else
   fi
 
