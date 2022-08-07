@@ -7,6 +7,13 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/) 
 
 ---
 
+## [**1.11.8**] - 2022-08-07
+
+### Fixed
+
+* Multiple typos and grammar issues.
+* From 'cp -r *' to 'cp -r ./*' in the tests, so names with dashes won't become options.
+
 ## [**1.11.7**] - 2021-12-05
 
 ### Added

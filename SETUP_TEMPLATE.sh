@@ -11,7 +11,7 @@
 #                even this own script.
 # TITLE:         SETUP_TEMPLATE
 # AUTHOR:        @Josee9988
-# VERSION:       See in CHANGELOG.md
+# VERSION:       See in CHANGELOG.md or in variable 'SCRIPT_VERSION'.
 # NOTES:         This script will auto remove itself, and in case of wanting to run it again, the user must download
 #                it again or do a 'git stash' and revert the changes.
 # BASH_VERSION:  5.1.4(1)-release (x86_64-pc-linux-gnu)
@@ -32,7 +32,7 @@ PROJECT_TYPE="repository" # default value if not specified
 will_omit_verification=false
 will_omit_commit=false
 will_omit_test=false
-SCRIPT_VERSION="1.11.7"
+SCRIPT_VERSION="1.11.8"
 
 FILE_FUNCTION_HELPERS=bin/FUNCTION_HELPERS.sh
 

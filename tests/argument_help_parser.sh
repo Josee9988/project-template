@@ -20,7 +20,7 @@ MAIL="FAKE_EMAIL_TESTS"
 SCRIPT_OUTPUT="script_output.txt"
 
 setUp() {
-    cp -r * $TESTS_TRASH_DIR --copy-content 2>/dev/null || :
+    cp -r ./* $TESTS_TRASH_DIR --copy-content 2>/dev/null || :
     cp -r .github/ $TESTS_TRASH_DIR --copy-contents
     cp -r bin/ $TESTS_TRASH_DIR --copy-contents
     cp .gitignore $TESTS_TRASH_DIR --copy-contents
