@@ -367,7 +367,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/) 
 
 ### Added
 
-* The script will git add and commit the new files/changes for you.
+* The script will 'git add' and 'commit' the new files/changes for you.
 
 ## [**1.0.8**] - 2021-03-17
 
@@ -396,7 +396,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/) 
 ### Added
 
 * Checks to the shell script (check if the files exist)
-* Colourized the output of the script.
+* Colorized the output of the script.
 
 ## [**1.0.4**] - 2021-02-26
 

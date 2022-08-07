@@ -45,7 +45,7 @@ displayTestErrorTexts() {
 }
 
 # Displays the help texts, normally called by the '--help' flag
-displayHelpTexts() { # (it will manually detect your git data and prompt for the proejct type)
+displayHelpTexts() { # (it will manually detect your git data and prompt for the project type)
   center "User help ${DGRAY}$SCRIPT_VERSION${BBLUE}"
   echo -e "Script usage: ${UGREEN}bash $0${NC} or ${UGREEN}./$0${NC}\n"
 
