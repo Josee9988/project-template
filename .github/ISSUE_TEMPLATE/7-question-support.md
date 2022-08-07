@@ -16,7 +16,7 @@ assignees: Josee9988
 
 <!--📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛
 
-Oh hi there! 😄
+Oh, hi there! 😄
 
 Before posting any question or ask for support, first read the project's README.md file and
 (if there is any) the WIKI pages or any other additional documentation that might be listed

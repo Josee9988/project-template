@@ -1,6 +1,6 @@
 <!--📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛
 
-Oh hi there! 😄
+Oh, hi there! 😄
 
 To make our work easier we recommend you to choose any of our available issue templates rather than using (this) a blank template.
 

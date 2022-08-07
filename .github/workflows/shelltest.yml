@@ -1,4 +1,4 @@
-# this github actions will run the tests/TESTS_RUNNER.sh script and fial if any of the tests fail.
+# this github actions will run the tests/TESTS_RUNNER.sh script and fail if any of the tests fail.
 name: SH Tests runner
 
 on:

@@ -15,7 +15,7 @@
   <a href="https://github.com/Josee9988/project-template/generate">
     <img src="https://img.shields.io/badge/use%20this-template-blue?logo=github-sponsors&style=for-the-badge&color=green" alt="@Josee9988/project-template link to create a new repository from the template">
   </a>
-  <a href="ttps://github.com/Josee9988/project-template/actions/workflows/shelltest.yml">
+  <a href="https://github.com/Josee9988/project-template/actions/workflows/shelltest.yml">
     <img src="https://github.com/Josee9988/project-template/actions/workflows/shelltest.yml/badge.svg" alt="@Josee9988/project-template's tests">
   </a>
 </p>

@@ -42,9 +42,9 @@ done
 if grep -q "FAILED" "$TEMP_TEST_OUTPUT"; then # if when running the tests any error was found
     echo -e "\n${RED}X TESTS FAILED: One or more tests have failed!\nPlease check the output above${NC}"
     rm "$TEMP_TEST_OUTPUT" 2>/dev/null || :
-    exit 1 # exit unsuccesfully
+    exit 1 # exit unsuccessfully
 else       # tests ran OK
     rm "$TEMP_TEST_OUTPUT" 2>/dev/null || :
     echo -e "\n${GREEN}✓ All tests ran successfully${NC}"
-    exit 0 # exit succesfully
+    exit 0 # exit successfully
 fi
