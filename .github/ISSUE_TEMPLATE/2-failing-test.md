@@ -17,7 +17,7 @@ assignees: Josee9988
 ---
 
 ## **Reason for failure/description**
-<!-- Try to describe why the test is failing or what are we missing to make it pass. -->
+<!-- Try to describe why the test is failing or what we are missing to make it pass. -->
 
 ---
 
@@ -35,7 +35,7 @@ assignees: Josee9988
 
 Oh, hi there! 😄
 
-To expedite issue processing please search open and closed issues before submitting a new one.
+To expedite issue processing, please search open and closed issues before submitting a new one.
 Please read our Rules of Conduct at this repository's `.github/CODE_OF_CONDUCT.md`
 
 📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛-->

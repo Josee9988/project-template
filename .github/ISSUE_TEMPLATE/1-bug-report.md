@@ -18,7 +18,7 @@ assignees: Josee9988
 
 ### **Is this a regression?**
 <!-- Did this behaviour used to work in the previous version? -->
-<!-- Yes, the previous version in which this bug was not present was: ... -->
+<!-- Yes, the last version in which this bug was not present was: ... -->
 
 ---
 
@@ -54,7 +54,7 @@ assignees: Josee9988
 
 ### **Your environment**
 
-<!-- use all the applicable bulleted list element for this specific issue,
+<!-- use all the applicable bulleted list elements for this specific issue,
 and remove all the bulleted list elements that are not relevant for this issue. -->
 
 * OS: <!--[e.g. Ubuntu 5.4.0-26-generic x86_64 / Windows 1904 ...]-->
@@ -73,7 +73,7 @@ and remove all the bulleted list elements that are not relevant for this issue. 
 
 Oh, hi there! 😄
 
-To expedite issue processing please search open and closed issues before submitting a new one.
+To expedite issue processing, please search open and closed issues before submitting a new one.
 Please read our Rules of Conduct at this repository's `.github/CODE_OF_CONDUCT.md`
 
 📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛-->

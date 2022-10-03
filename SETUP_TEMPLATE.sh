@@ -3,16 +3,16 @@
 #~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#
 # SCRIPT:        SETUP_TEMPLATE.sh
 # USAGE:         bash SETUP_TEMPLATE.sh | ./SETUP_TEMPLATE.sh
-# PURPOSE:       Shell script that setups the @Josee9988/project-template github project template.
+# PURPOSE:       Shell script that setups the @Josee9988/project-template GitHub project template.
 #                It detects the user's GitHub username, email and project name,
-#                then it prompts for the type of project that it is. All the data can be manually specified using the
-#                script optional arguments. For more information please execute the script with the '--help' flag.
-#                After it will customize all the files with the user's data, and remove some files and folders,
+#                and then prompts for the type of project that it is. All the data can be manually specified using
+#                the script optional arguments. For more information, please execute the script with the '--help' flag.
+#                After it will customize all the files with the user's data and remove some files and folders,
 #                even this own script.
 # TITLE:         SETUP_TEMPLATE
 # AUTHOR:        @Josee9988
 # VERSION:       See in CHANGELOG.md or in variable 'SCRIPT_VERSION'.
-# NOTES:         This script will auto remove itself, and in case of wanting to run it again, the user must download
+# NOTES:         This script will auto remove itself, and if you want to rerun it, the user must download
 #                it again or do a 'git stash' and revert the changes.
 # BASH_VERSION:  5.1.4(1)-release (x86_64-pc-linux-gnu)
 # LICENSE:       see in LICENSE (project root) or https://github.com/Josee9988/project-template/blob/master/LICENSE
@@ -100,7 +100,7 @@ for i in "$@"; do
 done
 
 echo -e "Thanks for using ${GREEN}@Josee9988/project-template${NC}"
-echo -e "Read carefully all the documentation before you continue executing this script: ${UPURPLE}https://github.com/Josee9988/project-template${NC}\n"
+echo -e "Read all the documentation carefully before you continue executing this script: ${UPURPLE}https://github.com/Josee9988/project-template${NC}\n"
 
 bash tests/TESTS_RUNNER.sh >/dev/null 2>&1 # PERFORM the TESTS
 

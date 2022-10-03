@@ -1,7 +1,7 @@
 #! /bin/bash
 
 #~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#
-# PURPOSE:       Test suite for testing the modified custom data, after executing the SETUP_TEMPLATE script.
+# PURPOSE:       Test suite for testing the modified custom data after executing the SETUP_TEMPLATE script.
 # TITLE:         Custom Data tests
 # AUTHOR:        @Josee9988 | Jose Gracia
 # VERSION:       See in ./../CHANGELOG.md

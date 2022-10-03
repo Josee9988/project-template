@@ -11,7 +11,7 @@ assignees: Josee9988
 
 Oh, hi there! 😄
 
-To expedite issue processing please search open and closed issues before submitting a new one.
+To expedite issue processing, please search open and closed issues before submitting a new one.
 Please read our Rules of Conduct at this repository's `.github/CODE_OF_CONDUCT.md`
 
 FIRST OF ALL, read this project's SECURITY.md file. Located in `.github/SECURITY.md`.
@@ -25,7 +25,7 @@ certain personal information or involves personal identifiable data, or you beli
 that the data that you might leak by exposing the way on how to attack the project
 could be considered as a data leak or could violate the privacy of any kind of
 data or sensible data, please do not post it here and directly email the developer:
-(jgracia9988@gmail.com). You should post the issue with the least amount of 
+(jgracia9988@gmail.com). You should post the issue with the least amount of
 sensible or private data as possible to help us manage the security issue, and
 with the extra data sent from your email to the developer (if any), we will deeply
 analyze and try to fix it as fast as possible.
@@ -84,7 +84,7 @@ The data that must NOT be posted here:
 
 ### **Your environment**
 
-<!-- use all the applicable bulleted list element for this specific issue,
+<!-- use all the applicable bulleted list elements for this specific issue,
 and remove all the bulleted list elements that are not relevant for this issue. -->
 
 * OS: <!--[e.g. Ubuntu 5.4.0-26-generic x86_64 / Windows 1904 ...]-->
